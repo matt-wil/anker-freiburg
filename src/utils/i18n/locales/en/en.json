@@ -1,0 +1,273 @@
+{
+    "hero": {
+        "intro": "A place where change becomes visible – precisely inked, respectfully accompanied, and with a keen sense for what lies beneath the surface. Whether tattooing or piercing – with us you'll find craftsmanship with integrity, short wait times, a rotating cast of artists, and a friendly, equal approach. In a stylish, uncluttered atmosphere, we accompany you on a step that can be more than just body adornment: an expression, a transition, a symbol.",
+        "introEnd": "Nice that your're here.",
+        "button": "Contact"
+    },
+    "scrollPage": {
+        "needle1": "Your Skin",
+        "needle2": "Your Story", 
+        "needle3": "Our Craft"
+    },
+    "about": {
+        "header": "About us",
+        "subHeader": "Change sometimes shows itself where words are not enough – on the skin.",
+        "text1": "Since December 2011, Anker has been a fixture in the heart of Freiburg — located directly at Martinstor, just a few steps from the Holzmarkt S-Bahn station, and within walking distance of the main train station. For those arriving by car, there are also two parking garages just around the corner.",
+        "text2": "Our studio combines high-quality craftsmanship with personalized support. Hygiene is not only a top priority for us, but is practiced daily – in an elegant, clean ambiance that provides space for your ideas, thoughts, and decisions.",
+        "text3": "Our regularly rotating team of tattoo artists from a wide variety of styles offers a broad spectrum of artistic expression – from delicate symbols to classic blackwork to expressive color pieces. Our piercings also combine precise technique with attentive support.",
+        "text4": "We invite you to follow our Instagram channel to find out about current promotions, walk-in days, specials, and charity projects – because there's always something new happening with us.",
+        "text5": "And no matter whether you come with a wild idea or a quiet wish: We're here. With openness, experience, and a feel for what resonates between the lines. Because sometimes a big change begins with a small gesture – and a needle."
+  }, 
+    "nav": {
+        "home": "Home",
+        "tattoo": "Tattoo",
+        "piercing": "Piercing",
+        "contact": "Contact",
+        "data": "Data Protection",
+        "legal": "Legal Notice",
+        "faq": "FAQ",
+        "promo": "Promotions"
+  },
+    "contact": {
+        "form": {
+            "header": "Contact us",
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "button": "Send",
+            "success": "Message sent successfully",
+            "error": "Message failed to send"
+        },
+        "openHoursHeader": "Working hours",
+        "weekdays": "Tuesday - Friday: ",
+        "weekdayTime": "12:00 - 18:00",
+        "saturday": "Saturday: ",
+        "saturdayTime": "12:00 - 16:00",
+        "closedDays": "Sunday and Monday: Closed",
+        "addressHeader": "Address",
+        "addressLine1": "An der Mehlwaage 2.",
+        "addressLine2": "79098 Freiburg im Breisgau",
+        "contactHeader": "Contact",
+        "phone": "Telephone: ",
+        "email": "Email: "
+    },
+        "faq": {
+            "header": "Frequently asked questions",
+                "subHeader1": "General",
+                "questionGeneral1": "How can I book an appointment?",
+                "answerGeneral1": "You can easily book piercing appointments using our contact form or by phone. If you'd like a tattoo, we ask you to come to the studio in person to discuss your idea and make a deposit.",
+                "questionGeneral2": "Are walk-in options available?",
+                "answerGeneral2": "We offer walk-in days for tattoos. However, you should always make an appointment for a tattoo. For piercings, walk-ins are welcome! although there may be a short waiting time",
+                "questionGeneral3": "How old do I have to be for a tattoo or piercing?",
+                "answerGeneral3": "You generally have to be at least 18 years old to get a tattoo. In exceptional cases, we also accept tattoos from the age of 16, provided a parent or legal guardian is present at the consultation. To schedule an appointment, we require: a written consent form, ID cards for both parents, and, if the parents have different last names, a birth certificate. For piercings, the following applies: From the age of 14, with personal supervision by a parent and presentation of ID cards. From the age of 16, a written consent form with a copy of the parents' ID cards is sufficient. We also offer ear piercing for children – from the age of 6. It is particularly important to us that the child clearly expresses their own wishes and feels safe – not just at the request of the parents.",
+                "questionGeneral4": "What do I need to bring to my appointment?",
+                "answerGeneral4": "Please bring a valid ID to your piercing appointment – ​​we can't treat you without it. Eat something beforehand to stabilize your circulation. Feel free to bring a small snack and a drink (no zero-calorie drinks) to keep your blood sugar levels up for your tattoo appointment. A book, podcast, or music helps many people relax or distract themselves from the pain – bring whatever feels good!",
+                "questionGeneral5": "Do you also offer vouchers?",
+                "answerGeneral5": "Yes, you can get vouchers at the counter, or if you live further away, we'll be happy to send you one.",
+            "subHeader2": "Tattoo",
+                "questionTattoo1": "How does the tattooing process work?",
+                "answerTattoo1": "Typically, you bring your idea or desired motif to the studio. We'll discuss the placement, size, and approximate price with you. After scheduling an appointment, you'll contact the tattoo artist directly. You'll usually receive your design shortly before your appointment—usually one day in advance. Minor adjustments can, of course, be made up until the tattooing appointment. A deposit is required to reserve an appointment. This will be retained for appointments not canceled in a timely manner (at least three business days in advance). In acute emergencies, we will of course be accommodating, but please inform us as early as possible in any case.",
+                "questionTattoo2": "How do I prepare for my tattoo appointment?",
+                "answerTattoo2": "Please arrive well-rested, healthy, and refreshed for your appointment. Eat well on the day of your appointment, ideally a balanced breakfast, and a small meal shortly beforehand – this will help your circulation. Feel free to bring something to drink and, for longer sessions, a small snack. Avoid alcohol or other substances the day before – painkillers like aspirin or ibuprofen are also taboo, as they have a blood-thinning effect. The fitter and more relaxed you are, the more pleasant your tattoo experience will be.",
+                "questionTattoo3": "How much does a tattoo cost?",
+                "answerTattoo3": "Of course, this depends entirely on the design, size, and body part. An hour's session costs around €150, and a day session costs around €850. Please discuss this thoroughly with the tattoo artist to avoid leaving the session feeling frustrated.",
+                "questionTattoo4": "Do I have to be sober for my tattoo appointment?",
+                "answerTattoo4": "Yes. Please. Absolutely. Even if you're on a tear – when getting a tattoo, your body needs to be sober and your head clear. Alcohol or other substances before your appointment? Not a good idea. Not only because they thin the blood and make it harder for the skin to work – the tattoo artist also appreciates clear communication and no beer breath during the final puncture. If we notice this, we'll unfortunately have to send you home with a red card.",
+                "questionTattoo5": "What if I'm sick or on my period?",
+                "answerTattoo5": "If you notice that you're getting sick, please let us know in advance – ideally at least three working days before your appointment. If it comes on suddenly and you realize that morning that you're not feeling well, please still contact us immediately. Even if you've waited a long time for your appointment – ​​your health and that of our artists are our top priority. We thank you for your consideration and sense of responsibility. If you're on your period: Of course, you can still attend your appointment. However, please be aware that your body may be more sensitive during this time – both physically and emotionally. If you're not feeling well, talk to us. We can take more breaks; you're welcome to bring a painkiller (please not blood-thinning aspirin), or take care of yourself with tea, snacks, or a hot water bottle.",
+                "questionTattoo6": "Is anesthesia possible?",
+                "answerTattoo6": "We generally don't use anesthetics. There are several reasons for this: Firstly, we don't know how your body will react to the active ingredients – this can be problematic, especially with sensitive or allergic skin. Secondly, we believe that pain is part of the process – and can certainly have a transformative effect. Often the idea is worse than reality. Your body knows what to do: After just a short time, it releases adrenaline, endorphins, and serotonin – a natural cocktail that relieves pain and can even put you into a pleasant flow state. Many even report a feeling of relief, strength, or inner clarity afterwards. So: breathe deeply, you can do it. We will accompany you mindfully – with experience, calm, and a great deal of sensitivity.",
+                "questionTattoo7": "What happens if I'm dissatisfied with my tattoo?",
+                "answerTattoo7": "Of course, we hope you'll wear your new tattoo with pride and joy – that's why we place great value on clear communication, a coherent motif, and calm, trusting consultations right from the start. Everything is coordinated with you before the needle even touches skin. But: Skin isn't paper, and a tattoo isn't a print job. It lives, works, and heals – and small variations are part of the craft. That's exactly what makes a tattoo unique. Should something get lost during healing or small areas develop unevenly, we'll of course offer you a free touch-up – that's included in the price. And if your perspective on your tattoo changes over the course of your life? That's okay too. There are options like cover-ups or laser lightening, which we'll give you honest advice about. In the end, perfection lies not in flawlessness, but in meaning. And your tattoo tells a story – yours.",
+            "subHeader3": "Tattoo Care & Aftercare",
+                "questionTattooCare1": "How do I properly care for my tattoo?",
+                "answerTattooCare1": "After the tattoo is done, you will receive verbal and written instructions on how to care for it!",
+                "questionTattooCare2": "What shouldn't I do after getting a tattoo?",
+                "answerTattooCare2": "Your fresh tattoo is like a small wound – and should be treated the same way. To ensure it heals beautifully and the colors shine, you should definitely avoid a few things in the first few weeks: ❌ No swimming (no lake, pool, whirlpool, or ocean – water harbors germs that can cause infections. Avoid water baths for at least 2–4 weeks). ❌ No saunas or tanning beds (heat, steam, and UV radiation are toxic to your fresh tattoo. Also avoid direct sunlight! Always cover it up or protect it with a high SPF (after healing)). ❌ No scratching or peeling (yes, it itches. Yes, it flakes. But please: don't pick, don't scratch, don't rub. This will tear out the ink and skin – and the tattoo will become spotty). ❌ No sports (at the beginning) (sweat, friction, and mechanical Stress isn't good for the skin. Pause intense exercise for 2–7 days, depending on the area of ​​the body. ❌ Avoid tight clothing (anything that chafes or sticks can irritate the tattoo. It's best to wear airy, clean clothing). ✅ Instead: Keep it clean, well-groomed, protected—and keep an eye on it. If you have any questions or concerns, we're here to help.",
+                "questionTattooCare3": "How long does it take to heal?",
+                "answerTattooCare3": "A tattoo heals in several phases – and how quickly your skin heals depends on many factors: your care, your skin type, the area inked, and also your immune system. A rough timeline: First phase (1–3 days): The skin is freshly injured, possibly slightly red and sensitive. Wound discharge, slight swelling, or tightness are completely normal. Second phase (3–14 days): Scabs form, and the skin may itch or peel – like after a sunburn. Please do not scratch or peel, even if it's difficult! Third phase (from 2 weeks): The upper layer of skin looks 'healed' again, but your tattoo continues to heal in the deeper layers. A tattoo is usually completely healed after about 4 to 6 weeks. With sensitive skin or larger motifs, it can sometimes take up to 8 weeks. Important: Even if it already looks good, your tattoo is only truly 'finished' when it has fully healed. Follow our care instructions and protect it from sun and stress.",
+                "questionTattooCare4": "What is normal during the healing phase and what isn't?",
+                "answerTattooCare4": "Let's be honest: Your tattoo is just a small wound – and, like any wound, needs to be treated well. Please avoid the following in the first few days: Bathing, swimming, saunas, or tanning beds – water, heat, and UV radiation are absolute no-gos for your fresh tattoo. Exercise and heavy sweating – give yourself and your skin a few days of rest. Crawling, picking, or rubbing – even if it itches: keep your hands off! The scab should fall off on its own. Perfumed creams or disinfectants – it's better to only use the care products we recommend. This is normal during the healing process: Slight burning, tightness, or itching. Slight redness or scabbing. Colored wound discharge (don't be alarmed – this is often a mixture of ink and wound fluid). The skin peels slightly, like after a sunburn. This is not normal: Severe redness, swelling, or throbbing pain for several days. Purulent discharge or an unpleasant odor. Fever or a general feeling of illness. If you are unsure, it is better to contact us too often than too little. We are here for you and will accompany you through the healing process even after the tattoo.",
+                "questionTattooCare5": "What do I do if the tattoo becomes infected?",
+                "answerTattooCare5": "Please come by and let us take a look. Saby is a nurse and is trained to assess wounds honestly.",
+            "subHeader4": "Piercing",
+                "questionPiercing1": "What piercings do you offer?",
+                "answerPiercing1": "We can perform anything that is anatomically possible and medically acceptable. We place particular emphasis on providing individualized advice: Not every piercing is suitable for every anatomy – and not everything that's theoretically possible actually makes sense. ❗️What we don't do: We responsibly refuse piercings that are medically risky, place excessive strain on the skin, or have no lasting benefit.",
+                "questionPiercing2": "How does a piercing appointment work?",
+                "answerPiercing2": "First, we'll take the time for a short consultation. We'll clarify your wishes together, discuss the appropriate placement, the anatomy, and provide you with important information about healing and aftercare. Afterwards, you'll fill out an information sheet and show us your valid ID. If you're a minor, special rules apply – see our information on age restrictions. 🧼 Hygiene & Preparation: Before we begin, the appropriate area is carefully disinfected, marked, and agreed upon with you. Only when everything is right for you will the piercing be performed – using sterile, disposable materials, of course. 💥 The moment of the piercing: The piercing itself only takes a few seconds. Afterward, we'll give you care instructions, check the fit of the jewelry, and you can ask any questions you may have.",
+                "questionPiercing3": "How painful is a piercing?",
+                "answerPiercing3": "The short answer: Painful – but only for a moment. The long answer: Pain is individual. What is barely noticeable to one person may be more intense for another. But: A piercing only takes seconds, and with the next breath, your body begins to release its own painkillers – adrenaline, endorphins, serotonin. Many even feel a real euphoria afterward. ✨ But beyond that: A piercing can be more than just body jewelry. In many cultures, body rituals were consciously associated with a small painful stimulus – as a rite of passage, as a sign of inner or outer change. Pain is not only endured, but integrated as a part of the transformation. Those who enter this moment consciously and prepared often experience more than just a pinprick. Transformation can get under your skin. And so far – truly – everyone has come out laughing.",
+                "questionPiercing4": "How much does a piercing cost?",
+                "answerPiercing4": "You can also find our price list here on the website.",
+                "questionPiercing5": "Do you use sterile jewelry?",
+                "answerPiercing5": "Yes, absolutely. We only use sterilized jewelry – straight from the autoclave or sterile-packaged by the manufacturer. We work according to the highest hygiene standards and only use medically acceptable materials such as titanium (grade 23) or PTFE for initial piercings. ✨ Hygiene isn't an extra for us – it's the basis of everything.",
+                "questionPiercing6": "Can I bring my own jewelry?",
+                "answerPiercing6": "Generally: Yes, but... For a fresh piercing, we only use sterile, high-quality, tested jewelry that meets our hygiene and material standards. Therefore, any jewelry you bring with you must be: made of implantable material (e.g., grade 23 titanium or PTFE), new and unworn, ideally still sterilely packaged, and inspected by us beforehand. For hygiene reasons, we do not pierce worn jewelry – even if you have cleaned it yourself. If you want to bring your own jewelry for later use after it has healed, that's no problem.",
+            "subHeader5": "Piercing Care & Healing",
+                "questionPiercingCare1": "How do I care for my fresh piercing?",
+                "answerPiercingCare1": "Proper care is essential for healthy healing. Please note the following: 🔹 Do not touch – especially not with unwashed hands! 🔹 Clean twice daily with a sterile saline solution (e.g., Octenisept only after consultation). No alcohol, no hydrogen peroxide. 🔹 Do not twist or move the jewelry – this will only irritate the wound. 🔹 No makeup, perfume, or cream near the fresh wound. 🔹 Showering is fine – bathing, swimming, or saunas are not – at least 2–4 weeks. 🔹 Do not play with, pick at, or catch on it – please also be careful when putting it on. Your body needs rest and time. A little redness, swelling, or clear fluid is normal – this shows that your body is healing. If you are unsure, Write to us anytime or drop by – we're here for you! 🌿",
+                "questionPiercingCare2": "What should I avoid during the healing phase?",
+                "answerPiercingCare2": "To ensure your piercing (or tattoo) heals optimally, there are a few no-gos you should definitely avoid during the healing phase: 🔸 No bathing, no swimming pool, no sauna – water in the wound = risk of infection. Showering is allowed! 🔸 Don't touch or twist it – even if it itches! Keep your hands off, keep your hands germ-free! 🔸 Don't apply creams, makeup, or perfume to the freshly cut area. 🔸 No exercise (depending on the area!) in the first few days – avoid friction, pressure, and sweat. 🔸 Don't get caught on it! Be careful when getting dressed, sleeping, or wearing hats, bras, etc. 🔸 No alcohol or blood-thinning medication directly before or after the appointment – ​​this will prolong the healing process. 🔸 No stress! Your body heals better when you give it rest and time. A fresh piercing or tattoo is like a small wound – treat it with the same loving and careful treatment. 💫",
+                "questionPiercingCare3": "How long does it take to heal?",
+                "answerPiercingCare3": "Healing is individual – just like you. 💫 Depending on the piercing or tattoo location, your immune system, and your care, it can take different amounts of time: → Earlobe: 4–6 weeks. → Cartilage (e.g., helix, tragus): 3–6 months. → Nose (nostril): 2–4 months. → Septum: 6–8 weeks. → Belly button: 6–12 months. → Genital piercings: usually 4–8 weeks. → Tongue/lips: 1–2 weeks (initial phase), then approximately 4–6 weeks for complete healing. 💡 Important: Healing doesn't mean that everything is 'finished' once it looks better. The deeper layers of skin often regenerate for many weeks. Give your body time – and be kind to yourself. 🌿",
+                "questionPiercingCare4": "When can I change my piercing?",
+                "answerPiercingCare4": "Patience is the best jewelry here. ✨ A fresh piercing needs sufficient time to fully heal internally – even if it already 'looks good' on the outside. Our recommendation: Only change it when your piercing is completely healed. Depending on the location, this can take between 6 weeks and 12 months. Changing it too soon can irritate the piercing canal or even lead to inflammation. If you're unsure, stop by – we'd be happy to take a look. 💡 Tip: We'd be happy to change your jewelry for you if you wish – safely, sterilely, free of charge, and stress-free.",
+                "questionPiercingCare5": "What to do in case of complications or inflammation?",
+                "answerPiercingCare5": "First of all: Don't panic. Slight redness, swelling, or a little wound discharge are completely normal signs of healing in the first few days. But if it feels unusually warm, swells badly, throbs, or becomes pus-filled, careful action is required. Here's what you can do: 🧼 Clean gently but regularly – twice a day with a sterile saline solution or a recommended piercing care spray. 🚫 Don't constantly touch or twist! Your hands carry bacteria – so only touch it with clean fingers. ❄️ Cooling can help – e.g., with a clean cooling pad wrapped in cloth. ⏳ Do not remove it yourself! The jewelry keeps the piercing canal open – otherwise the infection can become trapped. When should you come to us? If you are unsure, are in pain, or the infection does not improve after a few days – contact us as soon as possible. We'll give you honest and professional advice; often, just a small adjustment is enough.",
+            "subHeader6": "Jewellery & Repurchase",
+                "questionJewellery1": "Do you also carry jewelry for repurchase?",
+                "answerJewellery1": "Yes – we have a diverse selection of high-quality piercing jewelry right here in our studio. From simple and elegant to eye-catching and unusual – whether titanium, bioplast, gold-plated, or with stones – you'll find sterile, tested jewelry in various thicknesses and sizes. You can drop by anytime without an appointment to look at jewelry or get advice on-site – we'll be happy to help you find the right piece or even change it safely.",
+                "questionJewellery2": "Can I have my jewelry changed at your place?",
+                "answerJewellery2": "Yes, anytime – we'll be happy to help you change your jewelry. Since we take sufficient time for each change and everything is done sterilely and carefully, we ask you to make an appointment in advance to avoid unnecessary waiting times. If you bring your own jewelry, we charge a small flat rate of €5 for insertion. If you purchase jewelry directly from us, the change is of course free of charge. Sometimes changing jewelry takes even longer than the piercing itself – so please allow yourself some time and patience so that everything can proceed calmly and stress-free.",
+            "subHeader7": "Safety & Hygiene", 
+                "questionSafety1": "What sets you apart in terms of hygiene and safety?",
+                "answerSafety1": "Hygiene is not just a top priority for us – it is an integral part of our identity. Studio owner Sabi is a registered nurse (since 2011) with extensive training in hygiene and wound management. She brings this knowledge wholeheartedly to the studio's daily routine and pays a keen eye for every detail – from instrument sterilization to aftercare advice. All employees work according to the latest hygiene standards and receive regular training. Cleanliness, safety, and careful treatment of your skin are our top priorities.",
+            "subHeader8": "Specials & Promotions",
+                "questionSpecials1": "Do you have any promotions or specials?",
+                "answerSpecials1": "Yes, regularly! We love to surprise you with special promotions, walk-in days, discounts, or even charity projects. To make sure you don't miss anything, follow us on Instagram – we'll keep you up to date there. You can also find an overview of planned specials for the current year on our website under the 'Promotions' menu item. Whether spontaneous ideas or long-announced highlights – it's worth checking in regularly!"
+                },
+    "impressum" : { 
+        "header": "Legal Notice" ,
+        "content": "Service provider / responsible within the meaning of §§ 6 TDG, 6 MDStV: Managing Director: Sabrina Mayer Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de VAT ID No.: DE288203238 Responsible for content within the meaning of §10 paragraph 3 MDStV: Managing Director Sabrina Mayer Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de VAT ID No.: DE288203238 Rights of use Copyright by Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de All rights reserved. The copyrights of this The website is entirely owned by Anker Tattoo. Images may only be used for editorial purposes. Use is free of charge if the source is cited and two free copies are sent to Anker Tattoo in Freiburg. Graphic modifications – except for isolating the main image – are not permitted. The web pages and documents provided here may be used for informational purposes only. These pages and documents may not be used commercially. Every copy (including excerpts) must contain this copyright notice. Disclaimer: Despite careful control of the content, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content. Anker Tattoo endeavors to ensure that its website is always up-to-date, correct, and complete. However, the occurrence of errors cannot be completely ruled out. Anker Tattoo assumes no liability for the timeliness, correctness, or completeness of the information provided on its website, unless the errors were made intentionally or through gross negligence. This applies to any material or immaterial damage. Third parties caused by the use of this website."
+                },
+    "datenschutz": {
+        "header": "Data Protection",
+        "content": "Note on how we handle your data -- We take the protection of your personal data very seriously and strictly adhere to the rules of data protection laws. Personal data is only collected on this website to the extent technically necessary. Under no circumstances will the collected data be sold or passed on to third parties for other reasons. The following declaration gives you an overview of how we ensure this protection and what type of data is collected for what purpose. Data processing on this website This website automatically collects and saves log file information that your browser transmits. This is: browser type and version, operating system used, referrer URL (the previously visited page), host name of the accessing computer (IP address) and the date and time of the server request. We cannot assign this data to specific people. This data is not merged with other data sources, and the data is deleted after statistical analysis. --Cookies-- Our site does not use cookies that could provide conclusions about the user behavior of the visitor. --Contact form-- If you would like to use the contact form offered on the website, we need a valid email address from you as well as information that allows us to verify that you are the owner of the specified email address. We naturally collect and store information that you enter on our site or send to us in any other way. This applies, for example, to entries in the contact form, title, name, email addresses and additional information that you enter in the corresponding fields. This information is provided voluntarily and is not checked in any way; the use of pseudonyms is possible. Email data is also collected and stored when you send us emails. No further information is collected. You can revoke your consent to the storage of the data, the email address and their use for the purpose of contacting you at any time. Right to information - You have the right at any time to information about the data stored about you, its origin and recipient as well as the purpose of storage. However, we do not know any more than you do. However, we are happy to share this little knowledge with you again within the framework of the statutory right to information. Further information - If you have any further questions about how your data is handled, simply send an e-mail to our address - you can find it in the legal notice. Google Analytics This website uses Google Analytics, a web analysis service provided by Google Inc. ('Google'). Google Analytics uses so-called 'cookies', text files that are stored on your computer and that enable an analysis of your use of the website. The information generated by the cookie about your use of the website is usually transferred to a Google server in the USA and stored there. However, if IP anonymization is activated on this website, your IP address will be shortened beforehand by Google within member states of the European Union or in other contracting states to the Agreement on the European Economic Area. Only in exceptional cases will the full IP address be transmitted to a Google server in the USA and shortened there. On behalf of the operator of this website, Google will use this information to evaluate your use of the website, to compile reports on website activity and to provide the website operator with other services relating to website activity and internet usage. The IP address transmitted by your browser as part of Google Analytics will not be merged with other data held by Google. You can prevent cookies from being saved by setting your browser software accordingly; however, we point out that in this case you may not be able to use all the functions of this website to their full extent. You can also prevent Google from collecting the data generated by the cookie and relating to your use of the website (including your IP address) and from processing this data by Google by downloading and installing the browser plug-in available under the following link: http://tools.google.com/dlpage/gaoptout?hl=de . Source: Google Analytics Terms and Conditions"
+                },
+    "piercingPriceList": {
+          "title": "Piercing Price List",
+          "categories": [
+            {
+              "name": "EAR",
+              "items": [
+                {
+                  "name": "Lobe (Ear Lobe) / 2x Lobe",
+                  "price": "35 € / 60 €"
+                },
+                {
+                  "name": "Helix (Ear Cartilage)",
+                  "price": "45 €"
+                },
+                {
+                  "name": "Forward Helix",
+                  "price": "50 €"
+                },
+                {
+                  "name": "Tragus",
+                  "price": "50 €"
+                },
+                {
+                  "name": "Conch",
+                  "price": "50 €"
+                },
+                {
+                  "name": "Daith",
+                  "price": "60 €"
+                },
+                {
+                  "name": "Rook",
+                  "price": "60 €"
+                },
+                {
+                  "name": "Industrial",
+                  "price": "80 €"
+                },
+                {
+                  "name": "Punch",
+                  "price": "5 € Surcharge"
+                },
+                {
+                  "name": "Stretching",
+                  "price": "5 € + Jewelry"
+                }
+              ]
+            },
+            {
+              "name": "MOUTH",
+              "items": [
+                {
+                  "name": "Lip Frenum",
+                  "price": "45 €"
+                },
+                {
+                  "name": "Tongue Frenum",
+                  "price": "55 €"
+                },
+                {
+                  "name": "Labret",
+                  "price": "60 €"
+                },
+                {
+                  "name": "Madonna",
+                  "price": "60 €"
+                },
+                {
+                  "name": "Medusa",
+                  "price": "60 €"
+                },
+                {
+                  "name": "Tongue",
+                  "price": "65 €"
+                },
+                {
+                  "name": "Ashley",
+                  "price": "65 €"
+                },
+                {
+                  "name": "Eskimo",
+                  "price": "65 €"
+                }
+              ]
+            },
+            {
+              "name": "FACE",
+              "items": [
+                {
+                  "name": "Nostril",
+                  "price": "55 €"
+                },
+                {
+                  "name": "Septum",
+                  "price": "65 €"
+                },
+                {
+                  "name": "Eyebrow",
+                  "price": "65 €"
+                }
+              ]
+            },
+            {
+              "name": "BODY",
+              "items": [
+                {
+                  "name": "Navel",
+                  "price": "60 €"
+                },
+                {
+                  "name": "Breast / 2x Breast",
+                  "price": "60 € / 110 €"
+                },
+                {
+                  "name": "Christina",
+                  "price": "80 €"
+                }
+              ]
+            },
+            {
+              "name": "OTHER",
+              "items": [
+                {
+                  "name": "Care Spray",
+                  "price": "5 €"
+                },
+                {
+                  "name": "Foreign Jewelry Change",
+                  "price": "5 €"
+                }
+              ]
+            }
+          ],
+          "note": "For colored titanium jewelry (Gold, Rosé, Black), a 5 € surcharge will be applied."
+                    }
+                  }

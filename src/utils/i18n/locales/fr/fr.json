@@ -1,0 +1,55 @@
+{
+    "hero": {
+        "intro": "Un lieu où le changement devient visible – un tatouage précis, un accompagnement respectueux et un sens aigu de ce qui se cache sous la surface. Tatouage ou piercing – chez nous, vous trouverez un savoir-faire intègre, des délais courts, une équipe d'artistes en rotation et une approche conviviale et équitable. Dans une ambiance élégante et épurée, nous vous accompagnons dans une démarche qui peut être plus qu'une simple parure corporelle : une expression, une transition, un symbole.",
+        "introEnd": "C'est bien que tu sois là",
+        "button": "Contact"
+    },
+    "scrollPage": {
+        "needle1": "Votre Peau",
+        "needle2": "Votre Histoire", 
+        "needle3": "Notre Métier"
+    },
+    "about": {
+        "header": "À propos de nous",
+        "subHeader": "Le changement se manifeste parfois là où les mots ne suffisent pas : sur la peau.",
+        "text1": "Depuis décembre 2011, Anker est un incontournable du cœur de Fribourg, situé directement sur la Martinstor, à quelques pas de la station de S-Bahn Holzmarkt et à quelques pas de la gare centrale. Pour les automobilistes, deux parkings sont également à proximité.",
+        "text2": "Notre studio allie savoir-faire de haute qualité et accompagnement personnalisé. L'hygiène est notre priorité absolue et nous la pratiquons au quotidien, dans une ambiance élégante et épurée, propice à la réflexion et à la prise de décisions.",
+        "text3": "Notre équipe de tatoueurs, composée de tatoueurs aux styles variés et en rotation régulière, offre un large éventail d'expressions artistiques : des symboles délicats au blackwork classique, en passant par des pièces colorées expressives. Nos piercings allient également une technique précise à un accompagnement attentionné.",
+        "text4": "Nous vous invitons à suivre notre chaîne Instagram pour découvrir les promotions en cours, les journées sans rendez-vous, les offres spéciales et les projets caritatifs – car il se passe toujours quelque chose de nouveau chez nous.",
+        "text5": "Que vous veniez avec une idée folle ou un souhait discret : nous sommes là. Avec ouverture d'esprit, expérience et un sens aigu de ce qui résonne entre les lignes. Parce que parfois, un grand changement commence par un petit geste – et une aiguille."
+  },
+    "nav": {
+        "home": "Maison",
+        "tattoo": "Tattoo",
+        "piercing": "Piercing",
+        "contact": "Contact",
+        "data": "Protection des données",
+        "legal": "Mentions légales",
+        "faq": "FAQ",
+        "promo": "Promotions"
+  },
+  "contact": {
+    "form": {
+    "header": "Nous contacter",
+    "name": "Nom",
+    "email": "E-mail",
+    "subject": "Objet",
+    "message": "Message",
+    "button": "Envoyer",
+    "success": "Message envoyé avec succès",
+    "error": "Échec de l'envoi du message"
+    },
+    "openHoursHeader": "Horaires d'ouverture",
+    "weekdays": "Mardi - Vendredi : ",
+    "weekdayTime": "12:00 - 18:00",
+    "saturday": "Samedi : ",
+    "saturdayTime": "12:00 - 16:00",
+    "closedDays": "Dimanche et lundi : Fermé",
+    "addressHeader": "Adresse",
+    "addressLine1": "An der Mehlwaage 2.",
+    "addressLine2": "79098 Fribourg im Breisgau",
+    "contactHeader": "Contact",
+    "phone": "Téléphone : ",
+    "email": "E-mail : "
+    }
+}
