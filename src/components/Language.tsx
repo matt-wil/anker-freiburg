@@ -1,6 +1,14 @@
-import { changeLanguage } from "i18next";
+"use client"
+
+import { useTranslation } from "react-i18next"
 
 const Language = (): React.ReactNode => {
+    const { i18n } = useTranslation()
+    const changeLanguage = (lng: string): void => {
+        i18n.changeLanguage(lng)
+    }
+
+
   return (
     <div>
         <select

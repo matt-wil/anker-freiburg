@@ -1,4 +1,5 @@
-import Language from "./Language"
+import Language from "@/components/Language"
+
 
 const Navbar = (): React.ReactNode => {
   return (
