@@ -16,26 +16,57 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --ankerLightBlue: #00a8ff;
+    --ankerNavy: #1a2c42;
+    --ankerBlue: #1B2A30;
+    --ankerSeafoam: #C2F9EB;
+    --ankerCoral: #ff8573;
+    --ankerMidAqua: #4ecdc4;
+    --ankerSandy: #fdfbf6;
   }
 }
 
+*,  *::before, *::after{
+  box-sizing: border-box;
+}
+
+*:hover {
+  border: red 1px solid;
+
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
-  position: relative;
-  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--ankerMidAqua);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 body::before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/tattooGun.jpg");
+  position: fixed;
+  top: -1300;
+  left: -700; 
+  width: 500%; 
+  height: 500%;
+  rotate: 10deg;
+  background-image: url("/whiteLogo.svg"); 
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain; 
+  background-position: left center;
   z-index: -1;
   opacity: 0.25;
+}
+
+main {
+  flex-grow: 1;
 }

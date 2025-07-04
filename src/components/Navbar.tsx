@@ -1,13 +1,12 @@
 import Language from "@/components/Language"
-
+import NavLinks from "./NavLinks"
 
 const Navbar = (): React.ReactNode => {
-  return (
-    <header>
-        <nav>
 
-        </nav>
+  return (
+    <header className="flex flex-row justify-between ">
         <Language />
+        <NavLinks />
     </header>
   )
 }
