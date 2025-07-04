@@ -10,7 +10,7 @@ const Language = (): React.ReactNode => {
 
 
   return (
-    <div>
+    <div className="m-1">
         <select
             name="language-selector"
             id="language-selector"
