@@ -1,3 +1,4 @@
+import Tattooists from '@/components/Tattooists'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -6,9 +7,9 @@ export const metadata: Metadata = {
 
 const page = (): React.JSX.Element => {
   return (
-    <div>
-        TATTOO
-    </div>
+    <>
+        <Tattooists/>
+    </>
   )
 }
 
