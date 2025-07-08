@@ -6,7 +6,6 @@ export default function LocaleSwitcher() {
     const t = useTranslations("nav");
     const locale = useLocale();
     const locales = ["de", "en"];
-    console.log("locale: ",locale)
 
     return (
         <LocaleSwitcherSelect defaultValue={locale} label={t("label")}>
