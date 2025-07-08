@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
-import type {JSX} from 'react'
 
 export const metadata: Metadata = {
-    title: 'About',
+    title: 'Piercing',
 }
-const page = (): JSX.Element => {
+
+const page = (): React.JSX.Element => {
   return (
-    <div>page</div>
+    <div>
+        PIERCING
+    </div>
   )
 }
 
