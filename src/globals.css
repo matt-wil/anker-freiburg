@@ -30,10 +30,11 @@
   box-sizing: border-box;
 }
 
+/*  
 *:hover {
   border: red 1px solid;
-
 }
+*/
 
 html, body {
   height: 100%;

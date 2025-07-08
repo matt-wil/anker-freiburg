@@ -1,9 +1,11 @@
-import './globals.css'
+import '@/globals.css'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from "@/components/Footer"
-
+import { NextIntlClientProvider, hasLocale } from 'next-intl'
+import {notFound} from 'next/navigation';
+import {Locale, routing} from '@/i18n/routing';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,18 +18,27 @@ export const metadata: Metadata = {
   description: 'Dein neues Tattoo oder Piercing in Freiburg? Bei uns bist du goldrichtig! Professionelle Beratung - Top-Künstler - Kurze Wartezeiten',
 }
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
+  params
 }: {
   children: React.ReactNode
+  params: Promise<{locale: string}>
 }) {
+
+  const {locale} = await params;
+  if (!routing.locales.includes(locale as Locale)) {
+    notFound();
+  }
   return (
-    <html lang="en">
+    <html lang='de'>
       <meta name="apple-mobile-web-app-title" content="AnkerFr" />
       <body className=''>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <NextIntlClientProvider locale={locale}>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   )

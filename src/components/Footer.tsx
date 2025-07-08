@@ -2,10 +2,10 @@
 
 import { CiInstagram } from "react-icons/ci";
 import Link from "next/link";
-import { useTranslation } from "react-i18next"
+import { useTranslations } from "next-intl";
 
 export default function Footer(): React.ReactNode {
-  const {t} = useTranslation()
+  const t = useTranslations()
   return (
     <footer className="text-sm italic">
       <div className="flex flex-col justify-center items-center text-center">

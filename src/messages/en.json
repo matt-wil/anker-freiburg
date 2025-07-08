@@ -26,7 +26,10 @@
         "data": "Data Protection",
         "legal": "Legal Notice",
         "faq": "FAQ",
-        "promo": "Promotions"
+        "promo": "Promotions",
+        "about": "About us",
+        "label": "Change Language",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇬🇧 English} other {Unknown}}"
   },
     "contact": {
         "form": {
