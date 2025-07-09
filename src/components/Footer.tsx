@@ -31,7 +31,6 @@ export default function Footer(): React.ReactNode {
           <a href="mailto:info@anker-tattoo.de">info@anker-tattoo.de</a> |{" "}
           <Link href="datenschutz">{t("nav.data")}</Link> |{" "}
           <Link href="impressum">{t("nav.legal")}</Link> | {" "}
-          <Link href="/login">Admin</Link> 
         </p>
       </div>
     </footer>

@@ -6,7 +6,6 @@ import Footer from "@/components/Footer"
 import { NextIntlClientProvider } from 'next-intl'
 import {notFound} from 'next/navigation';
 import {Locale, routing} from '@/i18n/routing';
-import Menu from '@/components/Menu'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,7 +36,6 @@ export default async function LocaleLayout({
       <body className=''>
         <NextIntlClientProvider locale={locale}>
           <Navbar />
-          <Menu />
           <main>{children}</main>
           <Footer />
         </NextIntlClientProvider>

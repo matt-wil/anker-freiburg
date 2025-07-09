@@ -5,7 +5,7 @@ export async function getTattooArtists() {
     .from('artists')
     .select('*')
     .eq('category', 'Tattoo')
-    .order('name', { ascending: true });
+    .order('name', { ascending: false });
 
   if (error) throw error;
   return data;
@@ -16,7 +16,7 @@ export async function getPiercingArtists() {
     .from('artists')
     .select('*')
     .eq('category', 'Piercing')
-    .order('name', {ascending: true});
+    .order('name', {ascending: false });
     
     if (error) throw error;
     return data;
