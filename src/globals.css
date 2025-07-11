@@ -30,7 +30,7 @@
   box-sizing: border-box;
 }
 
-/*  
+/*
 *:hover {
   border: red 1px solid;
 }
@@ -65,11 +65,23 @@ body::before {
   background-size: contain; 
   background-position: left center;
   z-index: -1;
-  opacity: 0.25;
+  opacity: 0.05;
 }
 
 main {
   flex-grow: 1;
+}
+
+@layer utilities {
+  .infinite-scroll {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll-left 30s linear infinite;
+  }
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
 }
 
 @layer components {

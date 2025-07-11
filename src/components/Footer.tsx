@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 export default function Footer(): React.ReactNode {
   const t = useTranslations()
   return (
-    <footer className="text-sm italic">
+    <footer className="text-xs italic">
       <div className="flex flex-col justify-center items-center text-center">
         <a
           className="my-5 hover:animate-pulse"
@@ -26,8 +26,8 @@ export default function Footer(): React.ReactNode {
           >
             An der Mehlwaage 2, 79098 Freiburg
           </a>{" "}
-          | Telefon:{" "}
-          <a href="tel:+4976151462878">0761-51 46 28 78</a> | E-Mail:{" "}
+          |{" "}
+          <a href="tel:+4976151462878">0761-51 46 28 78</a> |{" "}
           <a href="mailto:info@anker-tattoo.de">info@anker-tattoo.de</a> |{" "}
           <Link href="datenschutz">{t("nav.data")}</Link> |{" "}
           <Link href="impressum">{t("nav.legal")}</Link> | {" "}

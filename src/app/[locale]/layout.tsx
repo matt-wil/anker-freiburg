@@ -31,9 +31,9 @@ export default async function LocaleLayout({
     notFound();
   }
   return (
-    <html lang='de'>
+    <html lang={locale}>
       <meta name="apple-mobile-web-app-title" content="AnkerFr" />
-      <body className=''>
+      <body className={inter.className}>
         <NextIntlClientProvider locale={locale}>
           <Navbar />
           <main>{children}</main>

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import { CiMenuFries, CiLink } from 'react-icons/ci';
+import { CiMenuFries} from 'react-icons/ci';
 import { IoIosClose } from 'react-icons/io';
 import { useTranslations } from 'next-intl';
 import NavigationLink from './NavigationLink';
@@ -26,8 +26,8 @@ const navLinks: NavItem[] = [
 
 const NavLinks = () => {
   const t = useTranslations();
-  const [isOpen, setIsOpen] = useState(false);
-  const [shouldRender, setShouldRender] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [shouldRender, setShouldRender] = useState<boolean>(false);
 
   const menuRef = useRef<HTMLDivElement>(null);
   const linksRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -94,11 +94,11 @@ const NavLinks = () => {
           ref={menuRef}
           className="fixed inset-0 bg-[#cbbd93] text-black flex flex-col flex-start pl-10 justify-center gap-6 z-50"
         >
-          {navLinks.map((link, index) => (
+          {navLinks.map((link: NavItem, index: number) => (
             <div
               key={link.key}
               ref={(el) => (linksRef.current[index] = el)}
-              className="text-4xl font-bold uppercase"
+              className="text-4xl lg:text-6xl lg:ml-30 font-bold uppercase"
               onClick={handleClose}
             >
               <NavigationLink href={`/${link.path}`}>
