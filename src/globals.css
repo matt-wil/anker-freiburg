@@ -23,6 +23,7 @@
     --ankerCoral: #ff8573;
     --ankerMidAqua: #4ecdc4;
     --ankerSandy: #fdfbf6;
+    --ankerBeige: #cbbd93;
   }
 }
 
@@ -37,10 +38,14 @@
 */
 
 html, body {
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -71,6 +76,154 @@ body::before {
 main {
   flex-grow: 1;
 }
+
+/* PARALLAX */
+
+.parralax-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.parralax-page section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.parralax-page section.testimonials {
+  width: 100vw;
+  height: 125vh;
+  display: flex;
+  gap:10em;
+}
+
+.testimonial-brief {
+  position: absolute;
+  width: 25%;
+  top: 35%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.testimonials .col {
+  position: relative;;
+}
+
+.col.testimonials-cover {
+  flex: 1;
+  height: 50%;
+}
+
+/* ... (existing CSS from previous sections) ... */
+
+/* Testimonials List for Marquee */
+.col.testimonials-list {
+  flex: 2;
+  display: flex; /* Make it a flex container */
+  overflow: hidden; /* Hide content outside the container */
+  white-space: nowrap; /* Keep all items on one line */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  position: relative; /* Needed for absolute positioning of children if desired, or for context */
+}
+
+.marquee-content {
+  display: flex; /* Arrange testimonial items in a row */
+  animation: marquee 60s linear infinite; /* Adjust time for speed */
+  will-change: transform; /* Optimize for animation */
+}
+
+.testimonial-item {
+  /* Ensure items don't shrink and have consistent spacing */
+  flex-shrink: 0;
+  margin-right: 2em; /* Space between testimonial cards */
+  width: 400px; /* Example fixed width, adjust as needed */
+  max-width: 80%; /* Or responsive width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  height: fit-content;
+  z-index: 5;
+}
+
+
+/* Keyframe Animation for Marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%); /* Start at original position */
+  }
+  100% {
+    transform: translateX(-50%); /* Move half the content width to the left */
+  }
+}
+
+.marquee-content.paused-marquee {
+  animation-play-state: paused;
+}
+
+.team {
+  display: flex;
+  background-color: #cbbd93;
+}
+
+.team, .photo {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.team p {
+  width: 50%;
+  text-align: center;
+}
+
+.photo .photo-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.studio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.studio-copy {
+  position: relative;
+  text-align: center;
+}
+
+/* END PARALLAX */
 
 @layer utilities {
   .infinite-scroll {

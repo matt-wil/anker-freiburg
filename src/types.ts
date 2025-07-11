@@ -31,4 +31,13 @@ export type ParamsProps = {
   artistName: string
 }
 
+export type Testimonial = {
+  id: number
+  name: string
+  stars: string
+  review: string
+  date: string
+  link: string
+}
+
 export type CloudinaryImageList = CloudinaryImage[]
