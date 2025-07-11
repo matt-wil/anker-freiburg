@@ -4,7 +4,7 @@ import NavLinks from "./NavLinks"
 const Navbar = (): React.ReactNode => {
 
   return (
-    <header className="flex flex-row justify-between mx-2 mt-2">
+    <header className="flex flex-row justify-between mx-2 mt-2 sticky top-0 z-10">
         <LocaleSwitcher />
         <NavLinks />
     </header>
