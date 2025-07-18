@@ -5,15 +5,16 @@ import 'next-cloudinary/dist/cld-video-player.css';
  
 
 
-const OptimizedVideo = ({src}: {src: string}): React.JSX.Element=> {
+const OptimizedVideo = ({src, className, width="1920", height="1080"}: {src: string, className?: string, width?: string, height?: string}): React.JSX.Element=> {
   return (
         <CldVideoPlayer
-            width="1920"
-            height="1080"
+            width={width}
+            height={height}
             src={src}
             autoPlay
             loop
             muted
+            className={className}
 
   fontFace="Source Serif Pro"
 />

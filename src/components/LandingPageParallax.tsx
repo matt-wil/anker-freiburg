@@ -76,7 +76,7 @@ const LandingPageParralax = (): React.JSX.Element => {
             <h1 className="page-header">Our Happy Customers</h1>
             <div className="marquee-content">
               {testimonials.map((testimonial: Testimonial) => (
-                <div key={testimonial.id} className="testimonial-item flex flex-col justify-center items-center bg-gray-900 p-4 rounded-2xl shadow-2xl">
+                <div key={testimonial.id} className="testimonial-item flex flex-col justify-center items-center bg-gray-900 p-4 rounded-2xl shadow-2xl border-2 border-white/20">
                   <h2 className="font-bold text-3xl">{testimonial.name}</h2>
                   <span>{testimonial.stars}</span>
                   <span>{testimonial.date}</span>

@@ -54,7 +54,7 @@ export default function InfiniteGallery({ images }: { images: CloudinaryImage[] 
   }
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-neutral-950 to-neutral-800 p-8">
+    <div className="w-full min-h-screen p-8">
       <div
         ref={gridRef}
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
@@ -62,7 +62,7 @@ export default function InfiniteGallery({ images }: { images: CloudinaryImage[] 
         {images.map((img, idx) => (
           <div
             key={`${img.public_id}-${idx}`}
-            className="group rounded-2xl overflow-hidden shadow-2xl relative transition-transform duration-300 cursor-pointer transform-gpu hover:scale-105 hover:z-10"
+            className="group rounded-2xl border-2 border-white/20 overflow-hidden shadow-2xl relative transition-transform duration-300 cursor-pointer transform-gpu hover:scale-105 hover:z-10"
             onClick={() => setFullscreenImage(img)}
           >
             <ImageCard
