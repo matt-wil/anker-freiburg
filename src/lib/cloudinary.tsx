@@ -23,3 +23,12 @@ export async function getArtistAssets(category: 'Tattoo' | 'Piercing', artistNam
     portfolioImages,
   };
 }
+
+export async function getAktionen(folder: "Aktionen") {
+  const resources: CloudinaryImageList = await cloudinary.search
+    .expression(`folder:${folder}`)
+    .max_results(100)
+    .execute();
+
+  return resources;
+}

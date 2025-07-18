@@ -1,15 +1,16 @@
 import type { Metadata } from 'next'
+import Contact from '@/components/Contact'
+
 
 export const metadata: Metadata = {
     title: 'Kontakt',
 }
 
-const page = () => {
+const Page = () => {
   return (
-    <div>
-        KONTAKT
-    </div>
+    <>
+      <Contact />
+    </>
   )
-}
-
-export default page
+};
+export default Page;

@@ -44,6 +44,11 @@ html, body {
   overflow-x: hidden;
 }
 
+body.intro-active {
+  opacity: 0;
+  z-index: -1;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -101,6 +106,10 @@ main {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+a {
+  cursor: pointer;
 }
 
 .intro-text {
