@@ -34,7 +34,6 @@ export default async function Tattooists() {
               />
             </div>
             <h2 className="text-xl font-semibold text-center">{artist.name}</h2>
-            <p className="text-sm text-gray-600 text-center">{artist.bio}</p>
           </a>)
         })}
       </div>

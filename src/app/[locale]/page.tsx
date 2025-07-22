@@ -2,11 +2,13 @@ import CTAButton from "@/components/CTAButton";
 import { Pirata_One } from "next/font/google"
 import LandingPageParralax from "@/components/LandingPageParallax";
 
+
 const pirate = Pirata_One({
   weight: "400",
   subsets: ["latin"],
 
 })
+
 export default function Page() {
   return (
     <>
