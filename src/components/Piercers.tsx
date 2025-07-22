@@ -3,7 +3,6 @@ import ImageCard from './ImageCard';
 
 export default async function Piercers() {
   const artists = await getPiercingArtists();
-  console.log(artists);
 
   return (
     <div className="px-6 max-w-6xl mx-auto">

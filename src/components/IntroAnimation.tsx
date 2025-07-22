@@ -4,7 +4,7 @@
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import Image from "next/image"
-import { useRef } from "react"
+import { useRef, useState, useEffect } from "react"
 
 gsap.registerPlugin(useGSAP)
 
@@ -12,9 +12,17 @@ const IntroAnimation = () => {
   const logoRef = useRef(null)
   const overlayRef = useRef(null)
   const bgRef = useRef(null)
+  const [showIntro, setShowIntro] = useState(true)
 
   useGSAP(() => {
-    const timeline = gsap.timeline({ defaults: { ease: "power4.out" } })
+    document.body.classList.add("intro-active")
+    const timeline = gsap.timeline({ defaults: { ease: "power4.out" },
+    onComplete: () => {
+      document.body.classList.remove("intro-active")
+      document.body.style.overflow = ''; 
+      setShowIntro(false)
+    }
+  })
 
     // Fade in overlay
     timeline.fromTo(
@@ -68,8 +76,20 @@ const IntroAnimation = () => {
     )
   }, [])
 
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove("intro-active");
+      document.body.style.overflow = '';
+    };
+  }, []);
+
+  // If the intro has finished, don't render this component anymore
+  if (!showIntro) {
+    return null;
+  }
+
   return (
-    <section ref={bgRef} className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section ref={bgRef} className="fixed w-full h-screen flex items-center justify-center overflow-hidden bg-[var(--ankerBlue)]">
       <div ref={overlayRef} className="absolute inset-0 bg-black z-50" />
       <div ref={logoRef} className="absolute z-40" style={{ transformStyle: 'preserve-3d' }}>
         <Image 

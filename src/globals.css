@@ -31,12 +31,6 @@
   box-sizing: border-box;
 }
 
-/*
-*:hover {
-  border: red 1px solid;
-}
-*/
-
 html, body {
   height: auto;
   margin: 0;
@@ -44,10 +38,22 @@ html, body {
   overflow-x: hidden;
 }
 
-body.intro-active {
-  opacity: 0;
-  z-index: -1;
+/* Intro Animation Blackout */
+
+body:not(.intro-active) .main-content {
+  opacity: 1;
+  transition: opacity 0.8s ease;
 }
+body.intro-active .main-content {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.intro-active::before {
+  opacity: 0;
+}
+
+/* END Intro Animation Blackout */
 
 body::-webkit-scrollbar {
   display: none;
@@ -106,10 +112,6 @@ main {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-}
-
-a {
-  cursor: pointer;
 }
 
 .intro-text {

@@ -6,6 +6,8 @@ import Footer from "@/components/Footer"
 import { NextIntlClientProvider } from 'next-intl'
 import {notFound} from 'next/navigation';
 import {Locale, routing} from '@/i18n/routing';
+import IntroWrapper from '@/components/IntroWrapper'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,11 +35,14 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <meta name="apple-mobile-web-app-title" content="AnkerFr" />
-      <body className={inter.className}>
+      <body className={`${inter.className}`}>
         <NextIntlClientProvider locale={locale}>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+          <IntroWrapper />
+          <div className="main-content">
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

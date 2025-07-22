@@ -1,4 +1,5 @@
 import Piercers from '@/components/Piercers'
+import PiercingPriceList from '@/components/PiercingPriceList'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -9,6 +10,7 @@ const page = (): React.JSX.Element => {
   return (
     <>
         <Piercers />
+        <PiercingPriceList />
     </>
   )
 }

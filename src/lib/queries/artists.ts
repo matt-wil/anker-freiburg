@@ -30,3 +30,13 @@ export async function getAlldata() {
     if (error) throw error;
     return data;
 }
+
+export async function getArtistByName(name: string) {
+  const { data, error } = await supabase
+    .from('artists')
+    .select('*')
+    .eq('name', name)
+    .single();
+  if (error) throw error;
+  return data;
+}
