@@ -1,9 +1,9 @@
 import CTAButton from "@/components/CTAButton";
-import { Pirata_One } from "next/font/google"
+import { Oldenburg } from "next/font/google"
 import LandingPageParralax from "@/components/LandingPageParallax";
 
 
-const pirate = Pirata_One({
+const font = Oldenburg({
   weight: "400",
   subsets: ["latin"],
 
@@ -13,8 +13,7 @@ export default function Page() {
   return (
     <>
       <div className="flex flex-col items-start pl-10 mt-10 h-[100dvh]">
-        <h1 className={`text-6xl sm:text-8xl md:text-9xl lg:text-[15rem] xl:text-[20rem] font-bold pt-5 mb-0 leading-none ${pirate.className}`}>Anker</h1>
-        <p className="text-[2.5rem]">Tattoo und Piercing Studio in Freiburg</p>
+        <h1 className="text-[2.5rem]"><span className={`text-6xl sm:text-8xl md:text-9xl lg:text-[15rem] xl:text-[20rem] font-bold pt-5 mb-0 leading-none ${font.className}`}>Anker</span><br/>Tattoo & Piercing Studio in Freiburg</h1>
         <p className="uppercase tracking-widest">Seit 2011</p>
         <div className="flex justify-end w-full pr-4 md:pr-[10rem] xl:pr-[20rem]">
           <CTAButton 

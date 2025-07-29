@@ -84,75 +84,14 @@ body::before {
   opacity: 0.05;
 }
 
+.about-clip-path {
+  clip-path: polygon(100% 6%, 97% 74%, 8% 89%, 0 0);
+}
+
+
 main {
   flex-grow: 1;
 }
-
-/* PARALLAX */
-
-.parralax-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  will-change: transform;
-}
-
-.img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.parralax-page section {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.intro-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 2;
-}
-
-.parralax-page section.testimonials {
-  width: 100vw;
-  height: 125vh;
-  display: flex;
-  gap:10em;
-}
-
-.testimonial-brief {
-  position: absolute;
-  width: 25%;
-  top: 35%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-.testimonials .col {
-  position: relative;;
-}
-
-.col.testimonials-cover {
-  flex: 1;
-  height: 50%;
-}
-
-/* ... (existing CSS from previous sections) ... */
 
 /* Testimonials List for Marquee */
 .col.testimonials-list {
@@ -181,7 +120,6 @@ main {
   z-index: 5;
 }
 
-
 /* Keyframe Animation for Marquee */
 @keyframes marquee {
   0% {
@@ -196,52 +134,13 @@ main {
   animation-play-state: paused;
 }
 
-.team {
-  display: flex;
-  background-color: #cbbd93;
-}
-
-.team, .photo {
-  position: relative;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-}
-
-.team p {
-  width: 50%;
-  text-align: center;
-}
-
-.photo .photo-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-}
-
-.studio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.studio-copy {
-  position: relative;
-  text-align: center;
-}
-
-/* END PARALLAX */
-
 @layer utilities {
   .infinite-scroll {
     display: flex;
     white-space: nowrap;
     animation: scroll-left 30s linear infinite;
   }
+
   @keyframes scroll-left {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
