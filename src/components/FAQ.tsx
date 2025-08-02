@@ -1,16 +1,17 @@
 "use client"
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl'; // Don't forget this import!
+import { useTranslations } from 'next-intl';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from 'gsap/SplitText';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AccordionItem from "@/components/AccordionItem";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
 const FAQ = () => {
-    const t = useTranslations(); // Initialize the translation hook
+    const t = useTranslations();
     const [openIndex, setOpenIndex] = useState(null);
 
     const handleToggle = (index) => {
@@ -47,7 +48,7 @@ const FAQ = () => {
 
     return (
         <div className='flex flex-col justify-center items-center text-center m-4'>
-            <h1 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl mb-8 font-bold'>{t('faq.header')}</h1>
+            <h1 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl mb-8 font-bold header'>{t('faq.header')}</h1>
 
             {faqCategories.map((category, catIndex) => (
                 <div className='md:max-w-[50dvw] w-auto' key={catIndex}>
@@ -67,17 +68,13 @@ const FAQ = () => {
                         }
 
                         return (
-                            <div key={combinedIndex}>
-                                <h3
-                                    onClick={() => handleToggle(combinedIndex)}
-                                    className='md:text-3xl xl:text-4xl font-bold m-4 cursor-pointer bg-[var(--ankerBeige)] border-white rounded-md p-4 text-[var(--ankerBlue)]'
-                                >
-                                    {questionText}
-                                </h3>
-                                <p className={`text-md md:text-xl xl:text-2xl mt-2 mb-4 p-4 text-left ${openIndex === combinedIndex ? "block" : "hidden"}`}>
-                                    {answerText}
-                                </p>
-                            </div>
+                            <AccordionItem
+                                key={combinedIndex}
+                                question={questionText}
+                                answer={answerText}
+                                isOpen={openIndex === combinedIndex}
+                                onClick={() => handleToggle(combinedIndex)}
+                            />
                         );
                     })}
                 </div>

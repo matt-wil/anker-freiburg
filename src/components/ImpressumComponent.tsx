@@ -44,7 +44,7 @@ const Impressum = () => {
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
-      onMouseExit={handleMouseExit}
+      onMouseLeave={handleMouseExit}
       onClick={handleClick}
       className="relative"
       >

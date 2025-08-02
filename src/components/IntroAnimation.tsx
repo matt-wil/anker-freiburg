@@ -15,10 +15,12 @@ const IntroAnimation = () => {
   const [showIntro, setShowIntro] = useState(true)
 
   useGSAP(() => {
+    document.body.classList.remove("intro-done")
     document.body.classList.add("intro-active")
     const timeline = gsap.timeline({ defaults: { ease: "power4.out" },
     onComplete: () => {
       document.body.classList.remove("intro-active")
+      document.body.classList.add("intro-done")
       document.body.style.overflow = ''; 
       setShowIntro(false)
     }

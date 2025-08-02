@@ -1,12 +1,18 @@
 import { getPiercingArtists } from '@/lib/queries/artists';
 import ImageCard from './ImageCard';
+import PiercingPriceList from './PiercingPriceList';
+import PiercingSchmuckGallery from './PiercingSchmuckGallery';
+import ScrollButton from './ScrollButton';
 
 export default async function Piercers() {
   const artists = await getPiercingArtists();
 
   return (
-    <div className="px-6 max-w-6xl mx-auto">
+    <section className="px-6 max-w-6xl mx-auto">
       <h1 className="page-header font-bold mb-8">Professional Body Piercers</h1>
+
+      <ScrollButton targetId='price-list'>Preiselist</ScrollButton>
+      <ScrollButton targetId='schmuck'>Schmuck</ScrollButton>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {artists.map((artist) => {
@@ -36,6 +42,12 @@ export default async function Piercers() {
           </a>)
         })}
       </div>
-    </div>
+      <div id="price-list">
+        <PiercingPriceList />
+      </div>
+      <div id="schmuck">
+        <PiercingSchmuckGallery />
+      </div>
+    </section>
   );
 }

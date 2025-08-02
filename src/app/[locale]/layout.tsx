@@ -40,13 +40,12 @@ export default async function LocaleLayout({
       <meta name="apple-mobile-web-app-title" content="AnkerFr" />
       <body className={`${inter.className}`}>
         <NextIntlClientProvider locale={locale}>
-          <IntroWrapper />
-          <div className="main-content">
+          <IntroWrapper >
             <Navbar />
             <main>{children}</main>
             <Footer />
             <ScrollLogger />
-          </div>
+          </IntroWrapper>
         </NextIntlClientProvider>
       </body>
     </html>

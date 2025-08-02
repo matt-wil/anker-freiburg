@@ -9,6 +9,16 @@ const LandingPageParralax = (): React.JSX.Element => {
   return (
     <ReactLenis root>
       <div className="space-y-0">
+        {/** Intro Photo */}
+        <section className="h-screen w-full relative overflow-hidden">
+          <ParallaxMedia
+            src="/parallax_images/stickers.JPG"
+            alt="A Photo taken in Anker Tattoo & Piercing Studio in Freiburg"
+            mediaType="image"
+            className="w-full h-full"
+            containerHeight="112vh"
+            />
+        </section>
         {/* Team Section */}
         <section className="h-screen w-full relative overflow-hidden">
           <ParallaxMedia
@@ -16,7 +26,7 @@ const LandingPageParralax = (): React.JSX.Element => {
             alt="The Team of Anker Tattoo & Piercing Studio in Freiburg"
             mediaType="image"
             className="w-full h-full"
-            containerHeight="100vh"
+            containerHeight="112vh"
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6 z-10">
             <p className="text-2xl md:text-6xl">Meet the team</p>
@@ -29,7 +39,7 @@ const LandingPageParralax = (): React.JSX.Element => {
             src="/parallax_images/sign.JPG"
             alt="Piercing Me Baby Neon sign inside of Anker Tattoo & Piercing Studio in Freiburg"
             className="w-full h-full"
-            containerHeight="100vh"
+            containerHeight="112vh"
           />
         </section>
 
@@ -38,7 +48,7 @@ const LandingPageParralax = (): React.JSX.Element => {
             src="/parallax_images/bell.JPG"
             alt="The Captains Bell in Anker Tattoo & Piercing Studio in Freiburg"
             className="w-full h-full"
-            containerHeight="100vh"
+            containerHeight="112vh"
           />
         </section>
 
@@ -49,7 +59,7 @@ const LandingPageParralax = (): React.JSX.Element => {
             alt=""
             mediaType="image"
             className="w-full h-full"
-            containerHeight="100vh"
+            containerHeight="112vh"
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10">
           </div>
@@ -61,7 +71,7 @@ const LandingPageParralax = (): React.JSX.Element => {
             src="/parallax_images/tatt.JPG"
             mediaType="image"
             className="w-full h-full"
-            containerHeight="100vh"
+            containerHeight="112vh"
           />
         </section>
 
@@ -71,7 +81,7 @@ const LandingPageParralax = (): React.JSX.Element => {
             mediaType="video"
             src="AnkerInstaVideo_xkzaxf"
             className="w-full h-full"
-            containerHeight="100vh"
+            containerHeight="112vh"
           />
         </section>
 
