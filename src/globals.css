@@ -40,18 +40,16 @@ html, body {
 
 /* Intro Animation Blackout */
 
-body:not(.intro-active) .main-content {
-  opacity: 1;
-  transition: opacity 0.8s ease;
-}
-body.intro-active .main-content {
+.main-content {
   opacity: 0;
   pointer-events: none;
 }
 
-body.intro-active::before {
-  opacity: 0;
+body.intro-done .main-content {
+  opacity: 1;
+  pointer-events: auto;
 }
+
 
 /* END Intro Animation Blackout */
 
@@ -91,47 +89,6 @@ body::before {
 
 main {
   flex-grow: 1;
-}
-
-/* Testimonials List for Marquee */
-.col.testimonials-list {
-  flex: 2;
-  display: flex; /* Make it a flex container */
-  overflow: hidden; /* Hide content outside the container */
-  white-space: nowrap; /* Keep all items on one line */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  position: relative; /* Needed for absolute positioning of children if desired, or for context */
-}
-
-.marquee-content {
-  display: flex; /* Arrange testimonial items in a row */
-  animation: marquee 60s linear infinite; /* Adjust time for speed */
-  will-change: transform; /* Optimize for animation */
-}
-
-.testimonial-item {
-  /* Ensure items don't shrink and have consistent spacing */
-  flex-shrink: 0;
-  margin-right: 2em; /* Space between testimonial cards */
-  width: 400px; /* Example fixed width, adjust as needed */
-  max-width: 80%; /* Or responsive width */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  height: fit-content;
-  z-index: 5;
-}
-
-/* Keyframe Animation for Marquee */
-@keyframes marquee {
-  0% {
-    transform: translateX(0%); /* Start at original position */
-  }
-  100% {
-    transform: translateX(-50%); /* Move half the content width to the left */
-  }
-}
-
-.marquee-content.paused-marquee {
-  animation-play-state: paused;
 }
 
 @layer utilities {

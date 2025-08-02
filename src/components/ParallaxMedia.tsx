@@ -58,9 +58,9 @@ const ParallaxMedia = ({ src, alt = "", mediaType, children, className = "", con
         currentTranslateY.current = lerp(
           currentTranslateY.current,
           targetTranslateY.current,
-          0.08
+          0.2
         )
-        const baseScale = isMobile ? 1 : 1.1
+        const baseScale = isMobile ? 1.005 : 1.1
         const scale = baseScale + Math.min(Math.abs(currentTranslateY.current) / 800, 0.15)
         innerRef.current.style.transform = `translateY(${currentTranslateY.current}px) scale(${scale})`
       }
@@ -128,7 +128,7 @@ const ParallaxMedia = ({ src, alt = "", mediaType, children, className = "", con
             unoptimized
             quality={90}
             priority
-            style={{ objectFit: "cover" }}
+            className="object-cover object-top lg:object-contain"
             sizes="100vw"
           />
         ) : (
