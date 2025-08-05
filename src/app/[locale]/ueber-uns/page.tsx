@@ -10,8 +10,8 @@ const page = (): React.JSX.Element => {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <div className="relative flex flex-col items-center justify-center px-6 py-32">
-      <div className='about-clip-path'>
-          <Image src="/parallax_images/team.JPG" alt="" width={360} height={360}/>
+      <div className='about-clip-path w-[360px] h-[360px] lg:w-[460px] lg:h-[460px]'>
+          <Image src="/parallax_images/team.JPG" alt="Photo of the Anker tattoo and piercing team" width={800} height={800}/>
       </div>
         <h1 className="about-header text-6xl sm:text-9xl font-bold mb-4">{t("about.header")}</h1>
         <h2 className="text-3xl mb-4">{t('about.subHeader')}</h2>

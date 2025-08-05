@@ -24,9 +24,7 @@ interface PiercingPriceListContent {
 // This confirms 'piercingPriceList' is a top-level key in your JSON
 interface AppMessages {
   piercingPriceList: PiercingPriceListContent;
-  // Include other top-level keys from your messages.json if you plan to access them
-  // directly via useMessages() elsewhere, though typically useTranslations is for strings.
-  hero: any; // You can define a proper type for hero too if needed
+  hero: any; 
   scrollPage: any;
   about: any;
   nav: any;
@@ -38,20 +36,10 @@ interface AppMessages {
 
 
 const PiercingPriceList = () => {
-  // useTranslations() can still be used for other parts of the site
-  // or if you ever needed to fetch a single string from a namespace
   const t = useTranslations();
-
-  // Use useMessages to get the entire messages object loaded by NextIntlClientProvider
-  const allMessages = useMessages() as AppMessages; // Cast to your defined type for safety
-
-  // Directly access the 'piercingPriceList' object from the raw messages
+  const allMessages = useMessages() as AppMessages; 
   const priceList = allMessages.piercingPriceList;
 
-
-  // Initial check for priceList and its categories
-  // This helps prevent errors if the messages haven't loaded yet or are malformed,
-  // especially during initial rendering or if data is missing.
   if (!priceList || !priceList.categories) {
     return <div className="text-center text-xl text-gray-500 py-10">Loading price list...</div>
   }

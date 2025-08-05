@@ -81,11 +81,15 @@ const NavLinks = () => {
             <IoIosClose
               className="w-20 h-20 cursor-pointer text-black fixed top-4 right-4 z-60"
               onClick={handleClose}
+              role={`button`}
+              aria-label={`Close Menu`}
             />
       ) : (
         <CiMenuFries
           className="w-10 h-10 cursor-pointer"
           onClick={handleOpen}
+          role={`button`}
+          aria-label={`Open Menu`}
         />
       )}
 
