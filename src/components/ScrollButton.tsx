@@ -1,8 +1,6 @@
 // components/ScrollButton.tsx
 'use client';
 
-import { useRef } from 'react';
-
 export default function ScrollButton({ targetId, children }: { 
   targetId: string; 
   children: React.ReactNode 
@@ -15,7 +13,7 @@ export default function ScrollButton({ targetId, children }: {
   };
 
   return (
-    <button onClick={handleClick} className="p-4 m-4 rounded bg-white text-[var(--ankerBlue)]">
+    <button onClick={handleClick} className="p-4 m-4 rounded bg-white text-[var(--ankerBlue)] cursor-pointer">
       {children}
     </button>
   );

@@ -1,7 +1,7 @@
 import { getPiercingArtists } from '@/lib/queries/artists';
 import ImageCard from './ImageCard';
 import PiercingPriceList from './PiercingPriceList';
-import PiercingSchmuckGallery from './PiercingSchmuckGallery';
+import PiercingJewelleryGallery from './PiercingJewelleryGallery';
 import ScrollButton from './ScrollButton';
 
 export default async function Piercers() {
@@ -26,10 +26,10 @@ export default async function Piercers() {
             href={`/piercing/${artist.slug}`}
             className="text-black border rounded-xl p-4 bg-white/60 hover:shadow-lg transition"
           >
-            <div className="mb-4  overflow-hidden mx-auto">
+            <div className="mb-4 overflow-hidden mx-auto">
               <ImageCard
                 src={`${publicId}`}
-                alt={`${artist.name} profile`}
+                alt={`Anker Tattoo & Piercing Studio in Freiburg Artist ${artist.name} Profile Image`}
                 width={300}
                 height={300}
                 crop="fill"
@@ -46,7 +46,7 @@ export default async function Piercers() {
         <PiercingPriceList />
       </div>
       <div id="schmuck">
-        <PiercingSchmuckGallery />
+        <PiercingJewelleryGallery />
       </div>
     </section>
   );

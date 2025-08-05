@@ -1,10 +1,13 @@
 import CTAButton from "@/components/CTAButton"
-import { Oldenburg } from "next/font/google"
+import { Playfair_Display } from "next/font/google"
 import LandingPageParralax from "@/components/LandingPageParallax"
 import LandingPageMobile from "@/components/LandingPageMobile"
 import Image from "next/image"
 
-const font = Oldenburg({ weight: "400", subsets: ["latin"] })
+const font = Playfair_Display({ 
+  weight: "900", 
+  subsets: ["latin"],
+})
 
 export default function Page() {
   return (
@@ -57,7 +60,7 @@ export default function Page() {
       </div>
 
       {/* Illustration at the bottom */}
-      <div className="absolute bottom-0 left-0 w-full h-[300px] md:h-[400px] bg-peppermint-dark-blue flex items-end justify-center">
+      <div className="absolute bottom-0 left-0 w-full h-[300px] md:h-[400px] flex items-end justify-center">
         <Image
           src="/tattoo_gun.svg" // Replace with your actual illustration path
           alt="Payment illustration"
