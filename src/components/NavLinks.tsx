@@ -120,7 +120,12 @@ const NavLinks = () => {
         >
                 <span>instagram &#8599;</span>
             </a>
-            <a>
+            <a
+                className='hover:animate-pulse hover:text-white'
+                href='https://www.facebook.com/profile.php?id=61579347080829'
+                target='_blank'
+                rel='noopener noreferrer'
+                >
                 <span>facebook &#8599;</span>
             </a>
             </div>
