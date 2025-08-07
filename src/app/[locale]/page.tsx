@@ -32,13 +32,13 @@ export default function Page() {
       </section>
 
      {/** MOBILE */}
-    <section className="flex lg:hidden relative flex-col justify-between h-[100dvh] bg-peppermint-purple text-white overflow-hidden">
+    <section className="flex lg:hidden relative flex-col justify-between h-[100dvh] text-white overflow-hidden">
       {/* Top Content Area */}
       <div className="flex flex-col items-center justify-center flex-grow px-6 md:px-12 pt-10 pb-48 z-10"> {/* pb-48 to make space for illustration */}
         {/* Logo and App Name */}
         <div className="flex items-center mb-10 self-start mx-auto max-w-xl w-full"> {/* Centered max-width div */}
           <Image src="/whiteLogo.svg" alt="Anker Logo" width={24} height={24} className="mr-2" /> {/* Adjust size */}
-          <span className={`${font.className} text-2xl font-semibold`}>
+          <span className={`${font.className} text-3xl font-semibold`}>
             Anker
           </span>
         </div>
@@ -49,8 +49,8 @@ export default function Page() {
         </h1>
 
         {/* Description */}
-        <p className="text-base md:text-lg text-peppermint-light-text text-left self-start mx-auto max-w-xl w-full mb-10 leading-relaxed">
-          Treat yourself to a fresh piercing or tattoo with us in Freiburg.
+        <p className="text-base md:text-lg text-left self-start mx-auto max-w-xl w-full mb-10 leading-relaxed uppercase tracking-widest">
+          Seit 2011
         </p>
 
         {/* Button */}
@@ -60,6 +60,7 @@ export default function Page() {
       </div>
 
       {/* Illustration at the bottom */}
+      {/**
       <div className="absolute bottom-0 left-0 w-full h-[300px] md:h-[400px] flex items-end justify-center">
         <Image
           src="/tattoo_gun.svg" // Replace with your actual illustration path
@@ -70,6 +71,7 @@ export default function Page() {
           sizes="(max-width: 768px) 100vw, 50vw" // Optimize image loading
         />
       </div>
+       */}
     </section>
 
       {/* Desktop Parallax */}

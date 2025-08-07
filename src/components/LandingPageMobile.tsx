@@ -40,7 +40,7 @@ export default function LandingPageMobile(): React.JSX.Element {
         className="shadow-lg w-full object-cover"
       />
 
-      <div className="text-center space-y-2">
+      <div className="text-center space-y-2 py-5">
         <p className="text-lg font-semibold">Check out</p>
         <p className="text-2xl">The Studio</p>
       </div>
@@ -55,13 +55,13 @@ export default function LandingPageMobile(): React.JSX.Element {
 
       <CTAButton
         href="/contact"
-        className="w-auto text-center m-4 bg-white border text-black py-4 rounded-xl text-lg shadow-md uppercase hover:bg-[var(--ankerBeige)] transition"
+        className="w-auto text-center m-4 bg-white border text-black py-4 my-4 rounded-xl text-lg shadow-md uppercase hover:bg-[var(--ankerBeige)] transition"
       >
         Kontakt
       </CTAButton>
 
     {/* Testimonials */}
-              <section className="min-h-screen w-full py-16 px-4 text-white">
+              <section className="min-h-screen w-full px-4 text-white">
           <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Happy Customers</h1>
           <div className="flex flex-wrap justify-center gap-6">
             {testimonials.map((testimonial: Testimonial) => (

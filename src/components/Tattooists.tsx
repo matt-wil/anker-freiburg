@@ -24,6 +24,7 @@ export default async function Tattooists() {
           >
             <div className="mb-4 overflow-hidden mx-auto">
               <ImageCard
+                showHoverEffect={true}
                 src={`${publicId}`}
                 alt={`Anker Tattoo & Piercing Studio in Freiburg Artist ${artist.name} Profile Image`}
                 width={500}
