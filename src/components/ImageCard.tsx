@@ -5,9 +5,11 @@ import { useState } from "react";
 
 type CldImageProps = React.ComponentProps<typeof CldImage>
 
-type ImageCardProps = CldImageProps
+interface ImageCardProps extends CldImageProps {
+  showHoverEffect?: boolean;
+}
 
-const ImageCard = ( {...props }: ImageCardProps): React.JSX.Element => {
+const ImageCard = ( {showHoverEffect = false, ...props }: ImageCardProps): React.JSX.Element => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
   return (
     <div 
@@ -20,13 +22,14 @@ const ImageCard = ( {...props }: ImageCardProps): React.JSX.Element => {
         className={`transition-transform duration-300 ease-in-out ${isHovered ? 'scale-110' : 'scale-100'}`}
       />
       {/* Optional: Add a semi-transparent overlay for a background effect */}
+{ showHoverEffect &&    
       <div 
         className={`absolute inset-0 flex items-center justify-center bg-white transition-opacity duration-300 ease-in-out ${isHovered ? 'opacity-60' : 'opacity-0'}`}
       >
         <span className="text-black text-3xl font-bold">
           Gallery
         </span>
-      </div>
+      </div>}
     </div>
   )
 }
