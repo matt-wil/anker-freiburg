@@ -3,8 +3,8 @@ import { getArtistAssets } from "@/lib/cloudinary";
 import { getArtistByName } from "@/lib/queries/artists";
 import type { ParamsProps } from "@/types";
 
-const page = async ({ params }: { params: ParamsProps }) => {
-  const { artistName, locale } = params;
+const page = async ({ params }: { params: Promise<ParamsProps> }) => {
+  const { artistName, locale } = await params;
   const upperedName = artistName.charAt(0).toUpperCase() + artistName.slice(1);
   const { portfolioImages } = await getArtistAssets("Piercing", upperedName);
   const artistData = await getArtistByName(upperedName);
