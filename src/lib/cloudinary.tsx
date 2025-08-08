@@ -33,10 +33,10 @@ export async function getArtistAssets(
 export async function getAktionen(
   folder: "Aktionen",
 ): Promise<AktionenResponse> {
-  const resources: CloudinaryImageList = await cloudinary.search
+  const result = await cloudinary.search
     .expression(`folder:${folder}`)
     .max_results(100)
     .execute();
 
-  return resources;
+  return { resources: result.resources as CloudinaryImageList };
 }
