@@ -9,8 +9,15 @@ const positionClasses = {
     right: "left-full top-1/2 -translate-y-1/2 ml-2",
 }
 
+type Position = "top" | "bottom" | "left" | "right"
 
-const Tooltip = ({text, children, position = "top"}) => {
+interface TooltipProps {
+    text: string
+    children: React.ReactNode
+    position?: Position
+}
+
+const Tooltip = ({text, children, position = "top"}: TooltipProps) => {
     const [visible, setVisible] = useState(false);
     const posClass = positionClasses[position] || positionClasses.top
 

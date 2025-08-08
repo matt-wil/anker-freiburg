@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 
 const Page = (): React.JSX.Element => {
   const t = useTranslations("nav")
+  
 
   return (
       <section>

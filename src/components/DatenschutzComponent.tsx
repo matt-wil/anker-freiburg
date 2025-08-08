@@ -1,22 +1,24 @@
 "use client"
 
 import { useTranslations } from "next-intl"
-import { useRef, useState } from "react"
+import { useRef, useState, MouseEvent } from "react"
+import type { CSSProperties } from "react";
 
 
 const Datenschutz = () => {
   const t = useTranslations()
-  const [mouseX, setMouseX] = useState(0);
-  const [mouseY, setMouseY] = useState(0);
-  const [circleSize, setCircleSize] = useState("100px");
-  const [isMaskActive, setIsMaskActive] = useState(false);
-  const containerRef = useRef(null)
+  const [mouseX, setMouseX] = useState<number>(0);
+  const [mouseY, setMouseY] = useState<number>(0);
+  const [circleSize, setCircleSize] = useState<string>("100px");
+  const [isMaskActive, setIsMaskActive] = useState<boolean>(false);
+  
+  const containerRef = useRef<HTMLElement>(null)
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     setCircleSize( circleSize === "100px" ? "200px" : "100px");
   }
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: MouseEvent<HTMLElement>): void => {
     if (containerRef.current) {
       const { left, top } = containerRef.current.getBoundingClientRect();
       setMouseX(e.clientX - left);
@@ -24,21 +26,20 @@ const Datenschutz = () => {
     }
   }
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter = (): void => {
     setIsMaskActive(true);
   };
 
-  const handleMouseExit = () => {
+  const handleMouseExit = (): void => {
     setIsMaskActive(false);
   };
 
-  const clipPathStyle = {
+  const clipPathStyle: CSSProperties = {
     clipPath: isMaskActive
       ? `circle(${circleSize} at ${mouseX}px ${mouseY}px)`
       : `circle(${circleSize} at 50% 50%)`,
   }
 
-  // console.log(isMaskActive)
   return (
     <section 
       ref={containerRef}

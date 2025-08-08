@@ -25,7 +25,7 @@ export default function LocaleSwitcher({
     const nextLocale = event.target.value;
     startTransition(() => {
       router.replace(
-        // @ts-ignore
+        // @ts-expect-error ignore
         {pathname, params},
         {locale: nextLocale}
       );

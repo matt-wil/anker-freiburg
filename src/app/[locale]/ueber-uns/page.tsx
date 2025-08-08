@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Über uns',
 }
 
-const page = (): React.JSX.Element => {
+const Page = (): React.JSX.Element => {
   const t = useTranslations()
   return (
     <div className="relative min-h-screen overflow-hidden">
@@ -27,4 +27,4 @@ const page = (): React.JSX.Element => {
   )
 }
 
-export default page
+export default Page
