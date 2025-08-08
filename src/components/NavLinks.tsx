@@ -15,7 +15,7 @@ type NavPath =
   | "/piercing"
   | "/kontakt"
   | "/aktionen"
-  | "/faq"
+  | "/haeufige-gestellte-fragen"
   | "/datenschutz"
   | "/impressum";
 
@@ -33,7 +33,7 @@ const navLinks: NavItem[] = [
   { key: "piercing", path: "/piercing", label: "nav.piercing" },
   { key: "kontakt", path: "/kontakt", label: "nav.contact" },
   { key: "aktionen", path: "/aktionen", label: "nav.promo" },
-  { key: "faq", path: "/faq", label: "nav.faq" },
+  { key: "faq", path: "/haeufige-gestellte-fragen", label: "nav.faq" },
 ];
 
 const NavLinks = () => {
