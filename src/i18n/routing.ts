@@ -38,7 +38,7 @@ export const routing = defineRouting({
       de: "/piercing", // Add German path
       en: "/piercing",
     },
-    "/faq": {
+    "/haeufige-gestellte-fragen": {
       de: "/haeufige-gestellte-fragen",
       en: "/frequently-asked-questions",
     },
