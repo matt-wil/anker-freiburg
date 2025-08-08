@@ -11,24 +11,31 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     "/aktionen": {
+      de: "/aktionen", // Add German path
       en: "/promotions",
     },
     "/kontakt": {
+      de: "/kontakt", // Add German path
       en: "/contact",
     },
     "/datenschutz": {
+      de: "/datenschutz", // Add German path
       en: "/data-protection",
     },
     "/impressum": {
+      de: "/impressum", // Add German path
       en: "/legal-notice",
     },
     "/ueber-uns": {
+      de: "/ueber-uns", // Add German path
       en: "/about-us",
     },
     "/tattoo": {
+      de: "/tattoo", // Add German path
       en: "/tattoo",
     },
     "/piercing": {
+      de: "/piercing", // Add German path
       en: "/piercing",
     },
     "/faq": {
