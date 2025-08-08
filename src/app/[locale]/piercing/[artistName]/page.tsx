@@ -4,7 +4,7 @@ import { getArtistByName } from "@/lib/queries/artists";
 import type { ParamsProps } from "@/types";
 
 const page = async ({ params }: { params: ParamsProps }) => {
-  const { artistName, locale } = await params;
+  const { artistName, locale } = params;
   const upperedName = artistName.charAt(0).toUpperCase() + artistName.slice(1);
   const { portfolioImages } = await getArtistAssets("Piercing", upperedName);
   const artistData = await getArtistByName(upperedName);
