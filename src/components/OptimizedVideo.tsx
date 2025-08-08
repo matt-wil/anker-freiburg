@@ -28,7 +28,6 @@ const OptimizedVideo = ({
     <CldVideoPlayer
       src={videoSrc}
       autoPlay
-      f-auto
       loop
       muted
       className={className}
