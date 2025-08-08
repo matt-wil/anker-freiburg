@@ -1,5 +1,5 @@
-import { v2 as cloudinary } from 'cloudinary';
-import { CloudinaryImageList } from '@/types';
+import { v2 as cloudinary } from "cloudinary";
+import { CloudinaryImageList, AktionenResponse } from "@/types";
 
 cloudinary.config({
   cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME!,
@@ -7,16 +7,22 @@ cloudinary.config({
   api_secret: process.env.NEXT_CLOUDINARY_APISECRET!,
 });
 
-export async function getArtistAssets(category: 'Tattoo' | 'Piercing', artistName: string) {
+export async function getArtistAssets(
+  category: "Tattoo" | "Piercing",
+  artistName: string,
+) {
   const folder = `Artists/${category}/${artistName}`;
 
-  const {resources}: {resources: CloudinaryImageList} = await cloudinary.search
-    .expression(`folder:${folder}`)
-    .max_results(100)
-    .execute();
+  const { resources }: { resources: CloudinaryImageList } =
+    await cloudinary.search
+      .expression(`folder:${folder}`)
+      .max_results(100)
+      .execute();
 
-  const profileImage = resources.find((r) => r.public_id.includes('profile'));
-  const portfolioImages = resources.filter((r) => !r.public_id.includes('profile'));
+  const profileImage = resources.find((r) => r.public_id.includes("profile"));
+  const portfolioImages = resources.filter(
+    (r) => !r.public_id.includes("profile"),
+  );
 
   return {
     profileImage,
@@ -24,7 +30,9 @@ export async function getArtistAssets(category: 'Tattoo' | 'Piercing', artistNam
   };
 }
 
-export async function getAktionen(folder: "Aktionen") {
+export async function getAktionen(
+  folder: "Aktionen",
+): Promise<AktionenResponse> {
   const resources: CloudinaryImageList = await cloudinary.search
     .expression(`folder:${folder}`)
     .max_results(100)
