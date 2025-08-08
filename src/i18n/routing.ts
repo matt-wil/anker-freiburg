@@ -31,8 +31,9 @@ export const routing = defineRouting({
     "/piercing": {
       en: "/piercing",
     },
-    "/haufige-gestellte-fragen": {
-      en: "/faq",
+    "/faq": {
+      de: "/haufige-gestellte-fragen",
+      en: "/frequently-asked-questions",
     },
   },
 
