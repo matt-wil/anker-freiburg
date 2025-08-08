@@ -12,14 +12,14 @@ gsap.registerPlugin(SplitText, ScrollTrigger);
 
 const FAQ = () => {
     const t = useTranslations();
-    const [openIndex, setOpenIndex] = useState(null);
+    const [openIndex, setOpenIndex] = useState<string | null>(null);
 
-    const handleToggle = (index) => {
+    const handleToggle = (index: string) => {
         setOpenIndex(prevIndex => (prevIndex === index ? null : index));
     };
 
     useGSAP(() => {
-        let split = SplitText.create(".header", {
+        const split = SplitText.create(".header", {
             type: "chars",
         });
 

@@ -58,7 +58,7 @@ const NavLinks = () => {
           duration: 0.5,
           ease: 'power3.in',
           onComplete: () => {
-            setShouldRender(false); // Unmount after animation
+            setShouldRender(false); 
           },
         });
       }
@@ -67,12 +67,12 @@ const NavLinks = () => {
   );
 
   const handleOpen = () => {
-    setShouldRender(true); // Mount the overlay
-    setIsOpen(true);       // Trigger open animation
+    setShouldRender(true);
+    setIsOpen(true);
   };
 
   const handleClose = () => {
-    setIsOpen(false); // Triggers close animation, then sets shouldRender = false
+    setIsOpen(false);
   };
 
   return (

@@ -1,4 +1,3 @@
-// components/ScrollButton.tsx
 'use client';
 
 export default function ScrollButton({ targetId, children }: { 

@@ -7,7 +7,6 @@ import { NextIntlClientProvider } from 'next-intl'
 import {notFound} from 'next/navigation';
 import {Locale, routing} from '@/i18n/routing';
 import IntroWrapper from '@/components/IntroWrapper'
-import ScrollLogger from '@/components/ScrollLogger'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -44,7 +43,6 @@ export default async function LocaleLayout({
             <Navbar />
             <main>{children}</main>
             <Footer />
-            <ScrollLogger />
           </IntroWrapper>
         </NextIntlClientProvider>
       </body>

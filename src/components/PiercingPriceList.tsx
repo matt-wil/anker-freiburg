@@ -1,9 +1,7 @@
 "use client"
 
-import { useTranslations, useMessages } from "next-intl"; // Import useMessages
+import { useMessages } from "next-intl";
 
-// Define a type for your piercingPriceList structure for better type safety
-// This is important because useMessages returns 'any' by default.
 interface PiercingPriceListItem {
   name: string;
   price: string;
@@ -17,37 +15,24 @@ interface PiercingPriceListCategory {
 interface PiercingPriceListContent {
   title: string;
   categories: PiercingPriceListCategory[];
-  note?: string; // 'note' is optional based on your JSON (though not fully shown for note)
+  note?: string; 
 }
 
-// Define an interface for the overall messages object structure
-// This confirms 'piercingPriceList' is a top-level key in your JSON
-interface AppMessages {
+type PiercingPriceListMessages = {
   piercingPriceList: PiercingPriceListContent;
-  hero: any; 
-  scrollPage: any;
-  about: any;
-  nav: any;
-  contact: any;
-  faq: any;
-  impressum: any;
-  datenschutz: any;
-}
+};
 
 
 const PiercingPriceList = () => {
-  const t = useTranslations();
-  const allMessages = useMessages() as AppMessages; 
+  const allMessages = useMessages() as PiercingPriceListMessages;
   const priceList = allMessages.piercingPriceList;
 
   if (!priceList || !priceList.categories) {
     return <div className="text-center text-xl text-gray-500 py-10">Loading price list...</div>
   }
 
-
   return (
     <section className="container mx-auto px-4 py-8">
-      {/* Access the title directly from the priceList object */}
       <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-center font-bold mb-10">
           {priceList.title}
       </h1>
@@ -66,7 +51,6 @@ const PiercingPriceList = () => {
           </div>
         ))}
       </div>
-      {/* Check if priceList.note exists before rendering the paragraph */}
       {priceList.note && (
         <p className="text-center text-lg mt-12 px-4 py-3 bg-opacity-50 rounded-lg max-w-2xl mx-auto">
           {priceList.note}

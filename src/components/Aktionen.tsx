@@ -4,7 +4,7 @@ import ImageCard from "@/components/ImageCard"
 const Aktionen = async (): Promise<React.JSX.Element> => {
     const {resources} = await getAktionen("Aktionen")
     console.log(resources)
-  
+
   
     return (
         <section className='flex flex-col sm:flex-row justify-center items-center gap-4'>
