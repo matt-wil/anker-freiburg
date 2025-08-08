@@ -1,9 +1,9 @@
 import { getAktionen } from "@/lib/cloudinary";
 import ImageCard from "@/components/ImageCard";
-import type { CloudinaryImageList } from "@/types";
+import type { AktionenResponse } from "@/types";
 
 const Aktionen = async (): Promise<React.JSX.Element> => {
-  const resources: CloudinaryImageList = await getAktionen("Aktionen");
+  const { resources }: AktionenResponse = await getAktionen("Aktionen");
   console.log(resources);
 
   return (
