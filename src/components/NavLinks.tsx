@@ -8,20 +8,32 @@ import NavigationLink from "./NavigationLink";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
+type NavPath =
+  | "/"
+  | "/ueber-uns"
+  | "/tattoo"
+  | "/piercing"
+  | "/kontakt"
+  | "/aktionen"
+  | "faq"
+  | "/datenschutz"
+  | "/impressum";
+
 interface NavItem {
   key: string;
-  path: string;
+  path: NavPath;
   label: string;
 }
 
+// Corrected navLinks array with the 'faq' path as a string literal
 const navLinks: NavItem[] = [
-  { key: "home", path: "", label: "nav.home" },
-  { key: "about", path: "ueber-uns", label: "nav.about" },
-  { key: "tattoo", path: "tattoo", label: "nav.tattoo" },
-  { key: "piercing", path: "piercing", label: "nav.piercing" },
-  { key: "kontakt", path: "kontakt", label: "nav.contact" },
-  { key: "aktionen", path: "aktionen", label: "nav.promo" },
-  { key: "faq", path: "haeufige-gestellte-fragen", label: "nav.faq" },
+  { key: "home", path: "/", label: "nav.home" },
+  { key: "about", path: "/ueber-uns", label: "nav.about" },
+  { key: "tattoo", path: "/tattoo", label: "nav.tattoo" },
+  { key: "piercing", path: "/piercing", label: "nav.piercing" },
+  { key: "kontakt", path: "/kontakt", label: "nav.contact" },
+  { key: "aktionen", path: "/aktionen", label: "nav.promo" },
+  { key: "faq", path: "faq", label: "nav.faq" },
 ];
 
 const NavLinks = () => {
@@ -101,13 +113,13 @@ const NavLinks = () => {
           {navLinks.map((link: NavItem, index: number) => (
             <div
               key={link.key}
-              ref={(el) => (linksRef.current[index] = el)}
+              ref={(el) => {
+                linksRef.current[index] = el;
+              }}
               className="text-4xl lg:text-6xl lg:ml-30 font-bold uppercase"
               onClick={handleClose}
             >
-              <NavigationLink href={`/${link.path}`}>
-                {t(link.label)}
-              </NavigationLink>
+              <NavigationLink href={link.path}>{t(link.label)}</NavigationLink>
             </div>
           ))}
           <div className="flex flex-row justify-between p-2 text-xs uppercase">
