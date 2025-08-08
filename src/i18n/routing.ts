@@ -1,47 +1,46 @@
-import { createNavigation } from 'next-intl/navigation';
-import {defineRouting} from 'next-intl/routing';
- 
+import { createNavigation } from "next-intl/navigation";
+import { defineRouting } from "next-intl/routing";
 
 export type Pathnames = {
-  [key: string]: string | {en: string}
-}
+  [key: string]: string | { en: string };
+};
 
 export const routing = defineRouting({
   // A list of all locales that are supported
-  locales: ['en', 'de'],
-  pathnames:{
-    '/': '/',
-    '/aktionen': {
-      en: '/promotions',
+  locales: ["en", "de"],
+  pathnames: {
+    "/": "/",
+    "/aktionen": {
+      en: "/promotions",
     },
-    '/kontakt': {
-      en: '/contact',
+    "/kontakt": {
+      en: "/contact",
     },
-    '/datenschutz': {
-      en: '/data-protection',
+    "/datenschutz": {
+      en: "/data-protection",
     },
-    '/impressum': {
-      en: '/legal-notice',
+    "/impressum": {
+      en: "/legal-notice",
     },
-    '/ueber-uns': {
-      en: '/about-us',
+    "/ueber-uns": {
+      en: "/about-us",
     },
-    '/tattoo': {
-      en: '/tattoo',
+    "/tattoo": {
+      en: "/tattoo",
     },
-    '/piercing': {
-      en: '/piercing',
+    "/piercing": {
+      en: "/piercing",
     },
-    'faq': {
-      en: '/faq',
+    "/haufige-gestellte-fragen": {
+      en: "/faq",
     },
   },
- 
+
   // Used when no locale matches
-  defaultLocale: 'de',
-  localePrefix: 'always',
+  defaultLocale: "de",
+  localePrefix: "always",
 });
 
-export type Locale = (typeof routing.locales)[number]
-export const {Link, redirect, usePathname, useRouter, getPathname} =
+export type Locale = (typeof routing.locales)[number];
+export const { Link, redirect, usePathname, useRouter, getPathname } =
   createNavigation(routing);
