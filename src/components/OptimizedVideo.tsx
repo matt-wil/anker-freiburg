@@ -16,7 +16,7 @@ const OptimizedVideo = ({
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
 
   useEffect(() => {
-    const optimizedSrc = src.replace("/upload/", "/upload/f_auto,vc_h264/");
+    const optimizedSrc = src.replace("/upload/", "/upload/f_mp4,vc_h264/");
     setVideoSrc(optimizedSrc);
   }, [src]);
 
