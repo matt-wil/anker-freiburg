@@ -40,6 +40,9 @@ const OptimizedVideo = ({
           quality: "auto:best",
           videoCodec: "h264",
         },
+        hls: {
+          streamingProfile: "hd",
+        },
       }}
       posterOptions={{
         publicId: `https://res.cloudinary.com/dcrmzq3wo/image/upload/v1753369743/CK0A4855_hzv1dk.jpg`,
