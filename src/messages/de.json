@@ -1,276 +1,276 @@
 {
-    "hero": {
-        "intro": "Ein Ort, an dem Veränderung sichtbar wird – präzise gestochen, respektvoll begleitet und mit Gespür für das, was unter der Oberfläche liegt. Ob Tattoo oder Piercing – bei uns findest du Handwerk mit Haltung, kurze Wartezeiten, wechselnde Artists und einen familiären Umgang auf Augenhöhe. In stilvoller, klarer Atmosphäre begleiten wir dich bei einem Schritt, der mehr sein kann als nur Körperschmuck: ein Ausdruck, ein Übergang, ein Zeichen.",
-        "introEnd": "Schön, dass du da bist.",
-        "button": "Kontakt"
+  "hero": {
+    "intro": "Ein Ort, an dem Veränderung sichtbar wird – präzise gestochen, respektvoll begleitet und mit Gespür für das, was unter der Oberfläche liegt. Ob Tattoo oder Piercing – bei uns findest du Handwerk mit Haltung, kurze Wartezeiten, wechselnde Artists und einen familiären Umgang auf Augenhöhe. In stilvoller, klarer Atmosphäre begleiten wir dich bei einem Schritt, der mehr sein kann als nur Körperschmuck: ein Ausdruck, ein Übergang, ein Zeichen.",
+    "introEnd": "Schön, dass du da bist.",
+    "button": "Kontakt"
   },
-    "scrollPage": {
-        "needle1": "Deine Haut",
-        "needle2": "Deine Geschichte", 
-        "needle3": "Unser Handwerk"
+  "scrollPage": {
+    "needle1": "Deine Haut",
+    "needle2": "Deine Geschichte",
+    "needle3": "Unser Handwerk"
   },
-    "about": {
-        "header": "Über uns",
-        "subHeader": "Veränderung zeigt sich manchmal dort, wo Worte nicht reichen – auf der Haut.",
-        "text1": "Seit Dezember 2011 ist Anker ein fester Bestandteil im Herzen Freiburgs – direkt beim Martinstor gelegen, nur wenige Schritte von der S-Bahn-Haltestelle Holzmarkt entfernt und in fußläufiger Nähe zum Hauptbahnhof. Auch für alle, die mit dem Auto anreisen, gibt es gleich um die Ecke zwei Parkhäuser.",
-        "text2": "Unser Studio verbindet hohe handwerkliche Qualität mit individueller Begleitung. Hygiene wird bei uns nicht nur großgeschrieben, sondern täglich gelebt – in einem eleganten, klaren Ambiente, das Raum gibt für deine Ideen, Gedanken und Entscheidungen.",
-        "text3": "Verschiedene, regelmäßig wechselnde Tätowierer*innen aus ganz unterschiedlichen Stilrichtungen bieten bei uns ein breites Spektrum an künstlerischem Ausdruck – von feinlinigen Symbolen über klassisches Blackwork bis zu ausdrucksstarken Color-Pieces. Auch für Piercings gilt: präzise Technik trifft bei uns auf eine achtsame Begleitung.",
-        "text4": "Wir laden dich ein, dich über unseren Instagram-Kanal über aktuelle Aktionen, Walk-in-Days, Specials und Charity-Projekte zu informieren – denn bei uns passiert ständig etwas Neues.",
-        "text5": "Und ganz gleich, ob du mit einer wilden Idee kommst oder mit einem stillen Wunsch: Wir sind da. Mit Offenheit, Erfahrung und einem Gespür für das, was zwischen den Zeilen mitschwingt. Denn manchmal beginnt eine große Veränderung mit einer kleinen Geste – und einer Nadel."
+  "about": {
+    "header": "Über uns",
+    "subHeader": "Veränderung zeigt sich manchmal dort, wo Worte nicht reichen – auf der Haut.",
+    "text1": "Seit Dezember 2011 ist Anker ein fester Bestandteil im Herzen Freiburgs – direkt beim Martinstor gelegen, nur wenige Schritte von der S-Bahn-Haltestelle Holzmarkt entfernt und in fußläufiger Nähe zum Hauptbahnhof. Auch für alle, die mit dem Auto anreisen, gibt es gleich um die Ecke zwei Parkhäuser.",
+    "text2": "Unser Studio verbindet hohe handwerkliche Qualität mit individueller Begleitung. Hygiene wird bei uns nicht nur großgeschrieben, sondern täglich gelebt – in einem eleganten, klaren Ambiente, das Raum gibt für deine Ideen, Gedanken und Entscheidungen.",
+    "text3": "Verschiedene, regelmäßig wechselnde Tätowierer*innen aus ganz unterschiedlichen Stilrichtungen bieten bei uns ein breites Spektrum an künstlerischem Ausdruck – von feinlinigen Symbolen über klassisches Blackwork bis zu ausdrucksstarken Color-Pieces. Auch für Piercings gilt: präzise Technik trifft bei uns auf eine achtsame Begleitung.",
+    "text4": "Wir laden dich ein, dich über unseren Instagram-Kanal über aktuelle Aktionen, Walk-in-Days, Specials und Charity-Projekte zu informieren – denn bei uns passiert ständig etwas Neues.",
+    "text5": "Und ganz gleich, ob du mit einer wilden Idee kommst oder mit einem stillen Wunsch: Wir sind da. Mit Offenheit, Erfahrung und einem Gespür für das, was zwischen den Zeilen mitschwingt. Denn manchmal beginnt eine große Veränderung mit einer kleinen Geste – und einer Nadel."
   },
-    "nav": {
-        "home": "Startseite",
-        "tattoo": "Tattoo",
-        "piercing": "Piercing",
-        "contact": "Kontakt",
-        "data": "Datenschutz",
-        "legal": "Impressum",
-        "faq": "FAQ",
-        "promo": "Aktionen",
-        "about": "Über uns",
-        "label": "Sprache ändern",
-        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇬🇧 English} other {Unknown}}"
+  "nav": {
+    "home": "Startseite",
+    "tattoo": "Tattoo",
+    "piercing": "Piercing",
+    "contact": "Kontakt",
+    "data": "Datenschutz",
+    "legal": "Impressum",
+    "faq": "FAQ",
+    "promo": "Aktionen",
+    "about": "Über uns",
+    "label": "Sprache ändern",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇬🇧 English} other {Unknown}}"
+  },
+  "contact": {
+    "form": {
+      "header": "Kontaktiere uns",
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "button": "Senden",
+      "success": "Nachricht erfolgreich gesendet!",
+      "error": "Fehler beim Senden der Nachricht."
     },
-    "contact": {
-        "form": {
-            "header": "Kontaktiere uns",
-            "name": "Name",
-            "email": "E-Mail",
-            "subject": "Betreff",
-            "message": "Nachricht",
-            "button": "Senden",
-            "success": "Nachricht erfolgreich gesendet!",
-            "error": "Fehler beim Senden der Nachricht."
-        },
-        "openHoursHeader": "Öffnungszeiten",
-        "weekdays": "Dienstag - Freitag: ",
-        "weekdayTime": "12:00 - 18:00 Uhr",
-        "saturday": "Samstag: ",
-        "saturdayTime": "12:00 - 16:00 Uhr",
-        "closedDays": "Sonntag & Montag: Geschlossen",
-        "addressHeader": "Adresse",
-        "addressLine1": "An der Mehlwaage 2.",
-        "addressLine2": "79098 Freiburg im Breisgau",
-        "contactHeader": "Kontakt",
-        "phone": "Telefon: ",
-        "email": "E-Mail: "
-    },
-    "faq": {
-        "header": "Häufig gestellte Fragen",
-            "subHeader1": "Allgemeines",
-            "questionGeneral1": "Wie kann ich einen Termin buchen?",
-            "answerGeneral1": "Piercing Termine kannst du einfach über unser Kontaktformular oder telefonisch buchen. Falls du ein Tattoo möchtest, bitten wir dich, persönlich im Studio vorbeizukommen, um deine Idee zu besprechen und eine Anzahlung zu leisten.",
-            "questionGeneral2": "Gibt es Walk-in-Möglichkeiten?",
-            "answerGeneral2": "Für Tattoos bieten wir Walk-in-Tage an. Allerdings solltest du zum Tätowieren immer einen Termin vereinbaren. Bei Piercings kannst du auch spontan vorbeikommen; Termine sind zwar besser, aber wenn du ein wenig Wartezeit mitbringst, ist das kein Problem.",
-            "questionGeneral3": "Wie alt muss ich für ein Tattoo oder Piercing sein?",
-            "answerGeneral3": "Für ein Tattoo musst du in der Regel mindestens 18 Jahre alt sein. In Ausnahmefällen tätowieren wir auch ab 16 Jahren, wenn ein Erziehungsberechtigter beim Beratungstermin persönlich anwesend ist. Zur Terminvereinbarung benötigen wir: eine schriftliche Einverständniserklärung, Ausweise beider Personen sowie bei unterschiedlichen Nachnamen zusätzlich die Geburtsurkunde. Für Piercings gilt: Ab 14 Jahren mit persönlicher Begleitung durch ein Elternteil und Vorlage der Ausweise. Ab 16 Jahren reicht eine schriftliche Einverständniserklärung mit Kopie der Ausweise der Eltern. Auch das Ohrlochstechen bei Kindern bieten wir an – ab einem Alter von 6 Jahren. Dabei ist uns besonders wichtig, dass das Kind den eigenen Wunsch deutlich äußert und sich sicher fühlt – nicht allein auf Wunsch der Eltern.",
-            "questionGeneral4": "Was muss ich zum Termin mitbringen?",
-            "answerGeneral4": "Bring bitte zu deinem Piercingtermin unbedingt einen gültigen Personalausweis mit – ohne Ausweis können wir dich nicht behandeln. Iss vorher etwas, um deinen Kreislauf zu stabilisieren. Bring für deinen Tattootermin gerne einen kleinen Snack und etwas zu trinken (keine Zero Getränke) für zwischendurch, um deinen Blutzuckerspiegel oben zu halten. Ein Buch, Podcast oder Musik helfen vielen dabei, sich zu entspannen oder vom Schmerz abzulenken – bring mit, was dir guttut!",
-            "questionGeneral5": "Bekomme ich bei euch auch Gutscheine?",
-            "answerGeneral5": "Ja, Gutscheine erhältst du an der Ladentheke oder wenn du weiter weg wohnst, senden wir dir auch gerne einen zu.",
-        "subHeader2": "Tätowierung",
-            "questionTattoo1": "Wie läuft der Tätowierprozess ab?",
-            "answerTattoo1": "In der Regel bringst du deine Idee oder ein Wunschmotiv mit ins Studio. Gemeinsam besprechen wir mit dir die Platzierung, Größe und den ungefähren Preis. Nach der Terminvereinbarung setzt du dich direkt mit dem Tätowierer oder der Tätowiererin in Verbindung. In der Regel bekommst du kurz vor dem Termin – meist einen Tag vorher – deinen Entwurf zugeschickt. Kleinere Anpassungen können natürlich noch bis zum Stechtermin vorgenommen werden. Für die Terminreservierung ist eine Anzahlung erforderlich. Diese wird bei nicht rechtzeitig abgesagten Terminen (mind. drei Werktage vorher) einbehalten. In akuten Notfällen zeigen wir natürlich Kulanz, bitten aber darum, uns in jedem Fall so früh wie möglich zu informieren.",
-            "questionTattoo2": "Wie bereite ich mich auf meinen Tattoo-Termin vor?",
-            "answerTattoo2": "Komm bitte ausgeschlafen, gesund und erholt zu deinem Termin. Iss am Tag des Termins gut, am besten ein ausgewogenes Frühstück und kurz vorher noch eine kleine Mahlzeit – das hilft deinem Kreislauf. Bring dir gerne etwas zu trinken und bei längeren Sitzungen einen kleinen Snack mit. Verzichte am Vortag unbedingt auf Alkohol oder andere Substanzen – auch Schmerzmittel wie Aspirin oder Ibuprofen sind tabu, da sie blutverdünnend wirken. Je fitter und entspannter du bist, desto angenehmer wird dein Tattoo-Erlebnis.",
-            "questionTattoo3": "Was kostet ein Tattoo?",
-            "answerTattoo3": "Das hängt natürlich ganz individuell von dem Motiv, der Größe und der Körperstelle ab. Eine Stunde liegt bei ca. 150€ und eine Tagessitzung bei ca. 850€. Sprich dies bitte gut mit dem Tätowierer oder der Tätowiererin ab, um am Ende frustriert aus der Sitzung zu gehen.",
-            "questionTattoo4": "Muss ich nüchtern zum Tattoo-Termin erscheinen?",
-            "answerTattoo4": "Ja. Bitte. Unbedingt. Auch wenn der Mut aus der Flasche kommt – beim Tätowieren gehört der Körper nüchtern und der Kopf klar. Alkohol oder andere Substanzen vor dem Termin? Keine gute Idee. Nicht nur, weil sie das Blut verdünnen und die Haut schlechter arbeiten lässt – auch der Tätowierer freut sich über klare Kommunikation und keine Bierfahne beim Feinstich. Sollten wir das bemerken, müssen wir dich leider mit einer roten Karte nach Hause schicken.",
-            "questionTattoo5": "Was ist, wenn ich krank bin oder meine Periode habe?",
-            "answerTattoo5": "Solltest du merken, dass du krank wirst, gib uns bitte rechtzeitig Bescheid – idealerweise mindestens drei Werktage vor dem Termin. Wenn es ganz plötzlich kommt und du am selben Morgen merkst, dass du nicht fit bist, melde dich bitte trotzdem sofort. Auch wenn du lange auf deinen Termin gewartet hast – deine Gesundheit und die unserer Künstler:innen stehen an erster Stelle. Wir danken dir für deine Rücksicht und dein Verantwortungsbewusstsein. Bei einer Periode gilt: Natürlich kannst du trotzdem zum Termin erscheinen. Beachte aber, dass dein Körper währenddessen empfindlicher reagieren kann – sowohl körperlich als auch emotional. Falls du dich nicht wohlfühlst, sprich mit uns. Wir können mehr Pausen machen, du darfst dir gern ein Schmerzmittel mitbringen (bitte kein blutverdünnendes Aspirin) oder für dich selbst gut sorgen mit Tee, Snacks oder einer Wärmflasche.",
-            "questionTattoo6": "Ist eine Betäubung möglich?",
-            "answerTattoo6": "Grundsätzlich verwenden wir keine Betäubungsmittel. Das hat mehrere Gründe: Zum einen wissen wir nicht, wie dein Körper auf die Wirkstoffe reagiert – gerade bei sensibler oder allergischer Haut kann das problematisch werden. Zum anderen glauben wir daran, dass Schmerz Teil des Prozesses ist – und durchaus etwas Transformierendes haben kann. Oft ist die Vorstellung schlimmer als die Realität. Dein Körper weiß, was zu tun ist: Schon nach kurzer Zeit schüttet er Adrenalin, Endorphine und Serotonin aus – ein natürlicher Cocktail, der die Schmerzen lindert und dich sogar in einen angenehmen Flow-Zustand bringen kann. Viele berichten danach sogar von einem Gefühl der Erleichterung, Kraft oder inneren Klarheit. Also: Atme durch, du schaffst das. Wir begleiten dich dabei achtsam – mit Erfahrung, Ruhe und ganz viel Feingefühl.",
-            "questionTattoo7": "Was passiert, wenn ich mit meinem Tattoo unzufrieden bin?",
-            "answerTattoo7": "Natürlich hoffen wir, dass du dein neues Tattoo mit Stolz und Freude trägst – deshalb legen wir schon im Vorfeld großen Wert auf klare Kommunikation, ein stimmiges Motiv und eine ruhige, vertrauensvolle Beratung. Alles wird gemeinsam mit dir abgestimmt, bevor die Nadel überhaupt die Haut berührt. Aber: Die Haut ist kein Papier und ein Tattoo kein Druckauftrag. Sie lebt, arbeitet, heilt – und kleine Abweichungen gehören zum Handwerk dazu. Genau das macht ein Tattoo auch einzigartig. Sollte beim Abheilen etwas verloren gehen oder sich kleine Stellen ungleich entwickeln, bieten wir dir natürlich ein kostenloses Touch-up an – das ist im Preis inklusive. Und wenn sich im Laufe deines Lebens deine Sicht auf dein Tattoo verändert? Auch das darf sein. Es gibt Möglichkeiten wie Cover-ups oder Aufhellen durch Laser, über die wir dich ehrlich beraten. Am Ende gilt: Perfektion liegt nicht in der Makellosigkeit, sondern in der Bedeutung. Und dein Tattoo erzählt eine Geschichte – deine.",
-        "subHeader3": "Tattoo-Pflege & Nachsorge",
-            "questionTattooCare1": "Wie pflege ich mein Tattoo richtig?",
-            "answerTattooCare1": "Nach dem Stechen bekommst Du mündlich und schriftlich eine 1:1 Anleitung, wie du es zu pflegen hast!",
-            "questionTattooCare2": "Was darf ich nach dem Tätowieren nicht tun?",
-            "answerTattooCare2": "Dein frisches Tattoo ist wie eine kleine Wunde – und will auch genauso behandelt werden. Damit es schön abheilt und die Farben strahlen, solltest du in den ersten Wochen ein paar Dinge unbedingt vermeiden: ❌ Kein Schwimmen (Kein See, Pool, Whirlpool oder Meer – Wasser birgt Keime, die Entzündungen verursachen können. Vermeide Wasserbäder für mindestens 2–4 Wochen). ❌ Keine Sauna & kein Solarium (Hitze, Dampf und UV-Strahlung sind Gift für dein frisches Tattoo. Auch direkte Sonne meiden! Immer abdecken oder mit hohem Lichtschutzfaktor schützen (nach Abheilung)). ❌ Nicht kratzen oder abziehen (Ja, es juckt. Ja, es schuppt. Aber bitte: nicht pulen, nicht kratzen, nicht reiben. Damit reißt du Farbe und Haut mit raus – und das Tattoo wird fleckig). ❌ Kein Sport (am Anfang) (Schweiß, Reibung und mechanischer Stress tun der Haut nicht gut. Pausiere intensive Bewegung für 2–7 Tage, je nach Körperstelle). ❌ Keine enge Kleidung (Alles, was scheuert oder klebt, kann das Tattoo stören. Trage am besten luftige, saubere Kleidung). ✅ Stattdessen: Halte es sauber, gepflegt, geschützt – und hab ein Auge drauf. Bei Fragen oder Unsicherheiten sind wir für dich da.",
-            "questionTattooCare3": "Wie lange dauert die Heilung?",
-            "answerTattooCare3": "Die Heilung eines Tattoos verläuft in mehreren Phasen – und wie schnell deine Haut heilt, hängt von vielen Faktoren ab: deiner Pflege, deinem Hauttyp, dem gestochenen Bereich und auch deinem Immunsystem. Grober Fahrplan: Erste Phase (1–3 Tage): Die Haut ist frisch verletzt, eventuell leicht gerötet und empfindlich. Wundsekret, leichte Schwellungen oder Spannung sind ganz normal. Zweite Phase (3–14 Tage): Es bildet sich Schorf, die Haut kann jucken oder sich pellen – wie nach einem Sonnenbrand. Bitte: nicht kratzen oder abziehen, auch wenn’s schwerfällt! Dritte Phase (ab 2 Wochen): Die obere Hautschicht sieht wieder „heil“ aus, aber in den tieferen Schichten heilt dein Tattoo weiter. Komplett abgeheilt ist ein Tattoo in der Regel nach ca. 4 bis 6 Wochen. Bei sensibler Haut oder größeren Motiven kann es auch mal bis zu 8 Wochen dauern. Wichtig: Auch wenn es schon gut aussieht – dein Tattoo ist erst dann wirklich „fertig“, wenn es sich vollständig regeneriert hat. Halte dich so lange an unsere Pflegehinweise und schütze es vor Sonne und Belastung.",
-            "questionTattooCare4": "Was ist normal in der Heilungsphase, was nicht?",
-            "answerTattooCare4": "Let’s be honest: Dein Tattoo ist erstmal eine kleine Wunde – und will wie jede Wunde gut behandelt werden. Bitte vermeide in den ersten Tagen: Baden, Schwimmen, Sauna oder Solarium – Wasser, Hitze und UV-Strahlung sind für dein frisches Tattoo absolute No-Gos. Sport und starkes Schwitzen – gönn dir und deiner Haut ein paar Tage Ruhe. Krabbeln, Picken, Reiben – auch wenn’s juckt: Finger weg! Der Schorf muss von selbst abfallen. Parfümierte Cremes oder Desinfektionsmittel – lieber nur die von uns empfohlene Pflege. Das ist in der Heilung normal: Leichtes Brennen, Spannen oder Jucken. Leichte Rötung oder Schorfbildung. Farbiger Wundsekret-Schleier (nicht erschrecken – das ist oft Tinte und Wundflüssigkeit gemischt). Die Haut pellt sich leicht wie nach einem Sonnenbrand. Das ist nicht normal: Starke Rötung, Schwellung oder pochender Schmerz über mehrere Tage. Eitrige Absonderungen oder unangenehmer Geruch. Fieber oder allgemeines Krankheitsgefühl. Wenn du dir unsicher bist: Melde dich lieber einmal zu viel bei uns als zu wenig. Wir sind für dich da und begleiten dich auch nach dem Stechen durch den Heilungsprozess.",
-            "questionTattooCare5": "Was mache ich, wenn sich das Tattoo entzündet?",
-            "answerTattooCare5": "Bitte komm vorbei und lass uns ein Auge darauf werfen. Saby ist Krankenschwester und ist geschult darin, Wunden ehrlich beurteilen zu können.",
-        "subHeader4": "Piercing",
-            "questionPiercing1": "Welche Piercings bietet ihr an?",
-            "answerPiercing1": "Alles, was anatomisch möglich und gesundheitlich vertretbar ist, können wir für dich umsetzen. Dabei liegt uns eine individuelle Beratung besonders am Herzen: Nicht jedes Piercing passt zu jeder Anatomie – und nicht alles, was theoretisch geht, ergibt auch Sinn. ❗️Was wir nicht machen: Piercings, die medizinisch riskant sind, die Haut übermäßig belasten oder keinen nachhaltigen Nutzen haben, lehnen wir verantwortungsbewusst ab.",
-            "questionPiercing2": "Wie läuft ein Piercing-Termin ab?",
-            "answerPiercing2": "Zuerst nehmen wir uns Zeit für ein kurzes Beratungsgespräch. Wir klären gemeinsam deine Wünsche, besprechen die passende Platzierung, die Anatomie und geben dir wichtige Infos zur Abheilung und Pflege. Danach füllst du einen Aufklärungsbogen aus und zeigst uns deinen gültigen Ausweis. Wenn du minderjährig bist, gelten gesonderte Regeln – siehe dazu unsere Info zur Altersfreigabe. 🧼 Hygiene & Vorbereitung: Bevor es losgeht, wird die entsprechende Stelle sorgfältig desinfiziert, markiert und mit dir abgestimmt. Erst wenn alles für dich stimmig ist, wird gestochen – mit steril verpacktem Einwegmaterial, versteht sich. 💥 Der Moment des Piercings: Das Stechen selbst dauert nur wenige Sekunden. Danach bekommst du von uns Pflegehinweise, wir kontrollieren den Sitz des Schmucks und du kannst in Ruhe nochmal alle Fragen loswerden.",
-            "questionPiercing3": "Wie schmerzhaft ist ein Piercing?",
-            "answerPiercing3": "Die kurze Antwort: Schmerzhaft – aber nur für einen Moment. Die lange: Schmerz ist individuell. Was für die eine kaum spürbar ist, empfindet der andere intensiver. Aber: Ein Piercing dauert nur Sekunden, und schon im nächsten Atemzug beginnt dein Körper, eigene Schmerzmittel auszuschütten – Adrenalin, Endorphine, Serotonin. Viele spüren danach sogar ein richtiges Hochgefühl. ✨ Doch darüber hinaus: Ein Piercing kann mehr sein als nur ein Körperschmuck. In vielen Kulturen wurden Körperrituale bewusst mit einem kleinen Schmerzreiz verbunden – als Übergangsritual, als Zeichen für eine innere oder äußere Veränderung. Schmerz wird dabei nicht nur ertragen, sondern als Teil des Wandels integriert. Wer bewusst und vorbereitet in diesen Moment geht, erlebt oft mehr als nur einen Nadelstich. Transformation kann unter die Haut gehen. Und bisher – wirklich – sind alle lachend wieder rausgegangen.",
-            "questionPiercing4": "Was kostet ein Piercing?",
-            "answerPiercing4": "Unsere Preisliste findest du auch hier auf der Website.",
-            "questionPiercing5": "Verwendet ihr sterilen Schmuck?",
-            "answerPiercing5": "Ja, unbedingt. Bei uns kommt ausschließlich sterilisierter Schmuck zum Einsatz – direkt aus dem Autoklaven oder steril verpackt vom Hersteller. Wir arbeiten nach den höchsten Hygienestandards und verwenden nur medizinisch geeignete Materialien wie Titan (Grad 23) oder PTFE für Erstpiercings. ✨ Hygiene ist für uns kein Extra – sie ist die Basis von allem.",
-            "questionPiercing6": "Kann ich eigenen Schmuck mitbringen?",
-            "answerPiercing6": "Grundsätzlich: Ja, aber… Für ein frisches Piercing verwenden wir ausschließlich sterilen, hochwertig geprüften Schmuck, der unseren Hygiene- und Materialstandards entspricht. Mitgebrachter Schmuck muss daher: aus implantierbarem Material bestehen (z. B. Titan Grad 23 oder PTFE), neu und ungetragen sein, idealerweise noch steril verpackt sein und vorher von uns geprüft werden. Aus hygienischen Gründen stechen wir keinen getragenen Schmuck – auch nicht, wenn du ihn selbst gereinigt hast. Wenn du deinen eigenen Schmuck zur späteren Verwendung nach der Abheilung mitbringen willst, ist das kein Problem.",
-        "subHeader5": "Piercing-Pflege & Heilung",
-            "questionPiercingCare1": "Wie pflege ich mein frisches Piercing?",
-            "answerPiercingCare1": "Die richtige Pflege ist das A und O für eine gesunde Heilung. Bitte beachte folgende Hinweise: 🔹 Nicht anfassen – vor allem nicht mit ungewaschenen Händen! 🔹 Zweimal täglich mit einer sterilen Kochsalzlösung reinigen (z. B. Octenisept nur nach Absprache). Kein Alkohol, kein Wasserstoffperoxid. 🔹 Kein Drehen oder Bewegen des Schmucks – das reizt die Wunde nur. 🔹 Kein Make-up, kein Parfüm oder Creme in die Nähe der frischen Stelle. 🔹 Duschen ja – Baden, Schwimmen, Sauna nein – mindestens 2–4 Wochen. 🔹 Nicht daran spielen, zupfen oder hängen bleiben – auch beim Anziehen bitte vorsichtig sein. Dein Körper braucht Ruhe und Zeit. Ein bisschen Rötung, Schwellung oder klare Flüssigkeit sind normal – das zeigt, dass dein Körper heilt. Wenn du unsicher bist, schreib uns jederzeit oder komm vorbei – wir sind für dich da! 🌿",
-            "questionPiercingCare2": "Was sollte ich in der Heilphase vermeiden?",
-            "answerPiercingCare2": "Damit dein Piercing (oder Tattoo) optimal heilen kann, gibt es ein paar No-Gos, die du in der Heilphase unbedingt vermeiden solltest: 🔸 Kein Baden, kein Schwimmbad, keine Sauna – Wasser in der Wunde = Infektionsgefahr. Duschen ist erlaubt! 🔸 Nicht dran fassen oder drehen – auch wenn’s juckt! Finger weg, Hände keimfrei! 🔸 Keine Cremes, kein Make-up, kein Parfüm an die frische Stelle lassen. 🔸 Kein Sport (je nach Stelle!) in den ersten Tagen – vermeide Reibung, Druck & Schweiß. 🔸 Nicht daran hängen bleiben! Vorsicht beim Anziehen, Schlafen oder beim Tragen von Mützen, BHs etc. 🔸 Kein Alkohol & keine blutverdünnenden Medikamente direkt vor oder nach dem Termin – das verlängert die Heilung. 🔸 Kein Stress! Dein Körper heilt besser, wenn du ihm Ruhe und Zeit gibst. Ein frisches Piercing oder Tattoo ist wie eine kleine Wunde – behandle sie auch so liebevoll und achtsam. 💫",
-            "questionPiercingCare3": "Wie lange dauert die Heilung?",
-            "answerPiercingCare3": "Die Heilung ist individuell – so wie du. 💫 Je nach Piercing- oder Tattoo-Stelle, deinem Immunsystem und deiner Pflege kann sie unterschiedlich lange dauern: → Ohrläppchen: 4–6 Wochen. → Knorpel (z. B. Helix, Tragus): 3–6 Monate. → Nase (Nostril): 2–4 Monate. → Septum: 6–8 Wochen. → Bauchnabel: 6–12 Monate. → Intimpiercings: meist 4–8 Wochen. → Zunge / Lippen: 1–2 Wochen (erste Phase), danach ca. 4–6 Wochen für vollständige Heilung. 💡 Wichtig: Heilung heißt nicht, dass alles „fertig“ ist, sobald es besser aussieht. Die tiefen Hautschichten regenerieren sich oft noch viele Wochen. Gib deinem Körper Zeit – und sei liebevoll mit dir. 🌿",
-            "questionPiercingCare4": "Wann darf ich das Piercing wechseln?",
-            "answerPiercingCare4": "Geduld ist hier das beste Schmuckstück. ✨ Ein frisches Piercing braucht ausreichend Zeit, um innerlich vollständig zu heilen – auch wenn es von außen schon „gut aussieht“. Unsere Empfehlung: Erst wechseln, wenn dein Piercing vollständig verheilt ist. Je nach Stelle kann das zwischen 6 Wochen und 12 Monaten dauern. Frühzeitiges Wechseln kann den Stichkanal reizen oder sogar zu Entzündungen führen. Wenn du unsicher bist, komm lieber kurz vorbei – wir werfen gerne einen Blick drauf. 💡 Tipp: Den ersten Schmuckwechsel übernehmen wir auf Wunsch gerne für dich – sicher, steril, kostenlos und ohne Stress.",
-            "questionPiercingCare5": "Was tun bei Komplikationen oder Entzündung?",
-            "answerPiercingCare5": "Erstmal: Keine Panik. Leichte Rötung, Schwellung oder ein bisschen Wundsekret sind ganz normale Anzeichen der Heilung in den ersten Tagen. Doch wenn es sich ungewöhnlich warm anfühlt, stark anschwillt, pocht oder eitrig wird, ist achtsames Handeln gefragt. Das kannst du tun: 🧼 Reinige sanft, aber regelmäßig – zweimal täglich mit einer sterilen Kochsalzlösung oder einem empfohlenen Piercing-Pflegespray. 🚫 Nicht ständig anfassen oder drehen! Deine Hände tragen Bakterien – also nur mit sauberen Fingern ran. ❄️ Kühlen kann helfen – z. B. mit einem sauberen, in Stoff eingewickelten Kühlpad. ⏳ Nicht selbst entfernen! Der Schmuck hält den Stichkanal offen – sonst kann sich die Entzündung „einschließen“. Wann solltest du zu uns kommen? Wenn du unsicher bist, Schmerzen hast oder die Entzündung nach ein paar Tagen nicht besser wird – melde dich frühzeitig bei uns. Wir beraten dich ehrlich und professionell, oft reicht schon ein kleiner Handgriff.",
-        "subHeader6": "Schmuck & Nachkauf",
-            "questionJewellery1": "Führt ihr auch Schmuck zum Nachkaufen?",
-            "answerJewellery1": "Ja – wir haben eine vielfältige Auswahl an hochwertigem Piercingschmuck direkt bei uns im Studio. Von schlicht und elegant bis auffällig und ausgefallen – ob Titan, Bioplast, vergoldet oder mit Steinbesatz – du findest bei uns sterilen, geprüften Schmuck in verschiedenen Stärken und Größen. Du kannst jederzeit ohne Termin vorbeikommen, um Schmuck anzuschauen oder dich direkt vor Ort beraten zu lassen – wir helfen dir gerne, das passende Stück zu finden oder auch beim sicheren Wechsel.",
-            "questionJewellery2": "Kann ich bei euch Schmuck wechseln lassen?",
-            "answerJewellery2": "Ja, jederzeit – wir helfen dir gern beim Wechsel deines Schmucks. Da wir uns für jeden Wechsel ausreichend Zeit nehmen und alles steril und sorgfältig abläuft, bitten wir dich, dafür vorab einen Termin zu vereinbaren, damit es nicht zu unnötigen Wartezeiten kommt. Falls du eigenen Schmuck mitbringst, berechnen wir eine kleine Aufwandspauschale von 5 € fürs Einsetzen. Beim Kauf von Schmuck direkt bei uns ist der Wechsel natürlich kostenlos. Manchmal dauert ein Schmuckwechsel sogar länger als das Piercing selbst – bring also etwas Zeit und Geduld mit, damit alles in Ruhe und stressfrei ablaufen kann.",
-        "subHeader7": "Sicherheit & Hygiene", 
-            "questionSafety1": "Was zeichnet euch in Sachen Hygiene und Sicherheit aus?",
-            "answerSafety1": "Bei uns wird Hygiene nicht nur großgeschrieben – sie ist fester Bestandteil unserer Identität. Studioinhaberin Sabi ist examinierte Gesundheits- und Krankenpflegerin (seit 2011) mit fundierter Ausbildung im Bereich Hygiene und Wundmanagement. Dieses Wissen bringt sie mit vollem Herzen in den Studioalltag ein und achtet mit geschultem Blick auf jedes Detail – von der Sterilisation der Instrumente bis hin zur Nachsorgeberatung. Alle Mitarbeitenden arbeiten nach den aktuellsten hygienischen Standards und werden regelmäßig geschult. Sauberkeit, Sicherheit und ein achtsamer Umgang mit deiner Haut stehen bei uns an oberster Stelle.",
-        "subHeader8": "Specials & Aktionen",
-            "questionSpecials1": "Gibt es bei euch Aktionen oder Specials?",
-            "answerSpecials1": "Ja, regelmäßig! Wir lieben es, euch mit besonderen Aktionen, Walk-in-Days, Rabattaktionen oder auch Charity-Projekten zu überraschen. Um nichts zu verpassen, folge uns am besten auf Instagram – dort halten wir dich immer aktuell auf dem Laufenden. Zudem findest du auf unserer Website unter dem Menüpunkt „Aktionen“ eine Übersicht der geplanten Specials für das laufende Jahr. Ob spontane Ideen oder lang angekündigte Highlights – bei uns lohnt es sich, regelmäßig reinzuschauen!"
-            },
-    "impressum" : { 
-        "header": "Impressum" ,
-        "content": "Dienstanbieter / Verantwortlicher i.S.d. §§ 6 TDG, 6 MDStV: Geschäftsführerin: Sabrina Mayer Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de USt-IdNr.: DE288203238 Inhaltlich verantwortlich i.S.d. §10 Absatz 3 MDStV:Geschäftsführer Sabrina Mayer Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de USt-IdNr.: DE288203238 Nutzungsrechte Copyright by Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de Alle Rechte vorbehalten. Die Urheberrechte dieser Web-Site liegen vollständig bei der Anker Tattoo.Bildmotive dürfen nur für redaktionelle Zwecke genutzt werden. Die Verwendung ist honorarfrei bei Quellenangabe und Übersendung von zwei kostenlosen Belegexemplaren an die Anker Tattoo im Freiburg. Grafische Veränderungen – außer zum Freistellen des Hauptmotivs – sind nicht gestattet.Die hier zur Verfügung gestellten Web-Seiten und Dokumente dürfen nur zu Informationszwecken verwendet werden.Diese Seiten und Dokumente dürfen nicht kommerziell verwertet werden.Jede Kopie (dies gilt auch für Auszüge) muss diesen Urheberrechtsnachweis enthalten.Haftungshinweis:Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.Die Anker Tattoo ist bemüht, ihr Webangebot stets aktuell und inhaltlich richtig sowie vollständig anzubieten. Dennoch ist das Auftreten von Fehlern nicht völlig auszuschließen. Die Anker Tattoo übernimmt keine Haftung für die Aktualität, die inhaltliche Richtigkeit sowie für die Vollständigkeit der in ihrem Webangebot eingestellten Informationen, es sei denn die Fehler wurden vorsätzlich oder grob fahrlässig aufgenommen. Dies bezieht sich auf eventuelle Schäden materieller oder ideeller Art Dritter, die durch die Nutzung dieses Webangebotes verursacht wurden."
-    },
-    "datenschutz": {
-        "header": "Datenschutz",
-        "content": "Hinweis zum Umgang mit Ihren Daten -- Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und halten uns strikt an die Regeln der Datenschutzgesetze. Personenbezogene Daten werden auf dieser Webseite nur im technisch notwendigen Umfang erhoben. In keinem Fall werden die erhobenen Daten verkauft oder aus anderen Gründen an Dritte weitergegeben. Die nachfolgende Erklärung gibt Ihnen einen Überblick darüber, wie wir diesen Schutz gewährleisten und welche Art von Daten zu welchem Zweck erhoben werden. Datenverarbeitung auf dieser Internetseite Diese Website erhebt und speichert automatisch Logfiles-Informationen, die Ihr Browser übermittelt. Dies sind: Browsertyp und -version, verwendetes Betriebssystem, Referer-URL (die zuvor besuchte Seite), Hostname des zugreifenden Rechners (IP-Adresse) und Datum und Uhrzeit der Serveranfrage. Diese Daten sind für uns nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen, die Daten werden zudem nach einer statistischen Auswertung gelöscht. --Cookies-- Unsere Seite verwendet keine Cookies, die Rückschlüsse auf das Nutzerverhalten des Besuchers geben könnten. --Kontaktformular-- Wenn Sie das auf der Webseite angebotene Kontaktformular verwenden möchten, benötigen wir von Ihnen eine valide E-Mail-Adresse sowie Informationen, die uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind. Selbstverständlich erfassen und speichern wir solche Informationen, die Sie auf unserer Seite eingeben oder uns in sonstiger Weise übermitteln. Das betrifft etwa Eingaben in das Kontaktformular, Anrede, Namen, E-Mail-Adressen und zusätzliche Angaben, die Sie in die entsprechenden Felder eintragen. Diese Angaben geschehen freiwillig und werden in keiner Weise überprüft, die Verwendung von Pseudonymen ist möglich. E-Mail - Daten werden auch erfasst und gespeichert, wenn Sie E-Mails an uns senden. Weitere Informationen werden nicht erhoben. Ihre Einwilligung zur Speicherung der Daten, der E-Mail-Adresse sowie deren Nutzung zum Zwecke der Kontaktaufnahme mit Ihnen können Sie jederzeit widerrufen. Auskunftsrecht - Sie haben jederzeit das Recht auf Auskunft über die bezüglich Ihrer Person gespeicherten Daten, deren Herkunft und Empfänger sowie den Zweck der Speicherung. Wir wissen allerdings nicht mehr als Sie auch. Dieses wenige Wissen teilen wir im Rahmen der gesetzlichen Auskunftsansprüche allerdings gern nochmals mit Ihnen. Weitere Informationen - Wenn Sie weitere Fragen zur Behandlung Ihrer Daten haben, dann senden Sie einfach eine E-Mail an unsere Adresse – die finden Sie im Impressum. Google Analytics Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. („Google“). Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: http://tools.google.com/dlpage/gaoptout?hl=de . Quellenangabe: Google Analytics Bedingungen"
-    },
-    "piercingPriceList": {
-        "title": "Piercing Preisliste",
-        "categories": [
+    "openHoursHeader": "Öffnungszeiten",
+    "weekdays": "Dienstag - Freitag: ",
+    "weekdayTime": "12:00 - 18:00 Uhr",
+    "saturday": "Samstag: ",
+    "saturdayTime": "11:00 - 16:00 Uhr",
+    "closedDays": "Sonntag & Montag: Geschlossen",
+    "addressHeader": "Adresse",
+    "addressLine1": "An der Mehlwaage 2.",
+    "addressLine2": "79098 Freiburg im Breisgau",
+    "contactHeader": "Kontakt",
+    "phone": "Telefon: ",
+    "email": "E-Mail: "
+  },
+  "faq": {
+    "header": "Häufig gestellte Fragen",
+    "subHeader1": "Allgemeines",
+    "questionGeneral1": "Wie kann ich einen Termin buchen?",
+    "answerGeneral1": "Piercing Termine kannst du einfach über unser Kontaktformular oder telefonisch buchen. Falls du ein Tattoo möchtest, bitten wir dich, persönlich im Studio vorbeizukommen, um deine Idee zu besprechen und eine Anzahlung zu leisten.",
+    "questionGeneral2": "Gibt es Walk-in-Möglichkeiten?",
+    "answerGeneral2": "Für Tattoos bieten wir Walk-in-Tage an. Allerdings solltest du zum Tätowieren immer einen Termin vereinbaren. Bei Piercings kannst du auch spontan vorbeikommen; Termine sind zwar besser, aber wenn du ein wenig Wartezeit mitbringst, ist das kein Problem.",
+    "questionGeneral3": "Wie alt muss ich für ein Tattoo oder Piercing sein?",
+    "answerGeneral3": "Für ein Tattoo musst du in der Regel mindestens 18 Jahre alt sein. In Ausnahmefällen tätowieren wir auch ab 16 Jahren, wenn ein Erziehungsberechtigter beim Beratungstermin persönlich anwesend ist. Zur Terminvereinbarung benötigen wir: eine schriftliche Einverständniserklärung, Ausweise beider Personen sowie bei unterschiedlichen Nachnamen zusätzlich die Geburtsurkunde. Für Piercings gilt: Ab 14 Jahren mit persönlicher Begleitung durch ein Elternteil und Vorlage der Ausweise. Ab 16 Jahren reicht eine schriftliche Einverständniserklärung mit Kopie der Ausweise der Eltern. Auch das Ohrlochstechen bei Kindern bieten wir an – ab einem Alter von 6 Jahren. Dabei ist uns besonders wichtig, dass das Kind den eigenen Wunsch deutlich äußert und sich sicher fühlt – nicht allein auf Wunsch der Eltern.",
+    "questionGeneral4": "Was muss ich zum Termin mitbringen?",
+    "answerGeneral4": "Bring bitte zu deinem Piercingtermin unbedingt einen gültigen Personalausweis mit – ohne Ausweis können wir dich nicht behandeln. Iss vorher etwas, um deinen Kreislauf zu stabilisieren. Bring für deinen Tattootermin gerne einen kleinen Snack und etwas zu trinken (keine Zero Getränke) für zwischendurch, um deinen Blutzuckerspiegel oben zu halten. Ein Buch, Podcast oder Musik helfen vielen dabei, sich zu entspannen oder vom Schmerz abzulenken – bring mit, was dir guttut!",
+    "questionGeneral5": "Bekomme ich bei euch auch Gutscheine?",
+    "answerGeneral5": "Ja, Gutscheine erhältst du an der Ladentheke oder wenn du weiter weg wohnst, senden wir dir auch gerne einen zu.",
+    "subHeader2": "Tätowierung",
+    "questionTattoo1": "Wie läuft der Tätowierprozess ab?",
+    "answerTattoo1": "In der Regel bringst du deine Idee oder ein Wunschmotiv mit ins Studio. Gemeinsam besprechen wir mit dir die Platzierung, Größe und den ungefähren Preis. Nach der Terminvereinbarung setzt du dich direkt mit dem Tätowierer oder der Tätowiererin in Verbindung. In der Regel bekommst du kurz vor dem Termin – meist einen Tag vorher – deinen Entwurf zugeschickt. Kleinere Anpassungen können natürlich noch bis zum Stechtermin vorgenommen werden. Für die Terminreservierung ist eine Anzahlung erforderlich. Diese wird bei nicht rechtzeitig abgesagten Terminen (mind. drei Werktage vorher) einbehalten. In akuten Notfällen zeigen wir natürlich Kulanz, bitten aber darum, uns in jedem Fall so früh wie möglich zu informieren.",
+    "questionTattoo2": "Wie bereite ich mich auf meinen Tattoo-Termin vor?",
+    "answerTattoo2": "Komm bitte ausgeschlafen, gesund und erholt zu deinem Termin. Iss am Tag des Termins gut, am besten ein ausgewogenes Frühstück und kurz vorher noch eine kleine Mahlzeit – das hilft deinem Kreislauf. Bring dir gerne etwas zu trinken und bei längeren Sitzungen einen kleinen Snack mit. Verzichte am Vortag unbedingt auf Alkohol oder andere Substanzen – auch Schmerzmittel wie Aspirin oder Ibuprofen sind tabu, da sie blutverdünnend wirken. Je fitter und entspannter du bist, desto angenehmer wird dein Tattoo-Erlebnis.",
+    "questionTattoo3": "Was kostet ein Tattoo?",
+    "answerTattoo3": "Das hängt natürlich ganz individuell von dem Motiv, der Größe und der Körperstelle ab. Eine Stunde liegt bei ca. 150€ und eine Tagessitzung bei ca. 850€. Sprich dies bitte gut mit dem Tätowierer oder der Tätowiererin ab, um am Ende frustriert aus der Sitzung zu gehen.",
+    "questionTattoo4": "Muss ich nüchtern zum Tattoo-Termin erscheinen?",
+    "answerTattoo4": "Ja. Bitte. Unbedingt. Auch wenn der Mut aus der Flasche kommt – beim Tätowieren gehört der Körper nüchtern und der Kopf klar. Alkohol oder andere Substanzen vor dem Termin? Keine gute Idee. Nicht nur, weil sie das Blut verdünnen und die Haut schlechter arbeiten lässt – auch der Tätowierer freut sich über klare Kommunikation und keine Bierfahne beim Feinstich. Sollten wir das bemerken, müssen wir dich leider mit einer roten Karte nach Hause schicken.",
+    "questionTattoo5": "Was ist, wenn ich krank bin oder meine Periode habe?",
+    "answerTattoo5": "Solltest du merken, dass du krank wirst, gib uns bitte rechtzeitig Bescheid – idealerweise mindestens drei Werktage vor dem Termin. Wenn es ganz plötzlich kommt und du am selben Morgen merkst, dass du nicht fit bist, melde dich bitte trotzdem sofort. Auch wenn du lange auf deinen Termin gewartet hast – deine Gesundheit und die unserer Künstler:innen stehen an erster Stelle. Wir danken dir für deine Rücksicht und dein Verantwortungsbewusstsein. Bei einer Periode gilt: Natürlich kannst du trotzdem zum Termin erscheinen. Beachte aber, dass dein Körper währenddessen empfindlicher reagieren kann – sowohl körperlich als auch emotional. Falls du dich nicht wohlfühlst, sprich mit uns. Wir können mehr Pausen machen, du darfst dir gern ein Schmerzmittel mitbringen (bitte kein blutverdünnendes Aspirin) oder für dich selbst gut sorgen mit Tee, Snacks oder einer Wärmflasche.",
+    "questionTattoo6": "Ist eine Betäubung möglich?",
+    "answerTattoo6": "Grundsätzlich verwenden wir keine Betäubungsmittel. Das hat mehrere Gründe: Zum einen wissen wir nicht, wie dein Körper auf die Wirkstoffe reagiert – gerade bei sensibler oder allergischer Haut kann das problematisch werden. Zum anderen glauben wir daran, dass Schmerz Teil des Prozesses ist – und durchaus etwas Transformierendes haben kann. Oft ist die Vorstellung schlimmer als die Realität. Dein Körper weiß, was zu tun ist: Schon nach kurzer Zeit schüttet er Adrenalin, Endorphine und Serotonin aus – ein natürlicher Cocktail, der die Schmerzen lindert und dich sogar in einen angenehmen Flow-Zustand bringen kann. Viele berichten danach sogar von einem Gefühl der Erleichterung, Kraft oder inneren Klarheit. Also: Atme durch, du schaffst das. Wir begleiten dich dabei achtsam – mit Erfahrung, Ruhe und ganz viel Feingefühl.",
+    "questionTattoo7": "Was passiert, wenn ich mit meinem Tattoo unzufrieden bin?",
+    "answerTattoo7": "Natürlich hoffen wir, dass du dein neues Tattoo mit Stolz und Freude trägst – deshalb legen wir schon im Vorfeld großen Wert auf klare Kommunikation, ein stimmiges Motiv und eine ruhige, vertrauensvolle Beratung. Alles wird gemeinsam mit dir abgestimmt, bevor die Nadel überhaupt die Haut berührt. Aber: Die Haut ist kein Papier und ein Tattoo kein Druckauftrag. Sie lebt, arbeitet, heilt – und kleine Abweichungen gehören zum Handwerk dazu. Genau das macht ein Tattoo auch einzigartig. Sollte beim Abheilen etwas verloren gehen oder sich kleine Stellen ungleich entwickeln, bieten wir dir natürlich ein kostenloses Touch-up an – das ist im Preis inklusive. Und wenn sich im Laufe deines Lebens deine Sicht auf dein Tattoo verändert? Auch das darf sein. Es gibt Möglichkeiten wie Cover-ups oder Aufhellen durch Laser, über die wir dich ehrlich beraten. Am Ende gilt: Perfektion liegt nicht in der Makellosigkeit, sondern in der Bedeutung. Und dein Tattoo erzählt eine Geschichte – deine.",
+    "subHeader3": "Tattoo-Pflege & Nachsorge",
+    "questionTattooCare1": "Wie pflege ich mein Tattoo richtig?",
+    "answerTattooCare1": "Nach dem Stechen bekommst Du mündlich und schriftlich eine 1:1 Anleitung, wie du es zu pflegen hast!",
+    "questionTattooCare2": "Was darf ich nach dem Tätowieren nicht tun?",
+    "answerTattooCare2": "Dein frisches Tattoo ist wie eine kleine Wunde – und will auch genauso behandelt werden. Damit es schön abheilt und die Farben strahlen, solltest du in den ersten Wochen ein paar Dinge unbedingt vermeiden: ❌ Kein Schwimmen (Kein See, Pool, Whirlpool oder Meer – Wasser birgt Keime, die Entzündungen verursachen können. Vermeide Wasserbäder für mindestens 2–4 Wochen). ❌ Keine Sauna & kein Solarium (Hitze, Dampf und UV-Strahlung sind Gift für dein frisches Tattoo. Auch direkte Sonne meiden! Immer abdecken oder mit hohem Lichtschutzfaktor schützen (nach Abheilung)). ❌ Nicht kratzen oder abziehen (Ja, es juckt. Ja, es schuppt. Aber bitte: nicht pulen, nicht kratzen, nicht reiben. Damit reißt du Farbe und Haut mit raus – und das Tattoo wird fleckig). ❌ Kein Sport (am Anfang) (Schweiß, Reibung und mechanischer Stress tun der Haut nicht gut. Pausiere intensive Bewegung für 2–7 Tage, je nach Körperstelle). ❌ Keine enge Kleidung (Alles, was scheuert oder klebt, kann das Tattoo stören. Trage am besten luftige, saubere Kleidung). ✅ Stattdessen: Halte es sauber, gepflegt, geschützt – und hab ein Auge drauf. Bei Fragen oder Unsicherheiten sind wir für dich da.",
+    "questionTattooCare3": "Wie lange dauert die Heilung?",
+    "answerTattooCare3": "Die Heilung eines Tattoos verläuft in mehreren Phasen – und wie schnell deine Haut heilt, hängt von vielen Faktoren ab: deiner Pflege, deinem Hauttyp, dem gestochenen Bereich und auch deinem Immunsystem. Grober Fahrplan: Erste Phase (1–3 Tage): Die Haut ist frisch verletzt, eventuell leicht gerötet und empfindlich. Wundsekret, leichte Schwellungen oder Spannung sind ganz normal. Zweite Phase (3–14 Tage): Es bildet sich Schorf, die Haut kann jucken oder sich pellen – wie nach einem Sonnenbrand. Bitte: nicht kratzen oder abziehen, auch wenn’s schwerfällt! Dritte Phase (ab 2 Wochen): Die obere Hautschicht sieht wieder „heil“ aus, aber in den tieferen Schichten heilt dein Tattoo weiter. Komplett abgeheilt ist ein Tattoo in der Regel nach ca. 4 bis 6 Wochen. Bei sensibler Haut oder größeren Motiven kann es auch mal bis zu 8 Wochen dauern. Wichtig: Auch wenn es schon gut aussieht – dein Tattoo ist erst dann wirklich „fertig“, wenn es sich vollständig regeneriert hat. Halte dich so lange an unsere Pflegehinweise und schütze es vor Sonne und Belastung.",
+    "questionTattooCare4": "Was ist normal in der Heilungsphase, was nicht?",
+    "answerTattooCare4": "Let’s be honest: Dein Tattoo ist erstmal eine kleine Wunde – und will wie jede Wunde gut behandelt werden. Bitte vermeide in den ersten Tagen: Baden, Schwimmen, Sauna oder Solarium – Wasser, Hitze und UV-Strahlung sind für dein frisches Tattoo absolute No-Gos. Sport und starkes Schwitzen – gönn dir und deiner Haut ein paar Tage Ruhe. Krabbeln, Picken, Reiben – auch wenn’s juckt: Finger weg! Der Schorf muss von selbst abfallen. Parfümierte Cremes oder Desinfektionsmittel – lieber nur die von uns empfohlene Pflege. Das ist in der Heilung normal: Leichtes Brennen, Spannen oder Jucken. Leichte Rötung oder Schorfbildung. Farbiger Wundsekret-Schleier (nicht erschrecken – das ist oft Tinte und Wundflüssigkeit gemischt). Die Haut pellt sich leicht wie nach einem Sonnenbrand. Das ist nicht normal: Starke Rötung, Schwellung oder pochender Schmerz über mehrere Tage. Eitrige Absonderungen oder unangenehmer Geruch. Fieber oder allgemeines Krankheitsgefühl. Wenn du dir unsicher bist: Melde dich lieber einmal zu viel bei uns als zu wenig. Wir sind für dich da und begleiten dich auch nach dem Stechen durch den Heilungsprozess.",
+    "questionTattooCare5": "Was mache ich, wenn sich das Tattoo entzündet?",
+    "answerTattooCare5": "Bitte komm vorbei und lass uns ein Auge darauf werfen. Saby ist Krankenschwester und ist geschult darin, Wunden ehrlich beurteilen zu können.",
+    "subHeader4": "Piercing",
+    "questionPiercing1": "Welche Piercings bietet ihr an?",
+    "answerPiercing1": "Alles, was anatomisch möglich und gesundheitlich vertretbar ist, können wir für dich umsetzen. Dabei liegt uns eine individuelle Beratung besonders am Herzen: Nicht jedes Piercing passt zu jeder Anatomie – und nicht alles, was theoretisch geht, ergibt auch Sinn. ❗️Was wir nicht machen: Piercings, die medizinisch riskant sind, die Haut übermäßig belasten oder keinen nachhaltigen Nutzen haben, lehnen wir verantwortungsbewusst ab.",
+    "questionPiercing2": "Wie läuft ein Piercing-Termin ab?",
+    "answerPiercing2": "Zuerst nehmen wir uns Zeit für ein kurzes Beratungsgespräch. Wir klären gemeinsam deine Wünsche, besprechen die passende Platzierung, die Anatomie und geben dir wichtige Infos zur Abheilung und Pflege. Danach füllst du einen Aufklärungsbogen aus und zeigst uns deinen gültigen Ausweis. Wenn du minderjährig bist, gelten gesonderte Regeln – siehe dazu unsere Info zur Altersfreigabe. 🧼 Hygiene & Vorbereitung: Bevor es losgeht, wird die entsprechende Stelle sorgfältig desinfiziert, markiert und mit dir abgestimmt. Erst wenn alles für dich stimmig ist, wird gestochen – mit steril verpacktem Einwegmaterial, versteht sich. 💥 Der Moment des Piercings: Das Stechen selbst dauert nur wenige Sekunden. Danach bekommst du von uns Pflegehinweise, wir kontrollieren den Sitz des Schmucks und du kannst in Ruhe nochmal alle Fragen loswerden.",
+    "questionPiercing3": "Wie schmerzhaft ist ein Piercing?",
+    "answerPiercing3": "Die kurze Antwort: Schmerzhaft – aber nur für einen Moment. Die lange: Schmerz ist individuell. Was für die eine kaum spürbar ist, empfindet der andere intensiver. Aber: Ein Piercing dauert nur Sekunden, und schon im nächsten Atemzug beginnt dein Körper, eigene Schmerzmittel auszuschütten – Adrenalin, Endorphine, Serotonin. Viele spüren danach sogar ein richtiges Hochgefühl. ✨ Doch darüber hinaus: Ein Piercing kann mehr sein als nur ein Körperschmuck. In vielen Kulturen wurden Körperrituale bewusst mit einem kleinen Schmerzreiz verbunden – als Übergangsritual, als Zeichen für eine innere oder äußere Veränderung. Schmerz wird dabei nicht nur ertragen, sondern als Teil des Wandels integriert. Wer bewusst und vorbereitet in diesen Moment geht, erlebt oft mehr als nur einen Nadelstich. Transformation kann unter die Haut gehen. Und bisher – wirklich – sind alle lachend wieder rausgegangen.",
+    "questionPiercing4": "Was kostet ein Piercing?",
+    "answerPiercing4": "Unsere Preisliste findest du auch hier auf der Website.",
+    "questionPiercing5": "Verwendet ihr sterilen Schmuck?",
+    "answerPiercing5": "Ja, unbedingt. Bei uns kommt ausschließlich sterilisierter Schmuck zum Einsatz – direkt aus dem Autoklaven oder steril verpackt vom Hersteller. Wir arbeiten nach den höchsten Hygienestandards und verwenden nur medizinisch geeignete Materialien wie Titan (Grad 23) oder PTFE für Erstpiercings. ✨ Hygiene ist für uns kein Extra – sie ist die Basis von allem.",
+    "questionPiercing6": "Kann ich eigenen Schmuck mitbringen?",
+    "answerPiercing6": "Grundsätzlich: Ja, aber… Für ein frisches Piercing verwenden wir ausschließlich sterilen, hochwertig geprüften Schmuck, der unseren Hygiene- und Materialstandards entspricht. Mitgebrachter Schmuck muss daher: aus implantierbarem Material bestehen (z. B. Titan Grad 23 oder PTFE), neu und ungetragen sein, idealerweise noch steril verpackt sein und vorher von uns geprüft werden. Aus hygienischen Gründen stechen wir keinen getragenen Schmuck – auch nicht, wenn du ihn selbst gereinigt hast. Wenn du deinen eigenen Schmuck zur späteren Verwendung nach der Abheilung mitbringen willst, ist das kein Problem.",
+    "subHeader5": "Piercing-Pflege & Heilung",
+    "questionPiercingCare1": "Wie pflege ich mein frisches Piercing?",
+    "answerPiercingCare1": "Die richtige Pflege ist das A und O für eine gesunde Heilung. Bitte beachte folgende Hinweise: 🔹 Nicht anfassen – vor allem nicht mit ungewaschenen Händen! 🔹 Zweimal täglich mit einer sterilen Kochsalzlösung reinigen (z. B. Octenisept nur nach Absprache). Kein Alkohol, kein Wasserstoffperoxid. 🔹 Kein Drehen oder Bewegen des Schmucks – das reizt die Wunde nur. 🔹 Kein Make-up, kein Parfüm oder Creme in die Nähe der frischen Stelle. 🔹 Duschen ja – Baden, Schwimmen, Sauna nein – mindestens 2–4 Wochen. 🔹 Nicht daran spielen, zupfen oder hängen bleiben – auch beim Anziehen bitte vorsichtig sein. Dein Körper braucht Ruhe und Zeit. Ein bisschen Rötung, Schwellung oder klare Flüssigkeit sind normal – das zeigt, dass dein Körper heilt. Wenn du unsicher bist, schreib uns jederzeit oder komm vorbei – wir sind für dich da! 🌿",
+    "questionPiercingCare2": "Was sollte ich in der Heilphase vermeiden?",
+    "answerPiercingCare2": "Damit dein Piercing (oder Tattoo) optimal heilen kann, gibt es ein paar No-Gos, die du in der Heilphase unbedingt vermeiden solltest: 🔸 Kein Baden, kein Schwimmbad, keine Sauna – Wasser in der Wunde = Infektionsgefahr. Duschen ist erlaubt! 🔸 Nicht dran fassen oder drehen – auch wenn’s juckt! Finger weg, Hände keimfrei! 🔸 Keine Cremes, kein Make-up, kein Parfüm an die frische Stelle lassen. 🔸 Kein Sport (je nach Stelle!) in den ersten Tagen – vermeide Reibung, Druck & Schweiß. 🔸 Nicht daran hängen bleiben! Vorsicht beim Anziehen, Schlafen oder beim Tragen von Mützen, BHs etc. 🔸 Kein Alkohol & keine blutverdünnenden Medikamente direkt vor oder nach dem Termin – das verlängert die Heilung. 🔸 Kein Stress! Dein Körper heilt besser, wenn du ihm Ruhe und Zeit gibst. Ein frisches Piercing oder Tattoo ist wie eine kleine Wunde – behandle sie auch so liebevoll und achtsam. 💫",
+    "questionPiercingCare3": "Wie lange dauert die Heilung?",
+    "answerPiercingCare3": "Die Heilung ist individuell – so wie du. 💫 Je nach Piercing- oder Tattoo-Stelle, deinem Immunsystem und deiner Pflege kann sie unterschiedlich lange dauern: → Ohrläppchen: 4–6 Wochen. → Knorpel (z. B. Helix, Tragus): 3–6 Monate. → Nase (Nostril): 2–4 Monate. → Septum: 6–8 Wochen. → Bauchnabel: 6–12 Monate. → Intimpiercings: meist 4–8 Wochen. → Zunge / Lippen: 1–2 Wochen (erste Phase), danach ca. 4–6 Wochen für vollständige Heilung. 💡 Wichtig: Heilung heißt nicht, dass alles „fertig“ ist, sobald es besser aussieht. Die tiefen Hautschichten regenerieren sich oft noch viele Wochen. Gib deinem Körper Zeit – und sei liebevoll mit dir. 🌿",
+    "questionPiercingCare4": "Wann darf ich das Piercing wechseln?",
+    "answerPiercingCare4": "Geduld ist hier das beste Schmuckstück. ✨ Ein frisches Piercing braucht ausreichend Zeit, um innerlich vollständig zu heilen – auch wenn es von außen schon „gut aussieht“. Unsere Empfehlung: Erst wechseln, wenn dein Piercing vollständig verheilt ist. Je nach Stelle kann das zwischen 6 Wochen und 12 Monaten dauern. Frühzeitiges Wechseln kann den Stichkanal reizen oder sogar zu Entzündungen führen. Wenn du unsicher bist, komm lieber kurz vorbei – wir werfen gerne einen Blick drauf. 💡 Tipp: Den ersten Schmuckwechsel übernehmen wir auf Wunsch gerne für dich – sicher, steril, kostenlos und ohne Stress.",
+    "questionPiercingCare5": "Was tun bei Komplikationen oder Entzündung?",
+    "answerPiercingCare5": "Erstmal: Keine Panik. Leichte Rötung, Schwellung oder ein bisschen Wundsekret sind ganz normale Anzeichen der Heilung in den ersten Tagen. Doch wenn es sich ungewöhnlich warm anfühlt, stark anschwillt, pocht oder eitrig wird, ist achtsames Handeln gefragt. Das kannst du tun: 🧼 Reinige sanft, aber regelmäßig – zweimal täglich mit einer sterilen Kochsalzlösung oder einem empfohlenen Piercing-Pflegespray. 🚫 Nicht ständig anfassen oder drehen! Deine Hände tragen Bakterien – also nur mit sauberen Fingern ran. ❄️ Kühlen kann helfen – z. B. mit einem sauberen, in Stoff eingewickelten Kühlpad. ⏳ Nicht selbst entfernen! Der Schmuck hält den Stichkanal offen – sonst kann sich die Entzündung „einschließen“. Wann solltest du zu uns kommen? Wenn du unsicher bist, Schmerzen hast oder die Entzündung nach ein paar Tagen nicht besser wird – melde dich frühzeitig bei uns. Wir beraten dich ehrlich und professionell, oft reicht schon ein kleiner Handgriff.",
+    "subHeader6": "Schmuck & Nachkauf",
+    "questionJewellery1": "Führt ihr auch Schmuck zum Nachkaufen?",
+    "answerJewellery1": "Ja – wir haben eine vielfältige Auswahl an hochwertigem Piercingschmuck direkt bei uns im Studio. Von schlicht und elegant bis auffällig und ausgefallen – ob Titan, Bioplast, vergoldet oder mit Steinbesatz – du findest bei uns sterilen, geprüften Schmuck in verschiedenen Stärken und Größen. Du kannst jederzeit ohne Termin vorbeikommen, um Schmuck anzuschauen oder dich direkt vor Ort beraten zu lassen – wir helfen dir gerne, das passende Stück zu finden oder auch beim sicheren Wechsel.",
+    "questionJewellery2": "Kann ich bei euch Schmuck wechseln lassen?",
+    "answerJewellery2": "Ja, jederzeit – wir helfen dir gern beim Wechsel deines Schmucks. Da wir uns für jeden Wechsel ausreichend Zeit nehmen und alles steril und sorgfältig abläuft, bitten wir dich, dafür vorab einen Termin zu vereinbaren, damit es nicht zu unnötigen Wartezeiten kommt. Falls du eigenen Schmuck mitbringst, berechnen wir eine kleine Aufwandspauschale von 5 € fürs Einsetzen. Beim Kauf von Schmuck direkt bei uns ist der Wechsel natürlich kostenlos. Manchmal dauert ein Schmuckwechsel sogar länger als das Piercing selbst – bring also etwas Zeit und Geduld mit, damit alles in Ruhe und stressfrei ablaufen kann.",
+    "subHeader7": "Sicherheit & Hygiene",
+    "questionSafety1": "Was zeichnet euch in Sachen Hygiene und Sicherheit aus?",
+    "answerSafety1": "Bei uns wird Hygiene nicht nur großgeschrieben – sie ist fester Bestandteil unserer Identität. Studioinhaberin Sabi ist examinierte Gesundheits- und Krankenpflegerin (seit 2011) mit fundierter Ausbildung im Bereich Hygiene und Wundmanagement. Dieses Wissen bringt sie mit vollem Herzen in den Studioalltag ein und achtet mit geschultem Blick auf jedes Detail – von der Sterilisation der Instrumente bis hin zur Nachsorgeberatung. Alle Mitarbeitenden arbeiten nach den aktuellsten hygienischen Standards und werden regelmäßig geschult. Sauberkeit, Sicherheit und ein achtsamer Umgang mit deiner Haut stehen bei uns an oberster Stelle.",
+    "subHeader8": "Specials & Aktionen",
+    "questionSpecials1": "Gibt es bei euch Aktionen oder Specials?",
+    "answerSpecials1": "Ja, regelmäßig! Wir lieben es, euch mit besonderen Aktionen, Walk-in-Days, Rabattaktionen oder auch Charity-Projekten zu überraschen. Um nichts zu verpassen, folge uns am besten auf Instagram – dort halten wir dich immer aktuell auf dem Laufenden. Zudem findest du auf unserer Website unter dem Menüpunkt „Aktionen“ eine Übersicht der geplanten Specials für das laufende Jahr. Ob spontane Ideen oder lang angekündigte Highlights – bei uns lohnt es sich, regelmäßig reinzuschauen!"
+  },
+  "impressum": {
+    "header": "Impressum",
+    "content": "Dienstanbieter / Verantwortlicher i.S.d. §§ 6 TDG, 6 MDStV: Geschäftsführerin: Sabrina Mayer Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de USt-IdNr.: DE288203238 Inhaltlich verantwortlich i.S.d. §10 Absatz 3 MDStV:Geschäftsführer Sabrina Mayer Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de USt-IdNr.: DE288203238 Nutzungsrechte Copyright by Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de Alle Rechte vorbehalten. Die Urheberrechte dieser Web-Site liegen vollständig bei der Anker Tattoo.Bildmotive dürfen nur für redaktionelle Zwecke genutzt werden. Die Verwendung ist honorarfrei bei Quellenangabe und Übersendung von zwei kostenlosen Belegexemplaren an die Anker Tattoo im Freiburg. Grafische Veränderungen – außer zum Freistellen des Hauptmotivs – sind nicht gestattet.Die hier zur Verfügung gestellten Web-Seiten und Dokumente dürfen nur zu Informationszwecken verwendet werden.Diese Seiten und Dokumente dürfen nicht kommerziell verwertet werden.Jede Kopie (dies gilt auch für Auszüge) muss diesen Urheberrechtsnachweis enthalten.Haftungshinweis:Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.Die Anker Tattoo ist bemüht, ihr Webangebot stets aktuell und inhaltlich richtig sowie vollständig anzubieten. Dennoch ist das Auftreten von Fehlern nicht völlig auszuschließen. Die Anker Tattoo übernimmt keine Haftung für die Aktualität, die inhaltliche Richtigkeit sowie für die Vollständigkeit der in ihrem Webangebot eingestellten Informationen, es sei denn die Fehler wurden vorsätzlich oder grob fahrlässig aufgenommen. Dies bezieht sich auf eventuelle Schäden materieller oder ideeller Art Dritter, die durch die Nutzung dieses Webangebotes verursacht wurden."
+  },
+  "datenschutz": {
+    "header": "Datenschutz",
+    "content": "Hinweis zum Umgang mit Ihren Daten -- Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und halten uns strikt an die Regeln der Datenschutzgesetze. Personenbezogene Daten werden auf dieser Webseite nur im technisch notwendigen Umfang erhoben. In keinem Fall werden die erhobenen Daten verkauft oder aus anderen Gründen an Dritte weitergegeben. Die nachfolgende Erklärung gibt Ihnen einen Überblick darüber, wie wir diesen Schutz gewährleisten und welche Art von Daten zu welchem Zweck erhoben werden. Datenverarbeitung auf dieser Internetseite Diese Website erhebt und speichert automatisch Logfiles-Informationen, die Ihr Browser übermittelt. Dies sind: Browsertyp und -version, verwendetes Betriebssystem, Referer-URL (die zuvor besuchte Seite), Hostname des zugreifenden Rechners (IP-Adresse) und Datum und Uhrzeit der Serveranfrage. Diese Daten sind für uns nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen, die Daten werden zudem nach einer statistischen Auswertung gelöscht. --Cookies-- Unsere Seite verwendet keine Cookies, die Rückschlüsse auf das Nutzerverhalten des Besuchers geben könnten. --Kontaktformular-- Wenn Sie das auf der Webseite angebotene Kontaktformular verwenden möchten, benötigen wir von Ihnen eine valide E-Mail-Adresse sowie Informationen, die uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind. Selbstverständlich erfassen und speichern wir solche Informationen, die Sie auf unserer Seite eingeben oder uns in sonstiger Weise übermitteln. Das betrifft etwa Eingaben in das Kontaktformular, Anrede, Namen, E-Mail-Adressen und zusätzliche Angaben, die Sie in die entsprechenden Felder eintragen. Diese Angaben geschehen freiwillig und werden in keiner Weise überprüft, die Verwendung von Pseudonymen ist möglich. E-Mail - Daten werden auch erfasst und gespeichert, wenn Sie E-Mails an uns senden. Weitere Informationen werden nicht erhoben. Ihre Einwilligung zur Speicherung der Daten, der E-Mail-Adresse sowie deren Nutzung zum Zwecke der Kontaktaufnahme mit Ihnen können Sie jederzeit widerrufen. Auskunftsrecht - Sie haben jederzeit das Recht auf Auskunft über die bezüglich Ihrer Person gespeicherten Daten, deren Herkunft und Empfänger sowie den Zweck der Speicherung. Wir wissen allerdings nicht mehr als Sie auch. Dieses wenige Wissen teilen wir im Rahmen der gesetzlichen Auskunftsansprüche allerdings gern nochmals mit Ihnen. Weitere Informationen - Wenn Sie weitere Fragen zur Behandlung Ihrer Daten haben, dann senden Sie einfach eine E-Mail an unsere Adresse – die finden Sie im Impressum. Google Analytics Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. („Google“). Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: http://tools.google.com/dlpage/gaoptout?hl=de . Quellenangabe: Google Analytics Bedingungen"
+  },
+  "piercingPriceList": {
+    "title": "Piercing Preisliste",
+    "categories": [
+      {
+        "name": "OHR",
+        "items": [
           {
-            "name": "OHR",
-            "items": [
-              {
-                "name": "Lobe (Ohrläppchen) / 2x Lobe",
-                "price": "40 € / 70 €"
-              },
-              {
-                "name": "Helix (Ohrknorpel)",
-                "price": "55 €"
-              },
-              {
-                "name": "Forward Helix",
-                "price": "50 €"
-              },
-              {
-                "name": "Tragus",
-                "price": "50 €"
-              },
-              {
-                "name": "Conch",
-                "price": "50 €"
-              },
-              {
-                "name": "Daith",
-                "price": "60 €"
-              },
-              {
-                "name": "Rook",
-                "price": "60 €"
-              },
-              {
-                "name": "Industrial",
-                "price": "80 €"
-              },
-              {
-                "name": "Punch",
-                "price": "5 € Aufpreis"
-              },
-              {
-                "name": "Dehnen",
-                "price": "5 € + Schmuck"
-              }
-            ]
+            "name": "Lobe (Ohrläppchen) / 2x Lobe",
+            "price": "40 € / 70 €"
           },
           {
-            "name": "MUND",
-            "items": [
-              {
-                "name": "Lippenband",
-                "price": "45 €"
-              },
-              {
-                "name": "Zungenband",
-                "price": "55 €"
-              },
-              {
-                "name": "Labret",
-                "price": "60 €"
-              },
-              {
-                "name": "Madonna",
-                "price": "60 €"
-              },
-              {
-                "name": "Medusa",
-                "price": "60 €"
-              },
-              {
-                "name": "Zunge",
-                "price": "65 €"
-              },
-              {
-                "name": "Ashley",
-                "price": "65 €"
-              },
-              {
-                "name": "Eskimo",
-                "price": "65 €"
-              }
-            ]
+            "name": "Helix (Ohrknorpel)",
+            "price": "55 €"
           },
           {
-            "name": "GESICHT",
-            "items": [
-              {
-                "name": "Nostril",
-                "price": "55 €"
-              },
-              {
-                "name": "Septum",
-                "price": "65 €"
-              },
-              {
-                "name": "Augenbraue",
-                "price": "65 €"
-              }
-            ]
+            "name": "Forward Helix",
+            "price": "50 €"
           },
           {
-            "name": "KÖRPER",
-            "items": [
-              {
-                "name": "Bauchnabel",
-                "price": "60 €"
-              },
-              {
-                "name": "Brust / 2x Brust",
-                "price": "60 € / 110 €"
-              },
-              {
-                "name": "Christina",
-                "price": "80 €"
-              }
-            ]
+            "name": "Tragus",
+            "price": "50 €"
           },
           {
-            "name": "SONSTIGES",
-            "items": [
-              {
-                "name": "Pflegespray",
-                "price": "5 €"
-              },
-              {
-                "name": "Fremdschmuckwechsel",
-                "price": "5 €"
-              }
-            ]
+            "name": "Conch",
+            "price": "50 €"
+          },
+          {
+            "name": "Daith",
+            "price": "60 €"
+          },
+          {
+            "name": "Rook",
+            "price": "60 €"
+          },
+          {
+            "name": "Industrial",
+            "price": "80 €"
+          },
+          {
+            "name": "Punch",
+            "price": "5 € Aufpreis"
+          },
+          {
+            "name": "Dehnen",
+            "price": "5 € + Schmuck"
           }
-        ],
-        "note": "Für gefärbten Titanschmuck (Gold, Rosé, Schwarz) werden 5 € Aufpreis berechnet."
-    }
+        ]
+      },
+      {
+        "name": "MUND",
+        "items": [
+          {
+            "name": "Lippenband",
+            "price": "45 €"
+          },
+          {
+            "name": "Zungenband",
+            "price": "55 €"
+          },
+          {
+            "name": "Labret",
+            "price": "60 €"
+          },
+          {
+            "name": "Madonna",
+            "price": "60 €"
+          },
+          {
+            "name": "Medusa",
+            "price": "60 €"
+          },
+          {
+            "name": "Zunge",
+            "price": "65 €"
+          },
+          {
+            "name": "Ashley",
+            "price": "65 €"
+          },
+          {
+            "name": "Eskimo",
+            "price": "65 €"
+          }
+        ]
+      },
+      {
+        "name": "GESICHT",
+        "items": [
+          {
+            "name": "Nostril",
+            "price": "55 €"
+          },
+          {
+            "name": "Septum",
+            "price": "65 €"
+          },
+          {
+            "name": "Augenbraue",
+            "price": "65 €"
+          }
+        ]
+      },
+      {
+        "name": "KÖRPER",
+        "items": [
+          {
+            "name": "Bauchnabel",
+            "price": "60 €"
+          },
+          {
+            "name": "Brust / 2x Brust",
+            "price": "60 € / 110 €"
+          },
+          {
+            "name": "Christina",
+            "price": "80 €"
+          }
+        ]
+      },
+      {
+        "name": "SONSTIGES",
+        "items": [
+          {
+            "name": "Pflegespray",
+            "price": "5 €"
+          },
+          {
+            "name": "Fremdschmuckwechsel",
+            "price": "5 €"
+          }
+        ]
+      }
+    ],
+    "note": "Für gefärbten Titanschmuck (Gold, Rosé, Schwarz) werden 5 € Aufpreis berechnet."
+  }
 }
