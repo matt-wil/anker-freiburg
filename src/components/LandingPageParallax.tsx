@@ -76,7 +76,7 @@ const LandingPageParralax = (): React.JSX.Element => {
 
         <section className="h-screen w-full relative overflow-hidden">
           <ParallaxMedia
-            src="https://res.cloudinary.com/dcrmzq3wo/image/upload/v1753369743/CK0A4855_hzv1dk.jpg"
+            src="parallax_images/anmeldung.JPG"
             mediaType="image"
             className="w-full h-full"
             containerHeight="112vh"
