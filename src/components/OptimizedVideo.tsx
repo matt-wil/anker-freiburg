@@ -12,7 +12,7 @@ interface OptimizedVideoProps {
 const OptimizedVideo = ({
   src,
   className,
-}: OptimizedVideoProps): React.JSX.Element => {
+}: OptimizedVideoProps): React.JSX.Element | null => {
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const [mounted, setMounted] = useState<boolean>(false);
 
