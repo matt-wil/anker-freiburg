@@ -14,11 +14,20 @@ const OptimizedVideo = ({
   className,
 }: OptimizedVideoProps): React.JSX.Element => {
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
+  const [mounted, setMounted] = useState<boolean>(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const secureSrc = src.replace("http://", "https://");
     setVideoSrc(secureSrc);
   }, [src]);
+
+  if (!mounted) {
+    return null;
+  }
 
   if (!videoSrc) {
     return <div>Loading...</div>;
