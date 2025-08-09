@@ -3,13 +3,16 @@ import { Playfair_Display } from "next/font/google";
 import LandingPageParralax from "@/components/LandingPageParallax";
 import LandingPageMobile from "@/components/LandingPageMobile";
 import Image from "next/image";
+import { getParallaxImages } from "@/lib/cloudinary";
 
 const font = Playfair_Display({
   weight: "900",
   subsets: ["latin"],
 });
 
-export default function Page() {
+export default async function Page() {
+  const images = await getParallaxImages("Parallax");
+
   return (
     <>
       {/** DESKTOP */}
@@ -77,12 +80,12 @@ export default function Page() {
 
       {/* Desktop Parallax */}
       <section className="hidden lg:block">
-        <LandingPageParralax />
+        <LandingPageParralax images={images} />
       </section>
 
       {/* Mobile/Tablet Static Layout */}
       <section className="block lg:hidden">
-        <LandingPageMobile />
+        <LandingPageMobile images={images} />
       </section>
     </>
   );

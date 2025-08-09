@@ -40,3 +40,14 @@ export async function getAktionen(
 
   return { resources: result.resources as CloudinaryImageList };
 }
+
+export async function getParallaxImages(
+  folder: "Parallax",
+): Promise<CloudinaryImageList> {
+  const result = await cloudinary.search
+    .expression(`folder:${folder}`)
+    .max_results(100)
+    .execute();
+
+  return result.resources as CloudinaryImageList;
+}
