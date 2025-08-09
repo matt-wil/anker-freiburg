@@ -16,7 +16,8 @@ const OptimizedVideo = ({
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
 
   useEffect(() => {
-    setVideoSrc(src);
+    const secureSrc = src.replace("http://", "https://");
+    setVideoSrc(secureSrc);
   }, [src]);
 
   if (!videoSrc) {
@@ -31,7 +32,6 @@ const OptimizedVideo = ({
       className={className}
       fontFace="Source Serif Pro"
       sourceTypes={["mp4", "webm"]}
-      secure={true}
       sourceTransformation={{
         webm: {
           quality: "auto:best",
