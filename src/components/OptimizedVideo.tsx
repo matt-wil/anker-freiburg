@@ -30,8 +30,17 @@ const OptimizedVideo = ({
       muted
       className={className}
       fontFace="Source Serif Pro"
-      transformation={{
-        start_offset: 5,
+      sourceTypes={["mp4", "webm"]}
+      sourceTransformation={{
+        webm: {
+          videoCodec: "vp9",
+        },
+        mp4: {
+          videoCodec: "h264",
+        },
+      }}
+      posterOptions={{
+        publicId: `https://res.cloudinary.com/dcrmzq3wo/image/upload/v1753369743/CK0A4855_hzv1dk.jpg`,
       }}
     />
   );
