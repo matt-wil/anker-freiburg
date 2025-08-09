@@ -9,7 +9,14 @@ import OptimizedVideo from "./OptimizedVideo";
 export default function LandingPageMobile(): React.JSX.Element {
   return (
     <div className="flex flex-col">
-      <p className="text-center text-3xl m-4">Meet the team</p>
+      <Image
+        src="/parallax_images/stickers.JPG"
+        alt="Anker Team"
+        width={800}
+        height={600}
+        className="shadow-lg w-full object-cover"
+      />
+      <p className="text-center text-3xl m-8">Meet the team</p>
       <Image
         src="/parallax_images/team.JPG"
         alt="Anker Team"
@@ -35,7 +42,15 @@ export default function LandingPageMobile(): React.JSX.Element {
       />
 
       <Image
-        src="/parallax_images/stickers.JPG"
+        src="/parallax_images/tatt.JPG"
+        alt="A Photo taken in Anker Tattoo & Piercing Studio in Freiburg"
+        width={800}
+        height={600}
+        className="shadow-lg w-full object-cover"
+      />
+
+      <Image
+        src="/parallax_images/tattooSetup.JPG"
         alt="A Photo taken in Anker Tattoo & Piercing Studio in Freiburg"
         width={800}
         height={600}

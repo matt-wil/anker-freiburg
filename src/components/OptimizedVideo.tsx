@@ -33,9 +33,11 @@ const OptimizedVideo = ({
       sourceTypes={["mp4", "webm"]}
       sourceTransformation={{
         webm: {
+          quality: "auto:best",
           videoCodec: "vp9",
         },
         mp4: {
+          quality: "auto:best",
           videoCodec: "h264",
         },
       }}
