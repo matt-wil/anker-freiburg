@@ -4,7 +4,6 @@ import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
 import testimonials from "@/lib/testimonials.json";
 import type { Testimonial } from "@/types";
-import OptimizedVideo from "./OptimizedVideo";
 
 export default function LandingPageMobile(): React.JSX.Element {
   return (
@@ -62,13 +61,13 @@ export default function LandingPageMobile(): React.JSX.Element {
         <p className="text-2xl">The Studio</p>
       </div>
 
-      {/* Intro Video Section */}
-      <section className="h-auto w-full relative overflow-hidden">
-        <OptimizedVideo
-          src="AnkerInstaVideo_xkzaxf"
-          className="w-full h-full"
-        />
-      </section>
+      <Image
+        src="https://res.cloudinary.com/dcrmzq3wo/image/upload/v1753369743/CK0A4855_hzv1dk.jpg"
+        alt="Anker Tattoo & Piercing Studio in Freiburg"
+        width={800}
+        height={600}
+        className="shadow-lg w-full object-cover"
+      />
 
       <CTAButton
         href="/contact"
