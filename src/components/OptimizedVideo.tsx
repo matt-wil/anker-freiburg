@@ -16,8 +16,7 @@ const OptimizedVideo = ({
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
 
   useEffect(() => {
-    const optimizedSrc = src.replace("/upload/", "/upload/f_mp4,vc_h264/");
-    setVideoSrc(optimizedSrc);
+    setVideoSrc(src);
   }, [src]);
 
   if (!videoSrc) {
@@ -31,6 +30,9 @@ const OptimizedVideo = ({
       muted
       className={className}
       fontFace="Source Serif Pro"
+      transformation={{
+        start_offset: 5,
+      }}
     />
   );
 };
