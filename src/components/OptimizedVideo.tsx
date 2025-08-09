@@ -31,6 +31,7 @@ const OptimizedVideo = ({
       className={className}
       fontFace="Source Serif Pro"
       sourceTypes={["mp4", "webm"]}
+      secure={true}
       sourceTransformation={{
         webm: {
           quality: "auto:best",
