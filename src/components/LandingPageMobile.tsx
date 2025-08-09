@@ -62,7 +62,7 @@ export default function LandingPageMobile(): React.JSX.Element {
       </div>
 
       <Image
-        src="https://res.cloudinary.com/dcrmzq3wo/image/upload/v1753369743/CK0A4855_hzv1dk.jpg"
+        src="/parallax_images/anmeldung.JPG"
         alt="Anker Tattoo & Piercing Studio in Freiburg"
         width={800}
         height={600}
