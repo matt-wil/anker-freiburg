@@ -3,13 +3,35 @@
 import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
 import testimonials from "@/lib/testimonials.json";
-import type { Testimonial } from "@/types";
+import type { Testimonial, CloudinaryImage } from "@/types";
 
-export default function LandingPageMobile(): React.JSX.Element {
+const PLACEHOLDER_IMG =
+  "https://res.cloudinary.com/demo/image/upload/w_800,h_600,c_fill,q_auto,f_auto/placeholder.jpg";
+
+const findImageUrl = (publicId: string, images: CloudinaryImage[]): string => {
+  const image = images.find((img) => img.public_id.startsWith(publicId));
+  return image?.secure_url ?? PLACEHOLDER_IMG;
+};
+
+export default function LandingPageMobile({
+  images,
+}: {
+  images: CloudinaryImage[];
+}): React.JSX.Element {
+  const imageMap = {
+    stickers: findImageUrl("stickers", images),
+    team: findImageUrl("team", images),
+    sign: findImageUrl("sign", images),
+    piercingSetup: findImageUrl("piercingSetup", images),
+    tatt: findImageUrl("tatt", images),
+    tattooSetup: findImageUrl("tattooSetup", images),
+    anmeldung: findImageUrl("anmeldung", images),
+  };
+
   return (
     <div className="flex flex-col">
       <Image
-        src="/parallax_images/stickers.JPG"
+        src={imageMap.stickers}
         alt="Anker Team"
         width={800}
         height={600}
@@ -17,7 +39,7 @@ export default function LandingPageMobile(): React.JSX.Element {
       />
       <p className="text-center text-3xl m-8">Meet the team</p>
       <Image
-        src="/parallax_images/team.JPG"
+        src={imageMap.team}
         alt="Anker Team"
         width={800}
         height={600}
@@ -25,7 +47,7 @@ export default function LandingPageMobile(): React.JSX.Element {
       />
 
       <Image
-        src="/parallax_images/sign.JPG"
+        src={imageMap.sign}
         alt="Piercing Me Baby Neon Sign"
         width={800}
         height={600}
@@ -33,7 +55,7 @@ export default function LandingPageMobile(): React.JSX.Element {
       />
 
       <Image
-        src="/parallax_images/piercingSetup.JPG"
+        src={imageMap.piercingSetup}
         alt="Studio Setup"
         width={800}
         height={600}
@@ -41,7 +63,7 @@ export default function LandingPageMobile(): React.JSX.Element {
       />
 
       <Image
-        src="/parallax_images/tatt.JPG"
+        src={imageMap.tatt}
         alt="A Photo taken in Anker Tattoo & Piercing Studio in Freiburg"
         width={800}
         height={600}
@@ -49,7 +71,7 @@ export default function LandingPageMobile(): React.JSX.Element {
       />
 
       <Image
-        src="/parallax_images/tattooSetup.JPG"
+        src={imageMap.tattooSetup}
         alt="A Photo taken in Anker Tattoo & Piercing Studio in Freiburg"
         width={800}
         height={600}
@@ -62,7 +84,7 @@ export default function LandingPageMobile(): React.JSX.Element {
       </div>
 
       <Image
-        src="/parallax_images/anmeldung.JPG"
+        src={imageMap.anmeldung}
         alt="Anker Tattoo & Piercing Studio in Freiburg"
         width={800}
         height={600}
@@ -76,7 +98,6 @@ export default function LandingPageMobile(): React.JSX.Element {
         Kontakt
       </CTAButton>
 
-      {/* Testimonials */}
       <section className="min-h-screen w-full px-4 text-white">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Our Happy Customers
