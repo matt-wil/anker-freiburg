@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import testimonials from "@/lib/testimonials.json"
-import type { Testimonial } from "@/types"
-import { ReactLenis } from "lenis/react"
-import ParallaxMedia from "./ParallaxMedia"
+import testimonials from "@/lib/testimonials.json";
+import type { Testimonial } from "@/types";
+import { ReactLenis } from "lenis/react";
+import ParallaxMedia from "./ParallaxMedia";
 
 const LandingPageParralax = (): React.JSX.Element => {
   return (
@@ -17,7 +17,7 @@ const LandingPageParralax = (): React.JSX.Element => {
             mediaType="image"
             className="w-full h-full"
             containerHeight="112vh"
-            />
+          />
         </section>
         {/* Team Section */}
         <section className="h-screen w-full relative overflow-hidden">
@@ -61,8 +61,7 @@ const LandingPageParralax = (): React.JSX.Element => {
             className="w-full h-full"
             containerHeight="112vh"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10">
-          </div>
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10"></div>
         </section>
 
         {/* Tattoo Section */}
@@ -75,11 +74,10 @@ const LandingPageParralax = (): React.JSX.Element => {
           />
         </section>
 
-        {/* Intro Video Section */}
         <section className="h-screen w-full relative overflow-hidden">
           <ParallaxMedia
-            mediaType="video"
-            src="AnkerInstaVideo_xkzaxf"
+            src="https://res.cloudinary.com/dcrmzq3wo/image/upload/v1753369743/CK0A4855_hzv1dk.jpg"
+            mediaType="image"
             className="w-full h-full"
             containerHeight="112vh"
           />
@@ -87,25 +85,36 @@ const LandingPageParralax = (): React.JSX.Element => {
 
         {/* Testimonials */}
         <section className="min-h-screen w-full py-16 px-4 text-white">
-          <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Happy Customers</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Our Happy Customers
+          </h1>
           <div className="flex flex-wrap justify-center gap-6">
             {testimonials.map((testimonial: Testimonial) => (
               <div
                 key={testimonial.id}
                 className="w-full sm:w-[300px] flex flex-col justify-center items-center bg-gray-900 p-6 rounded-2xl shadow-2xl border-2 border-white/20 space-y-2"
               >
-                <h2 className="font-bold text-xl text-white">{testimonial.name}</h2>
+                <h2 className="font-bold text-xl text-white">
+                  {testimonial.name}
+                </h2>
                 <span className="text-yellow-400">{testimonial.stars}</span>
                 <span className="text-gray-400">{testimonial.date}</span>
                 <p className="text-sm text-white">{testimonial.review}</p>
-                <a className="text-blue-300 underline" href={testimonial.link} target="_blank" rel="noopener noreferrer">review</a>
+                <a
+                  className="text-blue-300 underline"
+                  href={testimonial.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  review
+                </a>
               </div>
             ))}
           </div>
         </section>
       </div>
     </ReactLenis>
-  )
-}
+  );
+};
 
-export default LandingPageParralax
+export default LandingPageParralax;
