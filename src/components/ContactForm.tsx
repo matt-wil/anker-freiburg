@@ -46,7 +46,7 @@ const ContactForm = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...formData,
-          "g-recaptcha-response": captchaValue, // Send token to backend
+          "g-recaptcha-response": captchaValue,
         }),
       });
 
@@ -55,7 +55,7 @@ const ContactForm = () => {
       if (result.success) {
         setSubmissionStatus("success");
         setFormData({ name: "", email: "", subject: "", message: "" });
-        recaptchaRef.current?.reset(); // Reset captcha if needed
+        recaptchaRef.current?.reset();
         setCaptchaValue(null);
       } else {
         setSubmissionStatus("error");
