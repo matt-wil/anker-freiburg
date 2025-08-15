@@ -11,14 +11,15 @@ export default async function Piercers() {
   return (
     <section className="px-6 max-w-6xl mx-auto">
       <h1 className="page-header font-bold mb-8">Professional Body Piercers</h1>
-
-      <ScrollButton targetId="price-list">Preisliste</ScrollButton>
-      <ScrollButton targetId="schmuck">Schmuck</ScrollButton>
-      <DownloadButton
-        text="U18 Einverständniserklärung PDF"
-        document="U18-doc.pdf"
-        downloadName="Anker-U18-Einverständniserklärung.pdf"
-      />
+      <div className="flex flex-wrap gap-4 mb-8">
+        <ScrollButton targetId="price-list">Preisliste</ScrollButton>
+        <ScrollButton targetId="schmuck">Schmuck</ScrollButton>
+        <DownloadButton
+          text="U18 Einverständniserklärung PDF"
+          document="U18-doc.pdf"
+          downloadName="Anker-U18-Einverständniserklärung.pdf"
+        />
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {artists.map((artist) => {
