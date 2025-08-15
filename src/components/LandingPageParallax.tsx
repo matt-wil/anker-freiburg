@@ -5,8 +5,7 @@ import type { Testimonial, CloudinaryImage } from "@/types";
 import { ReactLenis } from "lenis/react";
 import ParallaxMedia from "./ParallaxMedia";
 
-const PLACEHOLDER_IMG =
-  "https://res.cloudinary.com/demo/image/upload/w_1600,h_900,c_fill,q_auto,f_auto/placeholder.jpg";
+const PLACEHOLDER_IMG = "/whiteLogo.svg";
 
 const findImageUrl = (publicId: string, images: CloudinaryImage[]): string => {
   const image = images.find((img) => img.public_id.startsWith(publicId));

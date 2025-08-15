@@ -5,8 +5,7 @@ import CTAButton from "@/components/CTAButton";
 import testimonials from "@/lib/testimonials.json";
 import type { Testimonial, CloudinaryImage } from "@/types";
 
-const PLACEHOLDER_IMG =
-  "https://res.cloudinary.com/demo/image/upload/w_800,h_600,c_fill,q_auto,f_auto/placeholder.jpg";
+const PLACEHOLDER_IMG = "/whiteLogo.svg";
 
 const findImageUrl = (publicId: string, images: CloudinaryImage[]): string => {
   const image = images.find((img) => img.public_id.startsWith(publicId));
