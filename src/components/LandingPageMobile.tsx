@@ -23,7 +23,7 @@ export default function LandingPageMobile({
     team: findImageUrl("team", images),
     sign: findImageUrl("sign", images),
     piercingSetup: findImageUrl("piercingSetup", images),
-    tatt: findImageUrl("tatt", images),
+    tatt: findImageUrl("tattooing", images),
     tattooSetup: findImageUrl("tattooSetup", images),
     anmeldung: findImageUrl("anmeldung", images),
   };
