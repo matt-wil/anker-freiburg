@@ -1,22 +1,21 @@
-"use client"
+"use client";
 
-import { useTranslations } from "next-intl"
-import { useRef, useState, MouseEvent } from "react"
+import { useTranslations } from "next-intl";
+import { useRef, useState, MouseEvent } from "react";
 import type { CSSProperties } from "react";
 
-
 const Datenschutz = () => {
-  const t = useTranslations()
+  const t = useTranslations("datenschutz");
   const [mouseX, setMouseX] = useState<number>(0);
   const [mouseY, setMouseY] = useState<number>(0);
   const [circleSize, setCircleSize] = useState<string>("100px");
   const [isMaskActive, setIsMaskActive] = useState<boolean>(false);
-  
-  const containerRef = useRef<HTMLElement>(null)
+
+  const containerRef = useRef<HTMLElement>(null);
 
   const handleClick = (): void => {
-    setCircleSize( circleSize === "100px" ? "200px" : "100px");
-  }
+    setCircleSize(circleSize === "100px" ? "200px" : "100px");
+  };
 
   const handleMouseMove = (e: MouseEvent<HTMLElement>): void => {
     if (containerRef.current) {
@@ -24,7 +23,7 @@ const Datenschutz = () => {
       setMouseX(e.clientX - left);
       setMouseY(e.clientY - top);
     }
-  }
+  };
 
   const handleMouseEnter = (): void => {
     setIsMaskActive(true);
@@ -38,34 +37,45 @@ const Datenschutz = () => {
     clipPath: isMaskActive
       ? `circle(${circleSize} at ${mouseX}px ${mouseY}px)`
       : `circle(${circleSize} at 50% 50%)`,
-  }
+  };
 
   return (
-    <section 
+    <section
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseExit}
       onClick={handleClick}
       className="relative"
+    >
+      <section className="flex flex-col justify-center items-center gap-5">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold">
+          {t("header")}
+        </h2>
+        <div>
+          <p className="p-5 md:px-15">{t("content")}</p>
+        </div>
+        <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl m-10 opacity-0 text-center">
+          May your data be safe as a pirate`s buried treasure!
+        </h2>
+      </section>
+
+      <section
+        className="absolute top-0 w-[100%] flex flex-col justify-center items-center gap-5 bg-[#c2f9eb]/40 text-[#FF8573]"
+        style={clipPathStyle}
       >
-    <section className="flex flex-col justify-center items-center gap-5">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold">{t("datenschutz.header")}</h2>
+        <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold">
+          {t("header")}
+        </h2>
         <div>
-        <p className="p-5 md:px-15">{t("datenschutz.content")}</p>
+          <p className="p-5 md:px-15">{t("content")}</p>
         </div>
-        <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl m-10 opacity-0 text-center">May your data be safe as a pirate`s buried treasure!</h2>
+        <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl m-10 text-center">
+          May your data be safe as a pirate`s buried treasure!
+        </h2>
+      </section>
     </section>
+  );
+};
 
-    <section className="absolute top-0 w-[100%] flex flex-col justify-center items-center gap-5 bg-[#c2f9eb]/40 text-[#FF8573]" style={clipPathStyle}>
-        <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold">{t("datenschutz.header")}</h2>
-        <div>
-        <p className="p-5 md:px-15">{t("datenschutz.content")}</p>
-        </div>
-        <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl m-10 text-center">May your data be safe as a pirate`s buried treasure!</h2>
-    </section>
-    </section>
-  )
-}
-
-export default Datenschutz
+export default Datenschutz;

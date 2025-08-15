@@ -6,7 +6,7 @@ import { GiOpenTreasureChest } from "react-icons/gi";
 import Tooltip from "../components/Tooltip";
 
 const Impressum = () => {
-  const t = useTranslations();
+  const t = useTranslations("impressum");
   const [mouseX, setMouseX] = useState<number>(0);
   const [mouseY, setMouseY] = useState<number>(0);
   const [circleSize, setCircleSize] = useState<string>("100px");
@@ -50,10 +50,10 @@ const Impressum = () => {
     >
       <section className="flex flex-col justify-center items-center gap-5">
         <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold">
-          {t("impressum.header")}
+          {t("header")}
         </h2>
         <div>
-          <p className="p-5 md:px-15">{t("impressum.content")}</p>
+          <p className="p-5 md:px-15">{t("content")}</p>
         </div>
         <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl m-10 text-center opacity-0">
           {<GiOpenTreasureChest />}
@@ -64,10 +64,10 @@ const Impressum = () => {
         style={clipPathStyle}
       >
         <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold">
-          {t("impressum.header")}
+          {t("header")}
         </h2>
         <div>
-          <p className="p-5 md:px-15">{t("impressum.content")}</p>
+          <p className="p-5 md:px-15">{t("content")}</p>
         </div>
         <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl m-10 text-center">
           {

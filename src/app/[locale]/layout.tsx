@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { Locale, routing } from "@/i18n/routing";
 import IntroWrapper from "@/components/IntroWrapper";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { getMessages } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,11 +33,13 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  const messages = await getMessages();
+
   return (
     <html lang={locale}>
       <meta name="apple-mobile-web-app-title" content="AnkerFr" />
       <body className={inter.className}>
-        <NextIntlClientProvider locale={locale}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <IntroWrapper>
             <Navbar />
             <main>

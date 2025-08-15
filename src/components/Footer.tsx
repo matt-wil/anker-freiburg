@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export default function Footer(): React.ReactNode {
-  const t = useTranslations();
+  const t = useTranslations("nav");
   return (
     <footer className="text-xs italic">
       <div className="flex flex-col justify-center items-center text-center">
@@ -28,8 +28,8 @@ export default function Footer(): React.ReactNode {
           </a>{" "}
           | <a href="tel:+4976151462878">0761-51 46 28 78</a> |{" "}
           <a href="mailto:info@anker-tattoo.de">info@anker-tattoo.de</a> |{" "}
-          <Link href="datenschutz">{t("nav.data")}</Link> |{" "}
-          <Link href="impressum">{t("nav.legal")}</Link> |{" "}
+          <Link href="datenschutz">{t("data")}</Link> |{" "}
+          <Link href="impressum">{t("legal")}</Link> |{" "}
           <a
             href="https://www.matt-williams.net"
             target="_blank"

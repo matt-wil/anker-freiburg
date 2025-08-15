@@ -28,7 +28,7 @@ const ContactForm = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const recaptchaRef = useRef<ReCAPTCHA | null>(null);
 
-  const t = useTranslations();
+  const t = useTranslations("contact.form");
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -80,7 +80,7 @@ const ContactForm = () => {
         className="bg-white rounded-lg shadow-xl border border-gray-300 p-8 w-full max-w-md"
       >
         <h2 className="text-2xl font-semibold mb-6 text-gray-800">
-          {t("contact.form.header")}
+          {t("header")}
         </h2>
 
         {/* Name */}
@@ -89,7 +89,7 @@ const ContactForm = () => {
             htmlFor="name"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            {t("contact.form.name")}
+            {t("name")}
           </label>
           <input
             type="text"
@@ -109,7 +109,7 @@ const ContactForm = () => {
             htmlFor="email"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            {t("contact.form.email")}
+            {t("email")}
           </label>
           <input
             type="email"
@@ -129,7 +129,7 @@ const ContactForm = () => {
             htmlFor="subject"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            {t("contact.form.subject")}
+            {t("subject")}
           </label>
           <input
             type="text"
@@ -148,7 +148,7 @@ const ContactForm = () => {
             htmlFor="message"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            {t("contact.form.message")}
+            {t("message")}
           </label>
           <textarea
             id="message"
@@ -181,14 +181,10 @@ const ContactForm = () => {
             {submissionStatus === "submitting" ? "Senden..." : "Senden"}
           </button>
           {submissionStatus === "success" && (
-            <p className="text-green-500 text-sm italic">
-              {t("contact.form.success")}
-            </p>
+            <p className="text-green-500 text-sm italic">{t("success")}</p>
           )}
           {submissionStatus === "error" && (
-            <p className="text-red-500 text-sm italic">
-              {t("contact.form.error")}
-            </p>
+            <p className="text-red-500 text-sm italic">{t("error")}</p>
           )}
         </div>
       </form>

@@ -2,6 +2,11 @@ import InfiniteGallery from "@/components/InfiniteGallery";
 import { getArtistAssets } from "@/lib/cloudinary";
 import { getArtistByName } from "@/lib/queries/artists";
 import type { ParamsProps } from "@/types";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Professional Body Piercing Portfolio",
+};
 
 const page = async ({ params }: { params: Promise<ParamsProps> }) => {
   const { artistName, locale } = await params;

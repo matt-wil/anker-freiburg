@@ -3,6 +3,7 @@ import ImageCard from "./ImageCard";
 import PiercingPriceList from "./PiercingPriceList";
 import PiercingJewelleryGallery from "./PiercingJewelleryGallery";
 import ScrollButton from "./ScrollButton";
+import DownloadButton from "./DownloadButton";
 
 export default async function Piercers() {
   const artists = await getPiercingArtists();
@@ -13,6 +14,11 @@ export default async function Piercers() {
 
       <ScrollButton targetId="price-list">Preisliste</ScrollButton>
       <ScrollButton targetId="schmuck">Schmuck</ScrollButton>
+      <DownloadButton
+        text="U18 Einverständniserklärung PDF"
+        document="U18-doc.pdf"
+        downloadName="Anker-U18-Einverständniserklärung.pdf"
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {artists.map((artist) => {

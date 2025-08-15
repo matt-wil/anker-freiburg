@@ -1,11 +1,15 @@
-import DatenschutzComponent from "@/components/DatenschutzComponent"
+import DatenschutzComponent from "@/components/DatenschutzComponent";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Datenschutz",
+};
 const page = () => {
   return (
     <>
-        <DatenschutzComponent />
+      <DatenschutzComponent />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

@@ -27,17 +27,17 @@ interface NavItem {
 
 // Corrected navLinks array with the 'faq' path as a string literal
 const navLinks: NavItem[] = [
-  { key: "home", path: "/", label: "nav.home" },
-  { key: "about", path: "/ueber-uns", label: "nav.about" },
-  { key: "tattoo", path: "/tattoo", label: "nav.tattoo" },
-  { key: "piercing", path: "/piercing", label: "nav.piercing" },
-  { key: "kontakt", path: "/kontakt", label: "nav.contact" },
-  { key: "aktionen", path: "/aktionen", label: "nav.promo" },
-  { key: "faq", path: "/haeufige-gestellte-fragen", label: "nav.faq" },
+  { key: "home", path: "/", label: "home" },
+  { key: "about", path: "/ueber-uns", label: "about" },
+  { key: "tattoo", path: "/tattoo", label: "tattoo" },
+  { key: "piercing", path: "/piercing", label: "piercing" },
+  { key: "kontakt", path: "/kontakt", label: "contact" },
+  { key: "aktionen", path: "/aktionen", label: "promo" },
+  { key: "faq", path: "/haeufige-gestellte-fragen", label: "faq" },
 ];
 
 const NavLinks = () => {
-  const t = useTranslations();
+  const t = useTranslations("nav");
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [shouldRender, setShouldRender] = useState<boolean>(false);
 
