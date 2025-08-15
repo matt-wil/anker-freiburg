@@ -6,36 +6,35 @@ export type Pathnames = {
 };
 
 export const routing = defineRouting({
-  // A list of all locales that are supported
   locales: ["en", "de"],
   pathnames: {
     "/": "/",
     "/aktionen": {
-      de: "/aktionen", // Add German path
+      de: "/aktionen",
       en: "/promotions",
     },
     "/kontakt": {
-      de: "/kontakt", // Add German path
+      de: "/kontakt",
       en: "/contact",
     },
     "/datenschutz": {
-      de: "/datenschutz", // Add German path
+      de: "/datenschutz",
       en: "/data-protection",
     },
     "/impressum": {
-      de: "/impressum", // Add German path
+      de: "/impressum",
       en: "/legal-notice",
     },
     "/ueber-uns": {
-      de: "/ueber-uns", // Add German path
+      de: "/ueber-uns",
       en: "/about-us",
     },
     "/tattoo": {
-      de: "/tattoo", // Add German path
+      de: "/tattoo",
       en: "/tattoo",
     },
     "/piercing": {
-      de: "/piercing", // Add German path
+      de: "/piercing",
       en: "/piercing",
     },
     "/haeufige-gestellte-fragen": {
@@ -44,7 +43,6 @@ export const routing = defineRouting({
     },
   },
 
-  // Used when no locale matches
   defaultLocale: "de",
   localePrefix: "always",
 });

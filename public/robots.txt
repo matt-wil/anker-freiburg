@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /admin
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.anker-tattoo.de
+
+# Sitemaps
+Sitemap: https://www.anker-tattoo.de/sitemap.xml
+Sitemap: https://www.anker-tattoo.de/server-sitemap.xml

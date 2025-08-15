@@ -34,7 +34,7 @@ const Contact = (): React.JSX.Element => {
           {/* Box 2: Open Hours */}
           <div className="bg-neutral-900 rounded-2xl p-6 text-center flex flex-col justify-center min-h-[200px]">
             <h2 className="text-3xl sm:text-4xl mb-4 font-bold text-white">
-              {t("contact.openHoursHeader")}
+              {t("openHoursHeader")}
             </h2>
             <p className="text-gray-300 text-lg">
               <strong>{t("weekdays")}</strong>

@@ -7,7 +7,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { Locale, routing } from "@/i18n/routing";
 import IntroWrapper from "@/components/IntroWrapper";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { getMessages } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -42,10 +41,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <IntroWrapper>
             <Navbar />
-            <main>
-              {children}
-              <SpeedInsights />
-            </main>
+            <main>{children}</main>
             <Footer />
           </IntroWrapper>
         </NextIntlClientProvider>
