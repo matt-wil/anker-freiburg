@@ -20,7 +20,7 @@ const LandingPageParralax = ({ images }: { images: CloudinaryImage[] }) => {
     sign: findImageUrl("sign", images),
     bell: findImageUrl("bell", images),
     piercingSetup: findImageUrl("piercingSetup", images),
-    tatt: findImageUrl("tattooing", images),
+    tattooing: findImageUrl("tattooing", images),
     anmeldung: findImageUrl("anmeldung", images),
   };
 
@@ -82,7 +82,7 @@ const LandingPageParralax = ({ images }: { images: CloudinaryImage[] }) => {
 
         <section className="h-screen w-full relative overflow-hidden">
           <ParallaxMedia
-            src={imageMap.tatt}
+            src={imageMap.tattooing}
             mediaType="image"
             className="w-full h-full"
             containerHeight="112vh"

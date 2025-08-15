@@ -23,7 +23,7 @@ export default function LandingPageMobile({
     team: findImageUrl("team", images),
     sign: findImageUrl("sign", images),
     piercingSetup: findImageUrl("piercingSetup", images),
-    tatt: findImageUrl("tattooing", images),
+    tattooing: findImageUrl("tattooing", images),
     tattooSetup: findImageUrl("tattooSetup", images),
     anmeldung: findImageUrl("anmeldung", images),
   };
@@ -63,7 +63,7 @@ export default function LandingPageMobile({
       />
 
       <Image
-        src={imageMap.tatt}
+        src={imageMap.tattooing}
         alt="A Photo taken in Anker Tattoo & Piercing Studio in Freiburg"
         width={800}
         height={600}
