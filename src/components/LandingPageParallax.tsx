@@ -20,7 +20,7 @@ const LandingPageParralax = ({ images }: { images: CloudinaryImage[] }) => {
     sign: findImageUrl("sign", images),
     bell: findImageUrl("bell", images),
     piercingSetup: findImageUrl("piercingSetup", images),
-    tatt: findImageUrl("tatt", images),
+    tatt: findImageUrl("tattooing", images),
     anmeldung: findImageUrl("anmeldung", images),
   };
 
