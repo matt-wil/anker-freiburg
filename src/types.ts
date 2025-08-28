@@ -1,4 +1,6 @@
-export interface CloudinaryImage {
+import type { IconType } from "react-icons";
+
+export type CloudinaryImage = {
   access_control: null; // Or `any` if it could be other types
   access_mode: "public" | string; // Assuming "public" is common, but could be other strings
   aspect_ratio: number;
@@ -24,7 +26,7 @@ export interface CloudinaryImage {
   url: string; // HTTP URL
   version: number;
   width: number;
-}
+};
 
 export type ParamsProps = {
   locale: string;
@@ -42,6 +44,52 @@ export type Testimonial = {
 
 export type CloudinaryImageList = CloudinaryImage[];
 
-export interface AktionenResponse {
+export type AktionenResponse = {
   resources: CloudinaryImageList;
-}
+};
+
+export type I18nService = {
+  icon: string;
+  title: string;
+  description: string;
+  features: string[];
+  price: string;
+  gradient: string;
+};
+
+export type RenderableService = {
+  icon: IconType;
+  title: string;
+  description: string;
+  features: string[];
+  price: string;
+  gradient: string;
+};
+
+export type I18nFeature = {
+  icon: string;
+  title: string;
+  description: string;
+  gradient: string;
+};
+
+export type RenderableFeature = {
+  icon: IconType;
+  title: string;
+  description: string;
+};
+
+export type DBArtist = {
+  bio_de: string;
+  bio_en: string;
+  category: string;
+  created_at: string;
+  id: number;
+  name: string;
+  profile_img: string;
+  slug: string;
+  experience: number;
+  specialities_en: string[];
+  specialities_de: string[];
+  instagram_link: string;
+};

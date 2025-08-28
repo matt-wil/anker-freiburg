@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
-import testimonials from "@/lib/testimonials.json";
-import type { Testimonial, CloudinaryImage } from "@/types";
+import type { CloudinaryImage } from "@/types";
+import Testimonials from "./Testimonials";
 
 const PLACEHOLDER_IMG = "/whiteLogo.svg";
 
@@ -29,14 +29,7 @@ export default function LandingPageMobile({
 
   return (
     <div className="flex flex-col">
-      <Image
-        src={imageMap.stickers}
-        alt="Anker Team"
-        width={800}
-        height={600}
-        className="shadow-lg w-full object-cover"
-      />
-      <p className="text-center text-3xl m-8">Meet the team</p>
+      <p className="text-center text-4xl font-bold m-8 p-8">Meet the Team</p>
       <Image
         src={imageMap.team}
         alt="Anker Team"
@@ -77,17 +70,12 @@ export default function LandingPageMobile({
         className="shadow-lg w-full object-cover"
       />
 
-      <div className="text-center space-y-2 py-5">
-        <p className="text-lg font-semibold">Check out</p>
-        <p className="text-2xl">The Studio</p>
-      </div>
-
       <Image
         src={imageMap.anmeldung}
         alt="Anker Tattoo & Piercing Studio in Freiburg"
         width={800}
         height={600}
-        className="shadow-lg w-full object-cover"
+        className="shadow-lg w-full object-cover mb-10"
       />
 
       <CTAButton
@@ -97,34 +85,7 @@ export default function LandingPageMobile({
         Kontakt
       </CTAButton>
 
-      <section className="min-h-screen w-full px-4 text-white">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Our Happy Customers
-        </h1>
-        <div className="flex flex-wrap justify-center gap-6">
-          {testimonials.map((testimonial: Testimonial) => (
-            <div
-              key={testimonial.id}
-              className="w-full sm:w-[300px] flex flex-col justify-center items-center bg-gray-900 p-6 rounded-2xl shadow-2xl border-2 border-white/20 space-y-2"
-            >
-              <h2 className="font-bold text-xl text-white">
-                {testimonial.name}
-              </h2>
-              <span className="text-yellow-400">{testimonial.stars}</span>
-              <span className="text-gray-400">{testimonial.date}</span>
-              <p className="text-sm text-white">{testimonial.review}</p>
-              <a
-                className="text-blue-300 underline"
-                href={testimonial.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                review
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
+      <Testimonials />
     </div>
   );
 }

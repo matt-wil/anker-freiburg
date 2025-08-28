@@ -1,4 +1,90 @@
 {
+  "artistCard": {
+    "xp": "Jahre Erfahrung"
+  },
+  "features": {
+    "items": [
+      {
+        "icon": "shieldCheckmark",
+        "title": "Gesundheit & Sicherheit",
+        "description": "Unsere Hygienepläne sind vom Gesundheitsamt geprüft und erfüllen höchste gesetzliche Standards, EU-konforme Tattoofarben, sterile Ausrüstung, zertifizierte Prozesse und eine Examinierte Krankenschwester vor Ort.",
+        "gradient": "from-cyan-500 to-pink-500"
+      },
+      {
+        "icon": "cuckooClock",
+        "title": "Flexible Zeiten",
+        "description": "Geöffnet an 5 Tagen die Woche mit der Möglichkeit von Terminen nach Vereinbarung.",
+        "gradient": "from-cyan-500 to-pink-500"
+      },
+      {
+        "icon": "walkingIn",
+        "title": "Walk-ins willkommen",
+        "description": "Für Piercings benötigst du keinen Termin, sondern nur ein wenig Geduld, da es zu kurzen Wartezeiten kommen kann.",
+        "gradient": "from-cyan-500 to-pink-500"
+      },
+      {
+        "icon": "receiveMoney",
+        "title": "Tattoo Termine",
+        "description": "Da wir für Tattoo-Termine eine Anzahlung verlangen, solltest du vorbeikommen, damit wir auch persönlich über dein Design sprechen können.",
+        "gradient": "from-cyan-500 to-pink-500"
+      }
+    ]
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "text": "Von aufwändigen individuellen Tattoos bis hin zu professionellen Piercings bieten wir erstklassige Body-Art-Dienstleistungen mit kompromissloser Qualität und Sicherheit.",
+    "items": [
+      {
+        "icon": "paintBrush",
+        "title": "Individuelle Tattoos",
+        "description": "Originelle Kunstwerke, die von unseren talentierten Künstlern speziell für dich entworfen werden.",
+        "features": [
+          "Von deiner Idee zur Skizze",
+          "Kreativer Austausch mit deinem Artist",
+          "Ein Stück Kunst, das nur dir gehört"
+        ],
+        "price": "150€ pro Stunde",
+        "gradient": "from-blue-500 to-purple-500"
+      },
+      {
+        "icon": "piercedBody",
+        "title": "Body Piercings",
+        "description": "Professionelle Piercing-Dienstleistungen mit hochwertigem Schmuck.",
+        "features": [
+          "Strenge Hygienestandards",
+          "Hochwertiger Schmuck",
+          "Ehrliche Beratung",
+          "Begleitung in der Nachsorge"
+        ],
+        "price": "ab 40€",
+        "gradient": "from-blue-500 to-purple-500"
+      },
+      {
+        "icon": "eraser",
+        "title": "Cover-ups",
+        "description": "Verwandle dein altes Tattoo in ein neues Kunstwerk.",
+        "features": [
+          "Kreative Lösungen",
+          "Individuelle Neugestaltung",
+          "Ehrliche Beratung"
+        ],
+        "price": "nach Vereinbarung",
+        "gradient": "from-blue-500 to-purple-500"
+      },
+      {
+        "icon": "flash",
+        "title": "Flash-Tattoos",
+        "description": "Wähle direkt ein Wanna-Do von unseren Künstlern",
+        "features": [
+          "Kunst zum fairen Preis",
+          "Von unseren Artists gezeichnet",
+          "Design wird nur einmal verwendet"
+        ],
+        "price": "Immer Spezialpreise",
+        "gradient": "from-blue-500 to-purple-500"
+      }
+    ]
+  },
   "hero": {
     "intro": "Ein Ort, an dem Veränderung sichtbar wird – präzise gestochen, respektvoll begleitet und mit Gespür für das, was unter der Oberfläche liegt. Ob Tattoo oder Piercing – bei uns findest du Handwerk mit Haltung, kurze Wartezeiten, wechselnde Artists und einen familiären Umgang auf Augenhöhe. In stilvoller, klarer Atmosphäre begleiten wir dich bei einem Schritt, der mehr sein kann als nur Körperschmuck: ein Ausdruck, ein Übergang, ein Zeichen.",
     "introEnd": "Schön, dass du da bist.",

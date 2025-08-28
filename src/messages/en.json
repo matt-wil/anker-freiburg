@@ -1,4 +1,90 @@
 {
+  "artistCard": {
+    "xp": "Years Experience"
+  },
+  "features": {
+    "items": [
+      {
+        "icon": "shieldCheckmark",
+        "title": "Health & Safety",
+        "description": "Our hygiene plans are approved by the health authority and meet the highest legal standards, EU-compliant tattoo inks, sterile equipment, certified processes, and a registered nurse on site.",
+        "gradient": "from-cyan-500 to-pink-500"
+      },
+      {
+        "icon": "cuckooClock",
+        "title": "Flexible Times",
+        "description": "Open 5 days a week with the possibility of appointments by arrangement.",
+        "gradient": "from-cyan-500 to-pink-500"
+      },
+      {
+        "icon": "walkingIn",
+        "title": "Walk-ins Welcome",
+        "description": "You don't need an appointment for piercings, just a little patience, as there may be short waiting times.",
+        "gradient": "from-cyan-500 to-pink-500"
+      },
+      {
+        "icon": "receiveMoney",
+        "title": "Tattoo Appointments",
+        "description": "Since we require a deposit for tattoo appointments, we recommend that you come by so we can discuss your design in person.",
+        "gradient": "from-cyan-500 to-pink-500"
+      }
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "text": "From elaborate custom tattoos to professional piercings, we offer first-class body art services with uncompromised quality and safety.",
+    "items": [
+      {
+        "icon": "paintBrush",
+        "title": "Custom Tattoos",
+        "description": "Original works of art designed by our talented artists especially for you.",
+        "features": [
+          "From your idea to the sketch",
+          "Creative exchange with your artist",
+          "A piece of art that belongs only to you"
+        ],
+        "price": "€150 per hour",
+        "gradient": "from-blue-500 to-purple-500"
+      },
+      {
+        "icon": "piercedBody",
+        "title": "Body Piercings",
+        "description": "Professional piercing services with high-quality jewelry.",
+        "features": [
+          "Strict hygiene standards",
+          "High-quality jewelry",
+          "Honest advice",
+          "Support during aftercare"
+        ],
+        "price": "from €40",
+        "gradient": "from-blue-500 to-purple-500"
+      },
+      {
+        "icon": "eraser",
+        "title": "Cover-ups",
+        "description": "Transform your old tattoo into a new work of art.",
+        "features": [
+          "Creative solutions",
+          "Individual redesign",
+          "Honest advice"
+        ],
+        "price": "by arrangement",
+        "gradient": "from-blue-500 to-purple-500"
+      },
+      {
+        "icon": "flash",
+        "title": "Flash Tattoos",
+        "description": "Choose a wanna-do directly from our artists.",
+        "features": [
+          "Art at a fair price",
+          "Drawn by our artists",
+          "Design is only used once"
+        ],
+        "price": "Always special prices",
+        "gradient": "from-blue-500 to-purple-500"
+      }
+    ]
+  },
   "hero": {
     "intro": "A place where change becomes visible – precisely inked, respectfully accompanied, and with a keen sense for what lies beneath the surface. Whether tattooing or piercing – with us you'll find craftsmanship with integrity, short wait times, a rotating cast of artists, and a friendly, equal approach. In a stylish, uncluttered atmosphere, we accompany you on a step that can be more than just body adornment: an expression, a transition, a symbol.",
     "introEnd": "Nice that your're here.",

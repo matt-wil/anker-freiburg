@@ -4,6 +4,7 @@ import LandingPageParralax from "@/components/LandingPageParallax";
 import LandingPageMobile from "@/components/LandingPageMobile";
 import Image from "next/image";
 import { getParallaxImages } from "@/lib/cloudinary";
+import Services from "@/components/Services";
 
 const font = Playfair_Display({
   weight: "900",
@@ -40,32 +41,27 @@ export default async function Page() {
       {/** MOBILE */}
       <section className="flex lg:hidden relative flex-col justify-between h-[100dvh] text-white overflow-hidden">
         {/* Top Content Area */}
-        <div className="flex flex-col items-center justify-center flex-grow px-6 md:px-12 pt-10 pb-48 z-10">
-          {" "}
-          {/* pb-48 to make space for illustration */}
+        <div className="flex flex-col items-center justify-center flex-grow pb-48 z-10 text-center">
           {/* Logo and App Name */}
-          <div className="flex items-center mb-10 self-start mx-auto max-w-xl w-full">
-            {" "}
-            {/* Centered max-width div */}
+          <div className="flex item-center mb-4">
             <Image
               src="/whiteLogo.svg"
               alt="Anker Logo"
-              width={24}
-              height={24}
+              width={80}
+              height={80}
               className="mr-2"
-            />{" "}
-            {/* Adjust size */}
-            <span className={`${font.className} text-3xl font-semibold`}>
-              Anker
-            </span>
+            />
           </div>
+          <span className={`${font.className} text-5xl font-semibold m-10`}>
+            Anker
+          </span>
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-left self-start mx-auto max-w-xl w-full mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mx-auto max-w-xl w-full mb-6">
             Tattoo & Piercing <br />
             Studio in Freiburg
           </h1>
           {/* Description */}
-          <p className="text-base md:text-lg text-left self-start mx-auto max-w-xl w-full mb-10 leading-relaxed uppercase tracking-widest">
+          <p className="text-base md:text-lg mx-auto max-w-xl w-full mb-10 leading-relaxed uppercase tracking-widest">
             Seit 2011
           </p>
           {/* Button */}
@@ -76,6 +72,11 @@ export default async function Page() {
             Kontakt
           </CTAButton>
         </div>
+      </section>
+
+      {/* Services */}
+      <section>
+        <Services />
       </section>
 
       {/* Desktop Parallax */}

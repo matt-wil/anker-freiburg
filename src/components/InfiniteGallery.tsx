@@ -1,18 +1,23 @@
-"use client"
+"use client";
 
-import { useRef, useState } from 'react'
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
-import ImageCard from '@/components/ImageCard'
-import type { CloudinaryImage } from '@/types'
+import { useRef, useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import ImageCard from "@/components/ImageCard";
+import type { CloudinaryImage } from "@/types";
 
-export default function InfiniteGallery({ images }: { images: CloudinaryImage[] }) {
-  const gridRef = useRef<HTMLDivElement>(null)
-  const modalRef = useRef<HTMLDivElement>(null)
-  const [fullscreenImage, setFullscreenImage] = useState<CloudinaryImage | null>(null)
+export default function InfiniteGallery({
+  images,
+}: {
+  images: CloudinaryImage[];
+}) {
+  const gridRef = useRef<HTMLDivElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const [fullscreenImage, setFullscreenImage] =
+    useState<CloudinaryImage | null>(null);
 
   useGSAP(() => {
-    if (!gridRef.current) return
+    if (!gridRef.current || images.length === 0) return;
 
     gsap.fromTo(
       gridRef.current.children,
@@ -25,19 +30,22 @@ export default function InfiniteGallery({ images }: { images: CloudinaryImage[] 
           from: "edges",
         },
         ease: "power4.out",
-      }
-    )
-  }, [])
+      },
+    );
+  }, []);
 
-  useGSAP(() => {
-    if (fullscreenImage && modalRef.current) {
-      gsap.fromTo(
-        modalRef.current,
-        { opacity: 0, scale: 0.95 },
-        { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }
-      )
-    }
-  }, { dependencies: [fullscreenImage] })
+  useGSAP(
+    () => {
+      if (fullscreenImage && modalRef.current) {
+        gsap.fromTo(
+          modalRef.current,
+          { opacity: 0, scale: 0.95 },
+          { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" },
+        );
+      }
+    },
+    { dependencies: [fullscreenImage] },
+  );
 
   const closeModal = () => {
     if (modalRef.current) {
@@ -47,11 +55,11 @@ export default function InfiniteGallery({ images }: { images: CloudinaryImage[] 
         duration: 0.3,
         ease: "power3.in",
         onComplete: () => setFullscreenImage(null),
-      })
+      });
     } else {
-      setFullscreenImage(null)
+      setFullscreenImage(null);
     }
-  }
+  };
 
   return (
     <div className="w-full min-h-screen p-8">
@@ -75,7 +83,7 @@ export default function InfiniteGallery({ images }: { images: CloudinaryImage[] 
             />
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-300" />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-transparent text-white px-4 py-2 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            &#x25B2;
+              &#x25B2;
             </div>
           </div>
         ))}
@@ -97,5 +105,5 @@ export default function InfiniteGallery({ images }: { images: CloudinaryImage[] 
         </div>
       )}
     </div>
-  )
+  );
 }
