@@ -85,17 +85,29 @@
       }
     ]
   },
-  "hero": {
+  "homepage": {
+    "metadata": {
+      "title": "Anker Tattoo & Piercing Studio Freiburg | Tattoos & Piercings",
+      "description": "Your new tattoo or piercing in Freiburg? You've come to the right place! Professional advice – Top artists – Short wait times",
+      "keywords": "Tattoo Freiburg, Piercing Freiburg, Tattoo Studio Freiburg, Anker Tattoo, Tattoo Artist Freiburg, Cover-up Tattoo, Fineline Tattoo",
+      "ogTitle": "Anker Tattoo & Piercing Studio Freiburg",
+      "ogDescription": "High-quality tattoos and professional piercings in the heart of Freiburg.",
+      "ogImageAlt": "Branded graphic for Anker Tattoo & Piercing in Freiburg, showing the studio's anchor logo on a colorful background."
+    },
     "intro": "A place where change becomes visible – precisely inked, respectfully accompanied, and with a keen sense for what lies beneath the surface. Whether tattooing or piercing – with us you'll find craftsmanship with integrity, short wait times, a rotating cast of artists, and a friendly, equal approach. In a stylish, uncluttered atmosphere, we accompany you on a step that can be more than just body adornment: an expression, a transition, a symbol.",
     "introEnd": "Nice that your're here.",
     "button": "Contact"
   },
-  "scrollPage": {
-    "needle1": "Your Skin",
-    "needle2": "Your Story",
-    "needle3": "Our Craft"
-  },
   "about": {
+    "metadata": {
+      "pathSlug": "about-us",
+      "title": "About Us | The Team at Anker Tattoo Studio Freiburg",
+      "description": "Meet the artists and discover the story behind Anker Tattoo & Piercing Studio in Freiburg. Learn about our passion for tattoo art and our commitment to hygiene standards.",
+      "keywords": "Anker Tattoo team, tattoo studio history Freiburg, about Anker Tattoo, tattoo artists Freiburg",
+      "ogTitle": "Meet the Team at Anker Tattoo in Freiburg",
+      "ogDescription": "The artists, the history, and the passion behind Freiburg's top tattoo studio.",
+      "ogImageAlt": "Branded graphic for Anker Tattoo & Piercing in Freiburg, showing the studio's anchor logo on a colorful background."
+    },
     "header": "About us",
     "subHeader": "Change sometimes shows itself where words are not enough – on the skin.",
     "text1": "Since December 2011, Anker has been a fixture in the heart of Freiburg — located directly at Martinstor, just a few steps from the Holzmarkt S-Bahn station, and within walking distance of the main train station. For those arriving by car, there are also two parking garages just around the corner.",
@@ -118,6 +130,15 @@
     "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇬🇧 English} other {Unknown}}"
   },
   "contact": {
+    "metadata": {
+      "pathSlug": "contact",
+      "title": "Contact | Anker Tattoo Freiburg | Book an Appointment",
+      "description": "Contact Anker Tattoo & Piercing Studio in Freiburg. Book your appointment, ask a question, or visit us. Find our address, opening hours, and phone number here.",
+      "keywords": "Contact Tattoo Freiburg, book tattoo appointment, piercing inquiry, Anker Tattoo address, tattoo studio opening hours",
+      "ogTitle": "Get in Touch with Anker Tattoo Freiburg",
+      "ogDescription": "Ready for your next tattoo or piercing? Find all our contact information here.",
+      "ogImageAlt": "Branded graphic for Anker Tattoo & Piercing in Freiburg, showing the studio's anchor logo on a colorful background."
+    },
     "form": {
       "header": "Contact us",
       "name": "Name",
@@ -142,6 +163,15 @@
     "email": "Email: "
   },
   "faq": {
+    "metadata": {
+      "pathSlug": "faq",
+      "title": "FAQ | Frequently Asked Questions about Tattoos & Piercings | Anker Freiburg",
+      "description": "Answers to your questions: How old do I have to be? How much does a tattoo cost? What about aftercare? Find all the info in the Anker Tattoo Studio FAQs.",
+      "keywords": "Tattoo FAQ, piercing questions, tattoo pain, tattoo cost, piercing healing, Anker Tattoo Freiburg",
+      "ogTitle": "Frequently Asked Questions | Anker Tattoo Freiburg",
+      "ogDescription": "All the answers to your questions about tattoos, piercings, aftercare, and prices.",
+      "ogImageAlt": "Branded graphic for Anker Tattoo & Piercing in Freiburg, showing the studio's anchor logo on a colorful background."
+    },
     "header": "Frequently asked questions",
     "subHeader1": "General",
     "questionGeneral1": "How can I book an appointment?",
@@ -217,10 +247,22 @@
     "answerSpecials1": "Yes, regularly! We love to surprise you with special promotions, walk-in days, discounts, or even charity projects. To make sure you don't miss anything, follow us on Instagram – we'll keep you up to date there. You can also find an overview of planned specials for the current year on our website under the 'Promotions' menu item. Whether spontaneous ideas or long-announced highlights – it's worth checking in regularly!"
   },
   "impressum": {
+    "metadata": {
+      "pathSlug": "impressum",
+      "title": "Legal Notice | Anker Tattoo & Piercing Studio Freiburg",
+      "description": "Legal notices and provider identification for Anker Tattoo & Piercing Studio in Freiburg.",
+      "robots": { "index": false, "follow": true }
+    },
     "header": "Legal Notice",
     "content": "Service provider / responsible within the meaning of §§ 6 TDG, 6 MDStV: Managing Director: Sabrina Mayer Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de VAT ID No.: DE288203238 Responsible for content within the meaning of §10 paragraph 3 MDStV: Managing Director Sabrina Mayer Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de VAT ID No.: DE288203238 Rights of use Copyright by Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de All rights reserved. The copyrights of this The website is entirely owned by Anker Tattoo. Images may only be used for editorial purposes. Use is free of charge if the source is cited and two free copies are sent to Anker Tattoo in Freiburg. Graphic modifications – except for isolating the main image – are not permitted. The web pages and documents provided here may be used for informational purposes only. These pages and documents may not be used commercially. Every copy (including excerpts) must contain this copyright notice. Disclaimer: Despite careful control of the content, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content. Anker Tattoo endeavors to ensure that its website is always up-to-date, correct, and complete. However, the occurrence of errors cannot be completely ruled out. Anker Tattoo assumes no liability for the timeliness, correctness, or completeness of the information provided on its website, unless the errors were made intentionally or through gross negligence. This applies to any material or immaterial damage. Third parties caused by the use of this website."
   },
   "datenschutz": {
+    "metadata": {
+      "pathSlug": "privacy-policy",
+      "title": "Privacy Policy | Anker Tattoo & Piercing Studio Freiburg",
+      "description": "Information on data protection and the processing of personal data at Anker Tattoo & Piercing Studio Freiburg.",
+      "robots": { "index": false, "follow": true }
+    },
     "header": "Data Protection",
     "content": "Note on how we handle your data -- We take the protection of your personal data very seriously and strictly adhere to the rules of data protection laws. Personal data is only collected on this website to the extent technically necessary. Under no circumstances will the collected data be sold or passed on to third parties for other reasons. The following declaration gives you an overview of how we ensure this protection and what type of data is collected for what purpose. Data processing on this website This website automatically collects and saves log file information that your browser transmits. This is: browser type and version, operating system used, referrer URL (the previously visited page), host name of the accessing computer (IP address) and the date and time of the server request. We cannot assign this data to specific people. This data is not merged with other data sources, and the data is deleted after statistical analysis. --Cookies-- Our site does not use cookies that could provide conclusions about the user behavior of the visitor. --Contact form-- If you would like to use the contact form offered on the website, we need a valid email address from you as well as information that allows us to verify that you are the owner of the specified email address. We naturally collect and store information that you enter on our site or send to us in any other way. This applies, for example, to entries in the contact form, title, name, email addresses and additional information that you enter in the corresponding fields. This information is provided voluntarily and is not checked in any way; the use of pseudonyms is possible. Email data is also collected and stored when you send us emails. No further information is collected. You can revoke your consent to the storage of the data, the email address and their use for the purpose of contacting you at any time. Right to information - You have the right at any time to information about the data stored about you, its origin and recipient as well as the purpose of storage. However, we do not know any more than you do. However, we are happy to share this little knowledge with you again within the framework of the statutory right to information. Further information - If you have any further questions about how your data is handled, simply send an e-mail to our address - you can find it in the legal notice. Google Analytics This website uses Google Analytics, a web analysis service provided by Google Inc. ('Google'). Google Analytics uses so-called 'cookies', text files that are stored on your computer and that enable an analysis of your use of the website. The information generated by the cookie about your use of the website is usually transferred to a Google server in the USA and stored there. However, if IP anonymization is activated on this website, your IP address will be shortened beforehand by Google within member states of the European Union or in other contracting states to the Agreement on the European Economic Area. Only in exceptional cases will the full IP address be transmitted to a Google server in the USA and shortened there. On behalf of the operator of this website, Google will use this information to evaluate your use of the website, to compile reports on website activity and to provide the website operator with other services relating to website activity and internet usage. The IP address transmitted by your browser as part of Google Analytics will not be merged with other data held by Google. You can prevent cookies from being saved by setting your browser software accordingly; however, we point out that in this case you may not be able to use all the functions of this website to their full extent. You can also prevent Google from collecting the data generated by the cookie and relating to your use of the website (including your IP address) and from processing this data by Google by downloading and installing the browser plug-in available under the following link: http://tools.google.com/dlpage/gaoptout?hl=de . Source: Google Analytics Terms and Conditions"
   },
@@ -358,5 +400,46 @@
       }
     ],
     "note": "For colored titanium jewelry (Gold, Rosé, Black), a 5 € surcharge will be applied."
+  },
+  "aktionen": {
+    "metadata": {
+      "pathSlug": "promotions",
+      "title": "Tattoo & Piercing Promotions in Freiburg | Anker Tattoo Studio",
+      "description": "Discover current promotions, special flash offers, and wanna-do tattoos at the Anker Studio in Freiburg. Get art at a fair price.",
+      "keywords": "Tattoo promotions Freiburg, flash tattoo deals, wanna-do tattoo, piercing discount, tattoo voucher",
+      "ogTitle": "Current Promotions & Deals at Anker Tattoo",
+      "ogDescription": "Don't miss any of our flash deals or special tattoo promotions in Freiburg.",
+      "ogImageAlt": "Branded graphic for Anker Tattoo & Piercing in Freiburg, showing the studio's anchor logo on a colorful background."
+    }
+  },
+  "tattoo": {
+    "metadata": {
+      "pathSlug": "tattoo",
+      "title": "Tattoo Studio Freiburg | Custom & Professional Tattoos | Anker",
+      "description": "Your tattoo studio in Freiburg for custom art. We offer custom designs, cover-ups, and flash tattoos from experienced artists. Let's bring your idea to life.",
+      "keywords": "Tattoo Studio Freiburg, Tattoo Artist Freiburg, Custom Tattoos, Cover-up Tattoo Freiburg, Flash Tattoo",
+      "ogTitle": "Professional Tattoos at Anker in Freiburg",
+      "ogDescription": "Discover custom designs, cover-ups, and flash tattoos from our talented artists.",
+      "ogImageAlt": "Branded graphic for Anker Tattoo & Piercing in Freiburg, showing the studio's anchor logo on a colorful background."
+    }
+  },
+  "piercing": {
+    "metadata": {
+      "pathSlug": "piercing",
+      "title": "Piercing Studio Freiburg | Professional & Hygienic Piercings | Anker",
+      "description": "Your professional piercing studio in Freiburg. We offer a wide range of body piercings, from earlobes to dermal anchors, under the strictest hygiene standards.",
+      "keywords": "Piercing Freiburg, Piercing Studio Freiburg, Body Piercing, ear piercing Freiburg, navel piercing, nose piercing, hygienic piercing",
+      "ogTitle": "Professional Piercings at Anker in Freiburg",
+      "ogDescription": "Discover our wide range of body piercings – safe, clean, and professional.",
+      "ogImageAlt": "Branded graphic for Anker Tattoo & Piercing in Freiburg, showing the studio's anchor logo on a colorful background."
+    }
+  },
+  "artistPortfolio": {
+    "piercerType": "Piercer",
+    "tattooistType": "Tattooist",
+    "title": "{artistName}'s Portfolio | {artistType} at Anker Freiburg",
+    "description": "Discover the work of {artistName}, professional {artistType} at Anker Tattoo & Piercing Studio in Freiburg. View the gallery and book your appointment.",
+    "ogTitle": "{artistName}'s Portfolio at Anker Tattoo",
+    "ogDescription": "A selection of works by {artistName}, {artistType} in Freiburg."
   }
 }

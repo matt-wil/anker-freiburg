@@ -3,11 +3,40 @@ import { getArtistAssets } from "@/lib/cloudinary";
 import { getArtistByName } from "@/lib/queries/artists";
 import type { ParamsProps } from "@/types";
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Professional Body Piercing Portfolio",
+type Props = {
+  params: { artistName: string; locale: string };
 };
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { artistName, locale } = await params;
+  const upperedName = artistName.charAt(0).toUpperCase() + artistName.slice(1);
+  const t = await getTranslations({ locale, namespace: "artistPortfolio" });
+
+  const { portfolioImages } = await getArtistAssets("Piercing", upperedName);
+  const firstImage = portfolioImages[0]?.secure_url;
+
+  return createPageMetadata({
+    title: t("title", {
+      artistName: upperedName,
+      artistType: t("piercerType"),
+    }),
+    description: t("description", {
+      artistName: upperedName,
+      artistType: t("piercerType"),
+    }),
+    ogTitle: t("ogTitle", { artistName: upperedName }),
+    ogDescription: t("ogDescription", {
+      artistName: upperedName,
+      artistType: t("piercerType"),
+    }),
+    ogImage: firstImage,
+    path: `/piercing/${artistName}`,
+    locale,
+  });
+}
 const page = async ({ params }: { params: Promise<ParamsProps> }) => {
   const { artistName, locale } = await params;
   const upperedName = artistName.charAt(0).toUpperCase() + artistName.slice(1);

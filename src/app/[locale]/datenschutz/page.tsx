@@ -1,9 +1,30 @@
 import DatenschutzComponent from "@/components/DatenschutzComponent";
-import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Datenschutz",
+type Props = {
+  params: { locale: string };
 };
+
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const { locale } = await props.params;
+  const t = await getTranslations({
+    locale,
+    namespace: "datenschutz.metadata",
+  });
+
+  const translatedPath = t("pathSlug");
+
+  return createPageMetadata({
+    title: t("title"),
+    description: t("description"),
+    path: `/${translatedPath}`,
+    locale,
+    robots: t.raw("robots"),
+  });
+}
+
 const page = () => {
   return (
     <>

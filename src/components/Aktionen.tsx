@@ -1,11 +1,11 @@
-import { getAktionen } from "@/lib/cloudinary";
 import ImageCard from "@/components/ImageCard";
-import type { AktionenResponse } from "@/types";
+import type { CloudinaryImage } from "@/types";
 
-const Aktionen = async (): Promise<React.JSX.Element> => {
-  const { resources }: AktionenResponse = await getAktionen("Aktionen");
-  console.log(resources);
-
+const Aktionen = ({
+  resources,
+}: {
+  resources: CloudinaryImage[];
+}): React.JSX.Element => {
   return (
     <section className="flex flex-col sm:flex-row justify-center items-center gap-4">
       {resources.map((r) => (

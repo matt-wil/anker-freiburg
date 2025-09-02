@@ -1,24 +1,35 @@
-import type { Metadata } from 'next'
-import { useTranslations } from 'next-intl'
-import Aktionen from '@/components/Aktionen'
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { createPageMetadata } from "@/lib/metadata";
+import { getAktionen } from "@/lib/cloudinary";
+import type { AktionenResponse } from "@/types";
+import AktionenClient from "@/components/AktionenClient";
 
-export const metadata: Metadata = {
-    title: 'Aktionen',
+type Props = {
+  params: { locale: string };
+};
+
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "aktionen.metadata" });
+
+  const translatedPath = t("pathSlug");
+
+  return createPageMetadata({
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords").split(", "),
+    ogTitle: t("ogTitle"),
+    ogDescription: t("ogDescription"),
+    ogImageAlt: t("ogImageAlt"),
+    path: `/${translatedPath}`,
+    locale,
+  });
 }
 
+const Page = async (): Promise<React.JSX.Element> => {
+  const { resources }: AktionenResponse = await getAktionen("Aktionen");
 
-const Page = (): React.JSX.Element => {
-  const t = useTranslations("nav")
-  
-
-  return (
-      <section>
-        <div className='flex justify-center'>
-          <h1 className='page-header'>{t("promo")}</h1>
-        </div>
-        <Aktionen />
-      </section>
-  )
-}
-
-export default Page
+  return <AktionenClient resources={resources} />;
+};
+export default Page;

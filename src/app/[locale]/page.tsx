@@ -5,11 +5,34 @@ import LandingPageMobile from "@/components/LandingPageMobile";
 import Image from "next/image";
 import { getParallaxImages } from "@/lib/cloudinary";
 import Services from "@/components/Services";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
+
+type Props = {
+  params: { locale: string };
+};
 
 const font = Playfair_Display({
   weight: "900",
   subsets: ["latin"],
 });
+
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const { locale } = await props.params;
+  const t = await getTranslations("homepage.metadata");
+
+  return createPageMetadata({
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords").split(", "),
+    ogTitle: t("ogTitle"),
+    ogDescription: t("ogDescription"),
+    ogImageAlt: t("ogImageAlt"),
+    path: "/",
+    locale,
+  });
+}
 
 export default async function Page() {
   const images = await getParallaxImages("Parallax");

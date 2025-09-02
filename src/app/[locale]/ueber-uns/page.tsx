@@ -1,9 +1,30 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-export const metadata: Metadata = {
-  title: "Über uns",
+import { getTranslations } from "next-intl/server";
+import { createPageMetadata } from "@/lib/metadata";
+
+type Props = {
+  params: { locale: string };
 };
+
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "about.metadata" });
+
+  const translatedPath = t("pathSlug");
+
+  return createPageMetadata({
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords").split(", "),
+    ogTitle: t("ogTitle"),
+    ogDescription: t("ogDescription"),
+    ogImageAlt: t("ogImageAlt"),
+    path: `/${translatedPath}`,
+    locale,
+  });
+}
 
 const Page = (): React.JSX.Element => {
   const t = useTranslations("about");
@@ -21,7 +42,7 @@ const Page = (): React.JSX.Element => {
         <h1 className="about-header text-6xl sm:text-9xl font-bold mb-4">
           {t("header")}
         </h1>
-        <h2 className="text-3xl mb-4">{t("subHeader")}</h2>
+        <h2 className="text-center text-3xl mb-4">{t("subHeader")}</h2>
         <div className="md:max-w-[75dvw] w-auto">
           <article className="m-6 max-w-150 text-center">{t("text1")}</article>
           <article className="m-6 max-w-150 text-center">{t("text2")}</article>

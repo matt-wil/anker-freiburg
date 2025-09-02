@@ -3,10 +3,40 @@ import { getArtistAssets } from "@/lib/cloudinary";
 import type { ParamsProps } from "@/types";
 import { getArtistByName } from "@/lib/queries/artists";
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Tattoo Artist Portfolio",
+type Props = {
+  params: { artistName: string; locale: string };
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { artistName, locale } = await params;
+  const upperedName = artistName.charAt(0).toUpperCase() + artistName.slice(1);
+  const t = await getTranslations({ locale, namespace: "artistPortfolio" });
+
+  const { portfolioImages } = await getArtistAssets("Tattoo", upperedName);
+  const firstImage = portfolioImages[0]?.secure_url;
+
+  return createPageMetadata({
+    title: t("title", {
+      artistName: upperedName,
+      artistType: t("tattooistType"),
+    }),
+    description: t("description", {
+      artistName: upperedName,
+      artistType: t("tattooistType"),
+    }),
+    ogTitle: t("ogTitle", { artistName: upperedName }),
+    ogDescription: t("ogDescription", {
+      artistName: upperedName,
+      artistType: t("tattooistType"),
+    }),
+    ogImage: firstImage,
+    path: `/tattoo/${artistName}`,
+    locale,
+  });
+}
 
 const page = async ({ params }: { params: Promise<ParamsProps> }) => {
   const { artistName, locale } = await params;
