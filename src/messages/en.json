@@ -441,5 +441,47 @@
     "description": "Discover the work of {artistName}, professional {artistType} at Anker Tattoo & Piercing Studio in Freiburg. View the gallery and book your appointment.",
     "ogTitle": "{artistName}'s Portfolio at Anker Tattoo",
     "ogDescription": "A selection of works by {artistName}, {artistType} in Freiburg."
+  },
+  "u18Info": {
+    "title": "Information for Minors – Piercing & Tattoo",
+    "intro": "Please take the following information seriously: Piercings and tattoos are procedures that affect the body. We carry a great responsibility, and any attempt at deception can have serious consequences for both you and us.",
+    "piercing": {
+      "title": "Piercing",
+      "rules": [
+        {
+          "age": "Earlobes from 6 years old",
+          "description": "Only if the child can clearly express their own wishes."
+        },
+        {
+          "age": "12–15 years old",
+          "description": "A parent must be present. Please bring: IDs for the legal guardian and the child."
+        },
+        {
+          "age": "From 16 years old",
+          "description": "A parent no longer needs to be present.",
+          "requirements": {
+            "title": "Required:",
+            "items": [
+              "Written declaration of consent (PDF download here)",
+              "IDs of the parent and the minor",
+              "Last names must match. If not, please bring a birth certificate."
+            ]
+          }
+        }
+      ]
+    },
+    "tattoo": {
+      "title": "Tattoo",
+      "ageRule": "Possible from 16 years old – but only after a case-by-case review.",
+      "conditions": {
+        "title": "Conditions:",
+        "items": [
+          "The design must be small, discreet, and not in a visible area (e.g., not on the forearm or neck).",
+          "A parent must be personally present when the appointment is made.",
+          "We decide on a case-by-case basis whether the design is morally and ethically acceptable."
+        ]
+      }
+    },
+    "warning": "Please note: We do not tolerate any tricks or false information. Anyone who attempts to deceive us risks immediate termination of the procedure and potential legal action."
   }
 }

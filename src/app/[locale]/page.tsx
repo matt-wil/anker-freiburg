@@ -8,6 +8,7 @@ import Services from "@/components/Services";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
+import U18Info from "@/components/U18Info";
 
 type Props = {
   params: { locale: string };
@@ -65,15 +66,18 @@ export default async function Page() {
       <section className="flex lg:hidden relative flex-col justify-between h-[100dvh] text-white overflow-hidden">
         {/* Top Content Area */}
         <div className="flex flex-col items-center justify-center flex-grow pb-48 z-10 text-center">
-          {/* Logo and App Name */}
+          {/* Logo and Name */}
           <div className="flex item-center mb-4">
-            <Image
-              src="/whiteLogo.svg"
-              alt="Anker Logo"
-              width={80}
-              height={80}
-              className="mr-2"
-            />
+            <div className="mt-10 w-30 h-30">
+              <Image
+                src="/whiteLogo.svg"
+                alt="Anker Logo"
+                width={30}
+                height={30}
+                className="mr-2 h-auto w-auto"
+                priority={true}
+              />
+            </div>
           </div>
           <span className={`${font.className} text-5xl font-semibold m-10`}>
             Anker
@@ -98,9 +102,10 @@ export default async function Page() {
       </section>
 
       {/* Services */}
-      <section>
-        <Services />
-      </section>
+      <Services />
+
+      {/* Under 18 Important Info */}
+      <U18Info />
 
       {/* Desktop Parallax */}
       <section className="hidden lg:block">

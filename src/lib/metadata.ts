@@ -69,7 +69,6 @@ export function createPageMetadata({
     },
 
     // Site-wide boilerplate
-    manifest: "/site.webmanifest",
     robots: robots,
     icons: {
       icon: "/favicon-96x96.png",

@@ -1,0 +1,7 @@
+# Allow all crawlers (like Googlebot) to access the entire site.
+User-agent: *
+Allow: /
+
+# Tell crawlers where to find your sitemap.
+# Next.js automatically generates this for you.
+Sitemap: https://www.anker-tattoo.de/sitemap.xml

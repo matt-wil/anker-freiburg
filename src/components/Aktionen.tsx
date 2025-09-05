@@ -7,7 +7,7 @@ const Aktionen = ({
   resources: CloudinaryImage[];
 }): React.JSX.Element => {
   return (
-    <section className="flex flex-col sm:flex-row justify-center items-center gap-4">
+    <section className="flex flex-col sm:flex-row justify-center items-center gap-4 m-4">
       {resources.map((r) => (
         <div key={r.public_id}>
           <ImageCard

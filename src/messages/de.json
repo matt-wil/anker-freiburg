@@ -441,5 +441,47 @@
     "description": "Entdecke die Arbeiten von {artistName}, professionelle*r {artistType} im Anker Tattoo & Piercing Studio in Freiburg. Sieh dir die Galerie an und buche deinen Termin.",
     "ogTitle": "Portfolio von {artistName} bei Anker Tattoo",
     "ogDescription": "Eine Auswahl der Arbeiten von {artistName}, {artistType} in Freiburg."
+  },
+  "u18Info": {
+    "title": "Infos für Minderjährige – Piercing & Tattoo",
+    "intro": "Bitte nehmt euch die folgenden Hinweise ernst: Piercings und Tattoos sind Eingriffe in den Körper. Wir tragen eine große Verantwortung, und jeder Täuschungsversuch kann für euch und für uns schwerwiegende Konsequenzen haben.",
+    "piercing": {
+      "title": "Piercing",
+      "rules": [
+        {
+          "age": "Ohrlöcher ab 6 Jahren",
+          "description": "Nur, wenn das Kind seinen eigenen Willen klar äußern kann."
+        },
+        {
+          "age": "12–15 Jahre",
+          "description": "Eltern müssen dabei sein. Bitte mitbringen: Ausweise von Erziehungsberechtigten + Kind."
+        },
+        {
+          "age": "Ab 16 Jahren",
+          "description": "Eltern müssen nicht mehr dabei sein.",
+          "requirements": {
+            "title": "Erforderlich:",
+            "items": [
+              "Schriftliche Einverständniserklärung (PDF-Download hier)",
+              "Ausweise von Eltern und Kind",
+              "Nachnamen müssen übereinstimmen. Falls nicht, bitte Geburtsurkunde mitbringen."
+            ]
+          }
+        }
+      ]
+    },
+    "tattoo": {
+      "title": "Tattoo",
+      "ageRule": "Ab 16 Jahren möglich – aber nur nach individueller Prüfung.",
+      "conditions": {
+        "title": "Bedingungen:",
+        "items": [
+          "Motiv muss klein, unauffällig und nicht sichtbar (z. B. nicht am Unterarm oder Hals) sein.",
+          "Eltern müssen bei der Terminvereinbarung persönlich anwesend sein.",
+          "Wir entscheiden individuell, ob das Motiv moralisch und ethisch vertretbar ist."
+        ]
+      }
+    },
+    "warning": "Bitte beachtet: Wir dulden keinerlei Tricks oder falsche Angaben. Wer uns täuscht, riskiert den sofortigen Abbruch und rechtliche Schritte."
   }
 }
