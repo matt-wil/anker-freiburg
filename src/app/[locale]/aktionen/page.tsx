@@ -27,7 +27,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   });
 }
 
-const Page = async (): Promise<React.JSX.Element> => {
+const Page = async () => {
   const { resources }: AktionenResponse = await getAktionen("Aktionen");
 
   return <AktionenClient resources={resources} />;
