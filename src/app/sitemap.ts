@@ -29,7 +29,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const artists = await getAlldata();
   const artistUrls = artists.flatMap((artist) => {
-    const artistTypePath = artist.type.toLowerCase();
+    const artistTypePath = artist.category.toLowerCase();
     const artistSlug = artist.name.toLowerCase();
 
     return [
