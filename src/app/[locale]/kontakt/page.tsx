@@ -25,11 +25,11 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   });
 }
 
-const Page = () => {
+const page = () => {
   return (
     <>
       <Contact />
     </>
   );
 };
-export default Page;
+export default page;
