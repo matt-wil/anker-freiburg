@@ -1,16 +1,35 @@
-import Piercers from '@/components/Piercers'
-import type { Metadata } from 'next'
+import Piercers from "@/components/Piercers";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-    title: 'Professional Body Piercers',
+type Props = {
+  params: { locale: string };
+};
+
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "piercing.metadata" });
+
+  const translatedPath = t("pathSlug");
+
+  return createPageMetadata({
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords").split(", "),
+    ogTitle: t("ogTitle"),
+    ogDescription: t("ogDescription"),
+    ogImageAlt: t("ogImageAlt"),
+    path: `/${translatedPath}`,
+    locale,
+  });
 }
-
 const page = (): React.JSX.Element => {
   return (
     <>
-        <Piercers />
+      <Piercers />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

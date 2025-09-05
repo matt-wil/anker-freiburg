@@ -1,15 +1,113 @@
 {
-  "hero": {
+  "artistCard": {
+    "xp": "Jahre Erfahrung"
+  },
+  "features": {
+    "items": [
+      {
+        "icon": "shieldCheckmark",
+        "title": "Gesundheit & Sicherheit",
+        "description": "Unsere Hygienepläne sind vom Gesundheitsamt geprüft und erfüllen höchste gesetzliche Standards, EU-konforme Tattoofarben, sterile Ausrüstung, zertifizierte Prozesse und eine Examinierte Krankenschwester vor Ort.",
+        "gradient": "from-cyan-500 to-pink-500"
+      },
+      {
+        "icon": "cuckooClock",
+        "title": "Flexible Zeiten",
+        "description": "Geöffnet an 5 Tagen die Woche mit der Möglichkeit von Terminen nach Vereinbarung.",
+        "gradient": "from-cyan-500 to-pink-500"
+      },
+      {
+        "icon": "walkingIn",
+        "title": "Walk-ins willkommen",
+        "description": "Für Piercings benötigst du keinen Termin, sondern nur ein wenig Geduld, da es zu kurzen Wartezeiten kommen kann.",
+        "gradient": "from-cyan-500 to-pink-500"
+      },
+      {
+        "icon": "receiveMoney",
+        "title": "Tattoo Termine",
+        "description": "Da wir für Tattoo-Termine eine Anzahlung verlangen, solltest du vorbeikommen, damit wir auch persönlich über dein Design sprechen können.",
+        "gradient": "from-cyan-500 to-pink-500"
+      }
+    ]
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "text": "Von aufwändigen individuellen Tattoos bis hin zu professionellen Piercings bieten wir erstklassige Body-Art-Dienstleistungen mit kompromissloser Qualität und Sicherheit.",
+    "items": [
+      {
+        "icon": "paintBrush",
+        "title": "Individuelle Tattoos",
+        "description": "Originelle Kunstwerke, die von unseren talentierten Künstlern speziell für dich entworfen werden.",
+        "features": [
+          "Von deiner Idee zur Skizze",
+          "Kreativer Austausch mit deinem Artist",
+          "Ein Stück Kunst, das nur dir gehört"
+        ],
+        "price": "150€ pro Stunde",
+        "gradient": "from-blue-500 to-purple-500"
+      },
+      {
+        "icon": "piercedBody",
+        "title": "Body Piercings",
+        "description": "Professionelle Piercing-Dienstleistungen mit hochwertigem Schmuck.",
+        "features": [
+          "Strenge Hygienestandards",
+          "Hochwertiger Schmuck",
+          "Ehrliche Beratung",
+          "Begleitung in der Nachsorge"
+        ],
+        "price": "ab 40€",
+        "gradient": "from-blue-500 to-purple-500"
+      },
+      {
+        "icon": "eraser",
+        "title": "Cover-ups",
+        "description": "Verwandle dein altes Tattoo in ein neues Kunstwerk.",
+        "features": [
+          "Kreative Lösungen",
+          "Individuelle Neugestaltung",
+          "Ehrliche Beratung"
+        ],
+        "price": "nach Vereinbarung",
+        "gradient": "from-blue-500 to-purple-500"
+      },
+      {
+        "icon": "flash",
+        "title": "Flash-Tattoos",
+        "description": "Wähle direkt ein Wanna-Do von unseren Künstlern",
+        "features": [
+          "Kunst zum fairen Preis",
+          "Von unseren Artists gezeichnet",
+          "Design wird nur einmal verwendet"
+        ],
+        "price": "Immer Spezialpreise",
+        "gradient": "from-blue-500 to-purple-500"
+      }
+    ]
+  },
+  "homepage": {
+    "metadata": {
+      "title": "Anker Tattoo & Piercing Studio Freiburg | Tattoos & Piercings",
+      "description": "Dein neues Tattoo oder Piercing in Freiburg? Bei uns bist du goldrichtig! Professionelle Beratung - Top-Künstler - Kurze Wartezeiten",
+      "keywords": "Tattoo Freiburg, Piercing Freiburg, Tattoostudio Freiburg, Anker Tattoo, Tätowierer Freiburg, Cover-up Tattoo, Fineline Tattoo",
+      "ogTitle": "Anker Tattoo & Piercing Studio Freiburg",
+      "ogDescription": "Hochwertige Tattoos und professionelle Piercings im Herzen von Freiburg.",
+      "ogImageAlt": "Markengrafik für Anker Tattoo & Piercing in Freiburg, die das Anker-Logo des Studios auf einem bunten Hintergrund zeigt."
+    },
     "intro": "Ein Ort, an dem Veränderung sichtbar wird – präzise gestochen, respektvoll begleitet und mit Gespür für das, was unter der Oberfläche liegt. Ob Tattoo oder Piercing – bei uns findest du Handwerk mit Haltung, kurze Wartezeiten, wechselnde Artists und einen familiären Umgang auf Augenhöhe. In stilvoller, klarer Atmosphäre begleiten wir dich bei einem Schritt, der mehr sein kann als nur Körperschmuck: ein Ausdruck, ein Übergang, ein Zeichen.",
     "introEnd": "Schön, dass du da bist.",
     "button": "Kontakt"
   },
-  "scrollPage": {
-    "needle1": "Deine Haut",
-    "needle2": "Deine Geschichte",
-    "needle3": "Unser Handwerk"
-  },
   "about": {
+    "metadata": {
+      "pathSlug": "ueber-uns",
+      "title": "Über Uns | Das Team vom Anker Tattoo Studio Freiburg",
+      "description": "Lerne die Künstler und die Geschichte hinter dem Anker Tattoo & Piercing Studio in Freiburg kennen. Erfahre mehr über unsere Leidenschaft für Tattookunst und unsere Hygienestandards.",
+      "keywords": "Anker Tattoo Team, Tattoostudio Geschichte Freiburg, Über Anker Tattoo, Tattookünstler Freiburg",
+      "ogTitle": "Lerne das Team von Anker Tattoo in Freiburg kennen",
+      "ogDescription": "Die Künstler, die Geschichte und die Leidenschaft hinter Freiburgs bestem Tattoostudio.",
+      "ogImageAlt": "Markengrafik für Anker Tattoo & Piercing in Freiburg, die das Anker-Logo des Studios auf einem bunten Hintergrund zeigt."
+    },
     "header": "Über uns",
     "subHeader": "Veränderung zeigt sich manchmal dort, wo Worte nicht reichen – auf der Haut.",
     "text1": "Seit Dezember 2011 ist Anker ein fester Bestandteil im Herzen Freiburgs – direkt beim Martinstor gelegen, nur wenige Schritte von der S-Bahn-Haltestelle Holzmarkt entfernt und in fußläufiger Nähe zum Hauptbahnhof. Auch für alle, die mit dem Auto anreisen, gibt es gleich um die Ecke zwei Parkhäuser.",
@@ -32,6 +130,15 @@
     "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇬🇧 English} other {Unknown}}"
   },
   "contact": {
+    "metadata": {
+      "pathSlug": "kontakt",
+      "title": "Kontakt | Anker Tattoo Freiburg | Termin buchen",
+      "description": "Kontaktiere das Anker Tattoo & Piercing Studio in Freiburg. Buche deinen Termin, stelle eine Frage oder besuche uns. Hier findest du unsere Adresse, Öffnungszeiten und Telefonnummer.",
+      "keywords": "Kontakt Tattoo Freiburg, Tattoo Termin buchen, Piercing Anfrage, Anker Tattoo Adresse, Öffnungszeiten Tattoo Studio",
+      "ogTitle": "Kontakt aufnehmen mit Anker Tattoo Freiburg",
+      "ogDescription": "Bereit für dein nächstes Tattoo oder Piercing? Hier findest du alle Kontaktinfos.",
+      "ogImageAlt": "Markengrafik für Anker Tattoo & Piercing in Freiburg, die das Anker-Logo des Studios auf einem bunten Hintergrund zeigt."
+    },
     "form": {
       "header": "Kontaktiere uns",
       "name": "Name",
@@ -56,6 +163,15 @@
     "email": "E-Mail: "
   },
   "faq": {
+    "metadata": {
+      "pathSlug": "haeufige-gestellte-fragen",
+      "title": "FAQ | Häufig gestellte Fragen zu Tattoos & Piercings | Anker Freiburg",
+      "description": "Antworten auf deine Fragen: Wie alt muss ich sein? Wie viel kostet ein Tattoo? Was ist bei der Pflege zu beachten? Finde alle Infos in den FAQs des Anker Tattoo Studios.",
+      "keywords": "Tattoo FAQ, Piercing Fragen, Tattoo Schmerzen, Tattoo Kosten, Piercing Heilung, Anker Tattoo Freiburg",
+      "ogTitle": "Häufig gestellte Fragen | Anker Tattoo Freiburg",
+      "ogDescription": "Alle Antworten auf deine Fragen rund um Tattoos, Piercings, Pflege und Preise.",
+      "ogImageAlt": "Markengrafik für Anker Tattoo & Piercing in Freiburg, die das Anker-Logo des Studios auf einem bunten Hintergrund zeigt."
+    },
     "header": "Häufig gestellte Fragen",
     "subHeader1": "Allgemeines",
     "questionGeneral1": "Wie kann ich einen Termin buchen?",
@@ -131,10 +247,22 @@
     "answerSpecials1": "Ja, regelmäßig! Wir lieben es, euch mit besonderen Aktionen, Walk-in-Days, Rabattaktionen oder auch Charity-Projekten zu überraschen. Um nichts zu verpassen, folge uns am besten auf Instagram – dort halten wir dich immer aktuell auf dem Laufenden. Zudem findest du auf unserer Website unter dem Menüpunkt „Aktionen“ eine Übersicht der geplanten Specials für das laufende Jahr. Ob spontane Ideen oder lang angekündigte Highlights – bei uns lohnt es sich, regelmäßig reinzuschauen!"
   },
   "impressum": {
+    "metadata": {
+      "pathSlug": "impressum",
+      "title": "Impressum | Anker Tattoo & Piercing Studio Freiburg",
+      "description": "Rechtliche Hinweise und Anbieterkennzeichnung für das Anker Tattoo & Piercing Studio in Freiburg gemäß § 5 TMG.",
+      "robots": { "index": false, "follow": true }
+    },
     "header": "Impressum",
     "content": "Dienstanbieter / Verantwortlicher i.S.d. §§ 6 TDG, 6 MDStV: Geschäftsführerin: Sabrina Mayer Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de USt-IdNr.: DE288203238 Inhaltlich verantwortlich i.S.d. §10 Absatz 3 MDStV:Geschäftsführer Sabrina Mayer Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de USt-IdNr.: DE288203238 Nutzungsrechte Copyright by Anker Tattoo An der Mehlwaage 279098 Freiburg Tel. 0761-51462878 e-mail: anker-tattoo@gmx.de Alle Rechte vorbehalten. Die Urheberrechte dieser Web-Site liegen vollständig bei der Anker Tattoo.Bildmotive dürfen nur für redaktionelle Zwecke genutzt werden. Die Verwendung ist honorarfrei bei Quellenangabe und Übersendung von zwei kostenlosen Belegexemplaren an die Anker Tattoo im Freiburg. Grafische Veränderungen – außer zum Freistellen des Hauptmotivs – sind nicht gestattet.Die hier zur Verfügung gestellten Web-Seiten und Dokumente dürfen nur zu Informationszwecken verwendet werden.Diese Seiten und Dokumente dürfen nicht kommerziell verwertet werden.Jede Kopie (dies gilt auch für Auszüge) muss diesen Urheberrechtsnachweis enthalten.Haftungshinweis:Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.Die Anker Tattoo ist bemüht, ihr Webangebot stets aktuell und inhaltlich richtig sowie vollständig anzubieten. Dennoch ist das Auftreten von Fehlern nicht völlig auszuschließen. Die Anker Tattoo übernimmt keine Haftung für die Aktualität, die inhaltliche Richtigkeit sowie für die Vollständigkeit der in ihrem Webangebot eingestellten Informationen, es sei denn die Fehler wurden vorsätzlich oder grob fahrlässig aufgenommen. Dies bezieht sich auf eventuelle Schäden materieller oder ideeller Art Dritter, die durch die Nutzung dieses Webangebotes verursacht wurden."
   },
   "datenschutz": {
+    "metadata": {
+      "pathSlug": "datenschutz",
+      "title": "Datenschutz | Anker Tattoo & Piercing Studio Freiburg",
+      "description": "Informationen zum Datenschutz und zur Verarbeitung personenbezogener Daten im Anker Tattoo & Piercing Studio Freiburg.",
+      "robots": { "index": false, "follow": true }
+    },
     "header": "Datenschutz",
     "content": "Hinweis zum Umgang mit Ihren Daten -- Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und halten uns strikt an die Regeln der Datenschutzgesetze. Personenbezogene Daten werden auf dieser Webseite nur im technisch notwendigen Umfang erhoben. In keinem Fall werden die erhobenen Daten verkauft oder aus anderen Gründen an Dritte weitergegeben. Die nachfolgende Erklärung gibt Ihnen einen Überblick darüber, wie wir diesen Schutz gewährleisten und welche Art von Daten zu welchem Zweck erhoben werden. Datenverarbeitung auf dieser Internetseite Diese Website erhebt und speichert automatisch Logfiles-Informationen, die Ihr Browser übermittelt. Dies sind: Browsertyp und -version, verwendetes Betriebssystem, Referer-URL (die zuvor besuchte Seite), Hostname des zugreifenden Rechners (IP-Adresse) und Datum und Uhrzeit der Serveranfrage. Diese Daten sind für uns nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen, die Daten werden zudem nach einer statistischen Auswertung gelöscht. --Cookies-- Unsere Seite verwendet keine Cookies, die Rückschlüsse auf das Nutzerverhalten des Besuchers geben könnten. --Kontaktformular-- Wenn Sie das auf der Webseite angebotene Kontaktformular verwenden möchten, benötigen wir von Ihnen eine valide E-Mail-Adresse sowie Informationen, die uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind. Selbstverständlich erfassen und speichern wir solche Informationen, die Sie auf unserer Seite eingeben oder uns in sonstiger Weise übermitteln. Das betrifft etwa Eingaben in das Kontaktformular, Anrede, Namen, E-Mail-Adressen und zusätzliche Angaben, die Sie in die entsprechenden Felder eintragen. Diese Angaben geschehen freiwillig und werden in keiner Weise überprüft, die Verwendung von Pseudonymen ist möglich. E-Mail - Daten werden auch erfasst und gespeichert, wenn Sie E-Mails an uns senden. Weitere Informationen werden nicht erhoben. Ihre Einwilligung zur Speicherung der Daten, der E-Mail-Adresse sowie deren Nutzung zum Zwecke der Kontaktaufnahme mit Ihnen können Sie jederzeit widerrufen. Auskunftsrecht - Sie haben jederzeit das Recht auf Auskunft über die bezüglich Ihrer Person gespeicherten Daten, deren Herkunft und Empfänger sowie den Zweck der Speicherung. Wir wissen allerdings nicht mehr als Sie auch. Dieses wenige Wissen teilen wir im Rahmen der gesetzlichen Auskunftsansprüche allerdings gern nochmals mit Ihnen. Weitere Informationen - Wenn Sie weitere Fragen zur Behandlung Ihrer Daten haben, dann senden Sie einfach eine E-Mail an unsere Adresse – die finden Sie im Impressum. Google Analytics Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. („Google“). Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: http://tools.google.com/dlpage/gaoptout?hl=de . Quellenangabe: Google Analytics Bedingungen"
   },
@@ -272,5 +400,88 @@
       }
     ],
     "note": "Für gefärbten Titanschmuck (Gold, Rosé, Schwarz) werden 5 € Aufpreis berechnet."
+  },
+  "aktionen": {
+    "metadata": {
+      "pathSlug": "aktionen",
+      "title": "Tattoo & Piercing Aktionen in Freiburg | Anker Tattoo Studio",
+      "description": "Entdecke aktuelle Aktionen, spezielle Flash-Angebote und Wanna-Do Tattoos im Anker Studio Freiburg. Sichere dir Kunst zum fairen Preis.",
+      "keywords": "Tattoo Aktionen Freiburg, Flash Tattoo Angebote, Wanna-Do Tattoo, Piercing Rabatt, Tattoo Gutschein",
+      "ogTitle": "Aktuelle Aktionen & Angebote bei Anker Tattoo",
+      "ogDescription": "Verpasse keine unserer Flash-Angebote oder speziellen Tattoo-Aktionen in Freiburg.",
+      "ogImageAlt": "Markengrafik für Anker Tattoo & Piercing in Freiburg, die das Anker-Logo des Studios auf einem bunten Hintergrund zeigt."
+    }
+  },
+  "tattoo": {
+    "metadata": {
+      "pathSlug": "tattoo",
+      "title": "Tattoo Studio Freiburg | Individuelle & Professionelle Tattoos | Anker",
+      "description": "Dein Tattoostudio in Freiburg für individuelle Kunst. Wir bieten Custom Designs, Cover-ups und Flash-Tattoos von erfahrenen Künstlern. Lass uns deine Idee verwirklichen.",
+      "keywords": "Tattoo Studio Freiburg, Tätowierer Freiburg, Individuelle Tattoos, Custom Tattoo, Cover-up Tattoo Freiburg, Flash Tattoo",
+      "ogTitle": "Professionelle Tattoos bei Anker in Freiburg",
+      "ogDescription": "Entdecke Custom Designs, Cover-ups und Flash-Tattoos von unseren talentierten Künstlern.",
+      "ogImageAlt": "Markengrafik für Anker Tattoo & Piercing in Freiburg, die das Anker-Logo des Studios auf einem bunten Hintergrund zeigt."
+    }
+  },
+  "piercing": {
+    "metadata": {
+      "pathSlug": "piercing",
+      "title": "Piercing Studio Freiburg | Professionelle & Hygienische Piercings | Anker",
+      "description": "Dein professionelles Piercing Studio in Freiburg. Wir bieten eine große Auswahl an Body Piercings, von Ohrlöchern bis Dermal Anchors, unter strengsten Hygienestandards.",
+      "keywords": "Piercing Freiburg, Piercing Studio Freiburg, Body Piercing, Ohrloch stechen Freiburg, Bauchnabelpiercing, Nasenpiercing, hygienisches Piercing",
+      "ogTitle": "Professionelle Piercings bei Anker in Freiburg",
+      "ogDescription": "Entdecke unsere große Auswahl an Body Piercings – sicher, sauber und professionell.",
+      "ogImageAlt": "Markengrafik für Anker Tattoo & Piercing in Freiburg, die das Anker-Logo des Studios auf einem bunten Hintergrund zeigt."
+    }
+  },
+  "artistPortfolio": {
+    "piercerType": "Piercer*in",
+    "tattooistType": "Tätowierer*in",
+    "title": "Portfolio von {artistName} | {artistType} bei Anker Freiburg",
+    "description": "Entdecke die Arbeiten von {artistName}, professionelle*r {artistType} im Anker Tattoo & Piercing Studio in Freiburg. Sieh dir die Galerie an und buche deinen Termin.",
+    "ogTitle": "Portfolio von {artistName} bei Anker Tattoo",
+    "ogDescription": "Eine Auswahl der Arbeiten von {artistName}, {artistType} in Freiburg."
+  },
+  "u18Info": {
+    "title": "Infos für Minderjährige – Piercing & Tattoo",
+    "intro": "Bitte nehmt euch die folgenden Hinweise ernst: Piercings und Tattoos sind Eingriffe in den Körper. Wir tragen eine große Verantwortung, und jeder Täuschungsversuch kann für euch und für uns schwerwiegende Konsequenzen haben.",
+    "piercing": {
+      "title": "Piercing",
+      "rules": [
+        {
+          "age": "Ohrlöcher ab 6 Jahren",
+          "description": "Nur, wenn das Kind seinen eigenen Willen klar äußern kann."
+        },
+        {
+          "age": "12–15 Jahre",
+          "description": "Eltern müssen dabei sein. Bitte mitbringen: Ausweise von Erziehungsberechtigten + Kind."
+        },
+        {
+          "age": "Ab 16 Jahren",
+          "description": "Eltern müssen nicht mehr dabei sein.",
+          "requirements": {
+            "title": "Erforderlich:",
+            "items": [
+              "Schriftliche Einverständniserklärung (PDF-Download hier)",
+              "Ausweise von Eltern und Kind",
+              "Nachnamen müssen übereinstimmen. Falls nicht, bitte Geburtsurkunde mitbringen."
+            ]
+          }
+        }
+      ]
+    },
+    "tattoo": {
+      "title": "Tattoo",
+      "ageRule": "Ab 16 Jahren möglich – aber nur nach individueller Prüfung.",
+      "conditions": {
+        "title": "Bedingungen:",
+        "items": [
+          "Motiv muss klein, unauffällig und nicht sichtbar (z. B. nicht am Unterarm oder Hals) sein.",
+          "Eltern müssen bei der Terminvereinbarung persönlich anwesend sein.",
+          "Wir entscheiden individuell, ob das Motiv moralisch und ethisch vertretbar ist."
+        ]
+      }
+    },
+    "warning": "Bitte beachtet: Wir dulden keinerlei Tricks oder falsche Angaben. Wer uns täuscht, riskiert den sofortigen Abbruch und rechtliche Schritte."
   }
 }
