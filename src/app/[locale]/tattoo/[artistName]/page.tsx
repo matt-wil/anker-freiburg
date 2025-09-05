@@ -6,11 +6,13 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { createPageMetadata } from "@/lib/metadata";
 
-type Props = {
-  params: Awaited<{ artistName: string; locale: string }>;
-};
+type RouteParams = { artistName: string; locale: string };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+type SegmentProps = { params: Promise<RouteParams> };
+
+export async function generateMetadata({
+  params,
+}: SegmentProps): Promise<Metadata> {
   const { artistName, locale } = await params;
   const upperedName = artistName.charAt(0).toUpperCase() + artistName.slice(1);
   const t = await getTranslations({ locale, namespace: "artistPortfolio" });

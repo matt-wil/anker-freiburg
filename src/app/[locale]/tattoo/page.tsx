@@ -3,12 +3,14 @@ import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
 
-type Props = {
-  params: Awaited<{ locale: string }>;
-};
+type RouteParams = { locale: string };
 
-export async function generateMetadata(props: Props): Promise<Metadata> {
-  const { locale } = await props.params;
+type SegmentProps = { params: Promise<RouteParams> };
+
+export async function generateMetadata({
+  params,
+}: SegmentProps): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "tattoo.metadata" });
 
   const translatedPath = t("pathSlug");

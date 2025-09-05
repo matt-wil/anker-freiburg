@@ -4,12 +4,16 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { createPageMetadata } from "@/lib/metadata";
 
-type Props = {
-  params: Awaited<{ locale: string }>;
+type RouteParams = { locale: string };
+
+type SegmentProps = {
+  params: Promise<RouteParams>;
 };
 
-export async function generateMetadata(props: Props): Promise<Metadata> {
-  const { locale } = await props.params;
+export async function generateMetadata({
+  params,
+}: SegmentProps): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "about.metadata" });
 
   const translatedPath = t("pathSlug");

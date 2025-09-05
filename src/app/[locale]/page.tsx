@@ -10,17 +10,20 @@ import { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
 import U18Info from "@/components/U18Info";
 
-type Props = {
-  params: Awaited<{ locale: string }>;
-};
+type RouteParams = { locale: string };
 
+type SegmentProps = {
+  params: Promise<RouteParams>;
+};
 const font = Playfair_Display({
   weight: "900",
   subsets: ["latin"],
 });
 
-export async function generateMetadata(props: Props): Promise<Metadata> {
-  const { locale } = props.params;
+export async function generateMetadata({
+  params,
+}: SegmentProps): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations("homepage.metadata");
 
   return createPageMetadata({
