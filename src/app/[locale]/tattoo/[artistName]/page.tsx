@@ -7,7 +7,7 @@ import { getTranslations } from "next-intl/server";
 import { createPageMetadata } from "@/lib/metadata";
 
 type Props = {
-  params: { artistName: string; locale: string };
+  params: Awaited<{ artistName: string; locale: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

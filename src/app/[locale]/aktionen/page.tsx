@@ -6,7 +6,7 @@ import type { AktionenResponse } from "@/types";
 import AktionenClient from "@/components/AktionenClient";
 
 type Props = {
-  params: { locale: string };
+  params: Awaited<{ locale: string }>;
 };
 
 export async function generateMetadata(props: Props): Promise<Metadata> {

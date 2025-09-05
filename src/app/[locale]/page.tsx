@@ -11,7 +11,7 @@ import { createPageMetadata } from "@/lib/metadata";
 import U18Info from "@/components/U18Info";
 
 type Props = {
-  params: { locale: string };
+  params: Awaited<{ locale: string }>;
 };
 
 const font = Playfair_Display({
@@ -20,7 +20,7 @@ const font = Playfair_Display({
 });
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
-  const { locale } = await props.params;
+  const { locale } = props.params;
   const t = await getTranslations("homepage.metadata");
 
   return createPageMetadata({

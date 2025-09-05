@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { createPageMetadata } from "@/lib/metadata";
 
 type Props = {
-  params: { locale: string };
+  params: Awaited<{ locale: string }>;
 };
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
