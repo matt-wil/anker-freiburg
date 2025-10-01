@@ -43,7 +43,6 @@ export default async function Piercers() {
             imageUrl={artist.imageUrl}
           />
         ))}
-        ;
       </div>
       <div id="price-list">
         <PiercingPriceList />

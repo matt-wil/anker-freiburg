@@ -30,7 +30,6 @@ export default async function Tattooists() {
               imageUrl={artist.imageUrl}
             />
           ))}
-          ;
         </div>
       </div>
     </div>
