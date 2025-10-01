@@ -9,13 +9,14 @@ import { usePathname } from "@/i18n/routing";
 
 type ArtistCardProps = {
   artist: DBArtist;
-  publicId: string;
+  imageUrl: string;
 };
 
 const ArtistCard = ({
   artist,
-  publicId,
+  imageUrl,
 }: ArtistCardProps): React.JSX.Element => {
+  console.log("URL IN ARTISTCARD: ", imageUrl);
   const locale = useLocale();
   const t = useTranslations("artistCard");
   const artistSpecs = artist[
@@ -32,12 +33,10 @@ const ArtistCard = ({
       <div className="mb-4 overflow-hidden mx-auto">
         <ImageCard
           showHoverEffect={true}
-          src={`${publicId}`}
+          src={`${imageUrl}`}
           alt={`Anker Tattoo & Piercing Studio in Freiburg Artist ${artist.name} Profile Image`}
           width={500}
           height={500}
-          crop="fill"
-          gravity="face"
           className="rounded group-hover:scale-105 transition-transform"
         />
       </div>

@@ -3,7 +3,7 @@ import { Playfair_Display } from "next/font/google";
 import LandingPageParralax from "@/components/LandingPageParallax";
 import LandingPageMobile from "@/components/LandingPageMobile";
 import Image from "next/image";
-import { getParallaxImages } from "@/lib/cloudinary";
+import { getAssetsByFolder } from "@/lib/cloudflare";
 import Services from "@/components/Services";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
@@ -39,7 +39,7 @@ export async function generateMetadata({
 }
 
 export default async function Page() {
-  const images = await getParallaxImages("Parallax");
+  const images = await getAssetsByFolder("Parallax/");
 
   return (
     <>

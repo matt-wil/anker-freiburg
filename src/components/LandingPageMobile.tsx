@@ -2,81 +2,73 @@
 
 import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
-import type { CloudinaryImage } from "@/types";
+import type { R2Asset } from "@/types";
 import Testimonials from "./Testimonials";
+import { useMemo } from "react";
 
 const PLACEHOLDER_IMG = "/whiteLogo.svg";
 
-const findImageUrl = (publicId: string, images: CloudinaryImage[]): string => {
-  const image = images.find((img) => img.public_id.startsWith(publicId));
-  return image?.secure_url ?? PLACEHOLDER_IMG;
-};
+// 1. Define the content for the mobile page in a structured array.
+const mobileSections = [
+  { id: "team", imageKey: "team", alt: "Anker Team" },
+  { id: "sign", imageKey: "sign", alt: "Piercing Me Baby Neon Sign" },
+  { id: "piercingSetup", imageKey: "piercingSetup", alt: "Studio Setup" },
+  {
+    id: "tattooing",
+    imageKey: "tattooing",
+    alt: "A photo taken in Anker Tattoo & Piercing Studio",
+  },
+  {
+    id: "tattooSetup",
+    imageKey: "tattooSetup",
+    alt: "A photo taken in Anker Tattoo & Piercing Studio",
+  },
+  {
+    id: "anmeldung",
+    imageKey: "anmeldung",
+    alt: "The anmeldung sign in the studio",
+  },
+];
 
 export default function LandingPageMobile({
   images,
 }: {
-  images: CloudinaryImage[];
+  images: R2Asset[];
 }): React.JSX.Element {
-  const imageMap = {
-    stickers: findImageUrl("stickers", images),
-    team: findImageUrl("team", images),
-    sign: findImageUrl("sign", images),
-    piercingSetup: findImageUrl("piercingSetup", images),
-    tattooing: findImageUrl("tattooing", images),
-    tattooSetup: findImageUrl("tattooSetup", images),
-    anmeldung: findImageUrl("anmeldung", images),
-  };
+  // 2. Create the same efficient, one-time lookup map.
+  const imageUrlMap = useMemo(() => {
+    if (!Array.isArray(images)) return new Map();
+
+    const newMap = new Map<string, string>();
+    images.forEach((img) => {
+      // Extracts "team" from a full key like "Parallax/team_blq97r.jpg"
+      const shortKey = img.key.split("/").pop()?.split("_")[0];
+      if (shortKey) {
+        newMap.set(shortKey, img.url);
+      }
+    });
+    return newMap;
+  }, [images]);
 
   return (
     <div className="flex flex-col">
       <p className="text-center text-4xl font-bold m-8 p-8">Meet the Team</p>
-      <Image
-        src={imageMap.team}
-        alt="Anker Team"
-        width={800}
-        height={600}
-        className="shadow-lg w-full object-cover"
-      />
 
-      <Image
-        src={imageMap.sign}
-        alt="Piercing Me Baby Neon Sign"
-        width={800}
-        height={600}
-        className="shadow-lg w-full object-cover"
-      />
+      {/* 3. Render the images by mapping over the structured array. */}
+      {mobileSections.map((section) => {
+        const imageUrl = imageUrlMap.get(section.imageKey) || PLACEHOLDER_IMG;
 
-      <Image
-        src={imageMap.piercingSetup}
-        alt="Studio Setup"
-        width={800}
-        height={600}
-        className="shadow-lg w-full object-cover"
-      />
-
-      <Image
-        src={imageMap.tattooing}
-        alt="A Photo taken in Anker Tattoo & Piercing Studio in Freiburg"
-        width={800}
-        height={600}
-        className="shadow-lg w-full object-cover"
-      />
-
-      <Image
-        src={imageMap.tattooSetup}
-        alt="A Photo taken in Anker Tattoo & Piercing Studio in Freiburg"
-        width={800}
-        height={600}
-        className="shadow-lg w-full object-cover"
-      />
-
-      <Image
-        src={imageMap.anmeldung}
-        alt="Anker Tattoo & Piercing Studio in Freiburg"
-        width={800}
-        height={600}
-        className="shadow-lg w-full object-cover mb-10"
-      />
+        return (
+          <Image
+            key={section.id}
+            src={imageUrl}
+            alt={section.alt}
+            width={800}
+            height={600}
+            className="shadow-lg w-full object-cover mb-4"
+          />
+        );
+      })}
 
       <CTAButton
         href="/contact"

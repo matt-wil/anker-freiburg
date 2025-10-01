@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { createPageMetadata } from "@/lib/metadata";
-import { getAktionen } from "@/lib/cloudinary";
-import type { AktionenResponse } from "@/types";
+import { getAssetsByFolder } from "@/lib/cloudflare";
+import type { R2AssetsList } from "@/types";
 import AktionenClient from "@/components/AktionenClient";
 
 type RouteParams = { locale: string };
@@ -32,8 +32,8 @@ export async function generateMetadata({
 }
 
 const page = async (): Promise<React.JSX.Element> => {
-  const { resources }: AktionenResponse = await getAktionen("Aktionen");
-
+  const resources: R2AssetsList = await getAssetsByFolder("Aktionen");
+  console.log(resources);
   return <AktionenClient resources={resources} />;
 };
 export default page;

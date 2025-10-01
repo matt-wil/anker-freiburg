@@ -35,7 +35,7 @@ export default function Footer(): React.ReactNode {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Creator
+            Dev
           </a>
         </p>
       </div>

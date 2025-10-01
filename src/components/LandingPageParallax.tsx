@@ -1,106 +1,77 @@
 "use client";
 
-import type { CloudinaryImage } from "@/types";
+import type { R2Asset } from "@/types";
+import { useMemo } from "react";
 import { ReactLenis } from "lenis/react";
-import ParallaxMedia from "./ParallaxMedia";
+import ParallaxImage from "./ParallaxMedia";
 import Testimonials from "./Testimonials";
 
 const PLACEHOLDER_IMG = "/whiteLogo.svg";
 
-const findImageUrl = (publicId: string, images: CloudinaryImage[]): string => {
-  const image = images.find((img) => img.public_id.startsWith(publicId));
-  return image?.secure_url ?? PLACEHOLDER_IMG;
-};
+const parallaxSections = [
+  {
+    id: "intro",
+    imageKey: "sticker",
+    alt: "A sticker from Anker Tattoo & Piercing Studio in Freiburg",
+  },
+  {
+    id: "team",
+    imageKey: "team",
+    alt: "The team at Anker Tattoo & Piercing Studio in Freiburg",
+    overlayText: "Meet the team",
+  },
+  {
+    id: "sign",
+    imageKey: "sign",
+    alt: "A neon sign inside the studio",
+  },
+  {
+    id: "bell",
+    imageKey: "bell",
+    alt: "The captain's bell in the studio",
+  },
+];
 
-const LandingPageParralax = ({ images }: { images: CloudinaryImage[] }) => {
-  const imageMap = {
-    intro: findImageUrl("sticker", images),
-    team: findImageUrl("team", images),
-    sign: findImageUrl("sign", images),
-    bell: findImageUrl("bell", images),
-    piercingSetup: findImageUrl("piercingSetup", images),
-    tattooing: findImageUrl("tattooing", images),
-    anmeldung: findImageUrl("anmeldung", images),
-  };
+const LandingPageParallax = ({ images }: { images: R2Asset[] }) => {
+  const imageUrlMap = useMemo(() => {
+    if (!Array.isArray(images)) return new Map();
+
+    return new Map(images.map((img) => [img.key, img.url]));
+  }, [images]);
 
   return (
     <ReactLenis root>
       <div className="space-y-0">
-        <section className="h-screen w-full relative overflow-hidden">
-          <ParallaxMedia
-            src={imageMap.intro}
-            alt="A Photo taken in Anker Tattoo & Piercing Studio in Freiburg"
-            mediaType="image"
-            className="w-full h-full"
-            containerHeight="112vh"
-          />
-        </section>
+        {parallaxSections.map((section, index) => {
+          const fullImageKey = Array.from(imageUrlMap.keys()).find((key) =>
+            key.includes(section.imageKey),
+          );
+          const imageUrl = fullImageKey
+            ? imageUrlMap.get(fullImageKey)
+            : PLACEHOLDER_IMG;
 
-        <section className="h-screen w-full relative overflow-hidden">
-          <ParallaxMedia
-            src={imageMap.team}
-            alt="The Team of Anker Tattoo & Piercing Studio in Freiburg"
-            mediaType="image"
-            className="w-full h-full"
-            containerHeight="112vh"
-          />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6 z-10">
-            <p className="text-2xl md:text-6xl">Meet the team</p>
-          </div>
-        </section>
-
-        <section className="h-screen w-full relative overflow-hidden">
-          <ParallaxMedia
-            src={imageMap.sign}
-            alt="Piercing Me Baby Neon sign inside of Anker Tattoo & Piercing Studio in Freiburg"
-            mediaType="image"
-            className="w-full h-full"
-            containerHeight="112vh"
-          />
-        </section>
-
-        <section className="h-screen w-full relative overflow-hidden">
-          <ParallaxMedia
-            src={imageMap.bell}
-            alt="The Captains Bell in Anker Tattoo & Piercing Studio in Freiburg"
-            mediaType="image"
-            className="w-full h-full"
-            containerHeight="112vh"
-          />
-        </section>
-
-        <section className="h-screen w-full relative overflow-hidden">
-          <ParallaxMedia
-            src={imageMap.piercingSetup}
-            alt="Setup for piercing in Anker Tattoo & Piercing Studio in Freiburg"
-            mediaType="image"
-            className="w-full h-full"
-            containerHeight="112vh"
-          />
-        </section>
-
-        <section className="h-screen w-full relative overflow-hidden">
-          <ParallaxMedia
-            src={imageMap.tattooing}
-            mediaType="image"
-            className="w-full h-full"
-            containerHeight="112vh"
-          />
-        </section>
-
-        <section className="h-screen w-full relative overflow-hidden">
-          <ParallaxMedia
-            src={imageMap.anmeldung}
-            mediaType="image"
-            className="w-full h-full"
-            containerHeight="112vh"
-          />
-        </section>
-
+          return (
+            <section key={section.id} className="h-screen w-full relative">
+              <ParallaxImage
+                src={imageUrl}
+                alt={section.alt}
+                priority={index < 2}
+                containerClassName="w-full h-full"
+              />
+              {section.overlayText && (
+                <div className="absolute inset-0 flex items-center justify-center text-white text-center z-10">
+                  <p className="text-2xl md:text-6xl font-bold">
+                    {section.overlayText}
+                  </p>
+                </div>
+              )}
+            </section>
+          );
+        })}
         <Testimonials />
       </div>
     </ReactLenis>
   );
 };
 
-export default LandingPageParralax;
+export default LandingPageParallax;

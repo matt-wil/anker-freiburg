@@ -1,13 +1,13 @@
 "use client";
 
 import Aktionen from "./Aktionen";
-import type { CloudinaryImage } from "@/types";
+import type { R2Asset } from "@/types";
 import { useTranslations } from "next-intl";
 
 export default function AktionenClient({
   resources,
 }: {
-  resources: CloudinaryImage[];
+  resources: R2Asset[];
 }) {
   const t = useTranslations("nav");
   return (

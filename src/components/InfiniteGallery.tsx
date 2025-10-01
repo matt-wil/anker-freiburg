@@ -4,17 +4,12 @@ import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ImageCard from "@/components/ImageCard";
-import type { CloudinaryImage } from "@/types";
+import type { R2Asset } from "@/types";
 
-export default function InfiniteGallery({
-  images,
-}: {
-  images: CloudinaryImage[];
-}) {
+export default function InfiniteGallery({ images }: { images: R2Asset[] }) {
   const gridRef = useRef<HTMLDivElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
-  const [fullscreenImage, setFullscreenImage] =
-    useState<CloudinaryImage | null>(null);
+  const [fullscreenImage, setFullscreenImage] = useState<R2Asset | null>(null);
 
   useGSAP(() => {
     if (!gridRef.current || images.length === 0) return;
@@ -69,17 +64,15 @@ export default function InfiniteGallery({
       >
         {images.map((img, idx) => (
           <div
-            key={`${img.public_id}-${idx}`}
+            key={`${img.key}-${idx}`}
             className="group rounded-2xl border-2 border-white/20 overflow-hidden shadow-2xl relative transition-transform duration-300 cursor-pointer transform-gpu hover:scale-105 hover:z-10"
             onClick={() => setFullscreenImage(img)}
           >
             <ImageCard
-              src={img.secure_url}
+              src={img.url}
               width={500}
               height={500}
               alt={`Art Image ${idx}`}
-              crop="fill"
-              gravity="face"
             />
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-300" />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-transparent text-white px-4 py-2 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -96,7 +89,7 @@ export default function InfiniteGallery({
           onClick={closeModal}
         >
           <ImageCard
-            src={fullscreenImage.secure_url}
+            src={fullscreenImage.url}
             width={1200}
             height={1200}
             alt="Fullscreen artwork"
