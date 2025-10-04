@@ -75,7 +75,11 @@ const page = async ({ params }: { params: Promise<ParamsProps> }) => {
           </a>
         </div>
       )}
-      <InfiniteGallery images={portfolioImages} />
+      <InfiniteGallery
+        images={portfolioImages}
+        artistName={artistName}
+        type="Tattoo"
+      />
     </div>
   );
 };

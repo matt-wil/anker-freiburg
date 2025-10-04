@@ -85,7 +85,7 @@ export default function U18Info() {
         <p className="font-bold text-amber-400">{t("warning")}</p>
       </div>
 
-      <div className="m-2 pb-4">
+      <div className="m-2 p-4">
         <DownloadButton
           text="U18 Einverständniserklärung PDF"
           document="U18-doc.pdf"

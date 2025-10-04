@@ -70,4 +70,6 @@ export type DBArtist = {
 export type R2Asset = {
   key: string; // This is the full filename/path
   url: string; // This is the temporary, secure URL
+  width?: number;
+  height?: number;
 };

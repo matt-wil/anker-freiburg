@@ -5,8 +5,17 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ImageCard from "@/components/ImageCard";
 import type { R2Asset } from "@/types";
+import { cn } from "@/lib/utils";
 
-export default function InfiniteGallery({ images }: { images: R2Asset[] }) {
+export default function InfiniteGallery({
+  images,
+  artistName,
+  type,
+}: {
+  images: R2Asset[];
+  artistName: string;
+  type: string;
+}) {
   const gridRef = useRef<HTMLDivElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
   const [fullscreenImage, setFullscreenImage] = useState<R2Asset | null>(null);
@@ -57,29 +66,50 @@ export default function InfiniteGallery({ images }: { images: R2Asset[] }) {
   };
 
   return (
-    <div className="w-full min-h-screen p-8">
+    <div className="w-full min-h-screen p-4 md:p-8">
       <div
         ref={gridRef}
-        className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 auto-rows-[300px] gap-4 grid-auto-flow-dense"
+        className="grid sm:grid-cols-2 md:grid-cols-4 auto-rows-[250px] gap-4 grid-auto-flow-dense"
       >
-        {images.map((img, idx) => (
-          <div
-            key={`${img.key}-${idx}`}
-            className="group flex items-center justify-center backdrop-blur-sm rounded-2xl border-2 border-white/20 overflow-hidden shadow-2xl relative transition-transform duration-300 cursor-pointer transform-gpu hover:scale-105 hover:z-10"
-            onClick={() => setFullscreenImage(img)}
-          >
-            <ImageCard
-              src={img.url}
-              width={500}
-              height={500}
-              alt={`Art Image ${idx}`}
-            />
-            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-300" />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-transparent text-white px-4 py-2 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              &#x25B2;
+        {images.map((img, idx) => {
+          const { key, width, height } = img;
+          const hash = key
+            .split("")
+            .reduce((acc, char) => acc + char.charCodeAt(0), 0);
+          let colSpan = "col-span-1";
+          let rowSpan = "row-span-1";
+          if (width && height) {
+            if (hash % 11 === 0) {
+              colSpan = "md:col-span-2";
+              rowSpan = "md:row-span-2";
+            } else if (hash % 7 === 0 && width && width > height) {
+              colSpan = "md:col-span-2";
+            } else if (hash % 5 === 0 && height && height > width) {
+              rowSpan = "md:row-span-2";
+            }
+          }
+          return (
+            <div
+              key={`${img.key}-${idx}`}
+              className={cn(
+                "group flex items-center justify-center rounded-2xl border-2 border-white/20 overflow-hidden shadow-2xl relative transition-transform duration-300 cursor-pointer transform-gpu hover:scale-105 hover:z-10",
+                colSpan,
+                rowSpan,
+              )}
+              onClick={() => setFullscreenImage(img)}
+            >
+              <ImageCard
+                src={img.url}
+                alt={`A beautiful ${type} done by ${artistName}, one of Anker Tattoo & Piercings professional artists `}
+                fill
+                priority={idx < 4}
+                className="object-cover"
+                sizes="(max-width: 768px) 50vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-300" />
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {fullscreenImage && (
@@ -90,10 +120,11 @@ export default function InfiniteGallery({ images }: { images: R2Asset[] }) {
         >
           <ImageCard
             src={fullscreenImage.url}
-            width={1200}
-            height={1200}
             alt="Fullscreen artwork"
-            className="md:max-w-[40dvw] md:max-h-[90dvh] rounded-2xl shadow-2xl"
+            width={fullscreenImage.width}
+            height={fullscreenImage.height}
+            className="h-auto w-auto max-w-[90vw] max-h-[90vh] rounded-2xl shadow-2xl"
+            sizes="90vw"
           />
         </div>
       )}

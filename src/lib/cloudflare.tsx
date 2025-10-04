@@ -58,7 +58,17 @@ export async function getAssetsByFolder(prefix: string): Promise<R2Asset[]> {
         const url = await getSignedUrl(s3Client, getCommand, {
           expiresIn: 3600,
         });
-        return { key: item.Key!, url };
+        let dimensions: { width?: number; height?: number } = {};
+        const filename = item.Key!.split("/").pop() || "";
+        const match = filename.match(/_(\d+)x(\d+)\.\w+$/);
+
+        if (match && match[1] && match[2]) {
+          dimensions = {
+            width: parseInt(match[1], 10),
+            height: parseInt(match[2], 10),
+          };
+        }
+        return { key: item.Key!, url, ...dimensions };
       });
 
     const assets = await Promise.all(assetPromises);

@@ -51,7 +51,11 @@ const page = async ({ params }: { params: Promise<ParamsProps> }) => {
     <div>
       <h1 className="page-header ml-2 px-6">{upperedName}&apos;s Portfolio</h1>
       <p className="m-2 px-6">{biography}</p>
-      <InfiniteGallery images={portfolioImages} />
+      <InfiniteGallery
+        images={portfolioImages}
+        artistName={artistName}
+        type="Piercing"
+      />
     </div>
   );
 };
