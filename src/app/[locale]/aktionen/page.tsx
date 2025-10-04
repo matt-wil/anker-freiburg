@@ -33,7 +33,15 @@ export async function generateMetadata({
 
 const page = async (): Promise<React.JSX.Element> => {
   const resources: R2AssetsList = await getAssetsByFolder("Aktionen");
-  console.log(resources);
+  if (!resources || resources.length === 0) {
+    return (
+      <section className="flex items-center justify-center text-center min-h-[60vh] px-4">
+        <h1 className="text-3xl font-bold mb-2">
+          Aktionen Unter Bearbeitung...
+        </h1>
+      </section>
+    );
+  }
   return <AktionenClient resources={resources} />;
 };
 export default page;

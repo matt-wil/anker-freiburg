@@ -91,7 +91,7 @@ const NavLinks = () => {
     <nav className="relative z-50">
       {isOpen ? (
         <IoIosClose
-          className="w-20 h-20 cursor-pointer text-black fixed top-4 right-4 z-60"
+          className="w-20 h-20 cursor-pointer text-black fixed top-4 right-4 z-60 hover:scale-150 duration-700 hover:text-white"
           onClick={handleClose}
           role={`button`}
           aria-label={`Close Menu`}
@@ -142,8 +142,15 @@ const NavLinks = () => {
               </a>
             </div>
             <div className="flex flex-col mr-4">
-              <a href="mailto:info@anker-tattoo.de">info@anker-tattoo.de</a>
-              <a href="tel:+4976151462878">076151462878</a>
+              <a
+                href="mailto:info@anker-tattoo.de"
+                className="hover:text-white"
+              >
+                info@anker-tattoo.de
+              </a>
+              <a href="tel:+4976151462878" className="hover:text-white">
+                076151462878
+              </a>
             </div>
           </div>
         </div>

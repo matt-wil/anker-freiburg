@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { createPageMetadata } from "@/lib/metadata";
+import { getSingleImage } from "@/lib/cloudflare";
+import AboutUs from "@/components/AboutUs";
 
 type RouteParams = { locale: string };
 
@@ -30,30 +31,21 @@ export async function generateMetadata({
   });
 }
 
-const Page = (): React.JSX.Element => {
-  const t = useTranslations("about");
+const Page = async (): Promise<React.JSX.Element> => {
+  const teamImage = await getSingleImage("Parallax/team.jpg");
+
   return (
     <div className="relative min-h-screen overflow-hidden">
-      <div className="relative flex flex-col items-center justify-center px-6 py-32">
-        <div className="about-clip-path w-[360px] h-[360px] lg:w-[460px] lg:h-[460px]">
+      <div className="relative flex flex-col items-center justify-center px-6 py-32 xl:py-5">
+        <div className="about-clip-path w-[360px] h-[206px] lg:w-[460px] lg:h-[263px] xl:w-[800px] xl:h-[457px]">
           <Image
-            src="/team.JPG"
+            src={teamImage}
             alt="Photo of the Anker tattoo and piercing team"
             width={800}
             height={800}
           />
         </div>
-        <h1 className="about-header text-6xl sm:text-9xl font-bold mb-4">
-          {t("header")}
-        </h1>
-        <h2 className="text-center text-3xl mb-4">{t("subHeader")}</h2>
-        <div className="md:max-w-[75dvw] w-auto">
-          <article className="m-6 max-w-150 text-center">{t("text1")}</article>
-          <article className="m-6 max-w-150 text-center">{t("text2")}</article>
-          <article className="m-6 max-w-150 text-center">{t("text3")}</article>
-          <article className="m-6 max-w-150 text-center">{t("text4")}</article>
-          <article className="m-6 max-w-150 text-center">{t("text5")}</article>
-        </div>
+        <AboutUs />
       </div>
     </div>
   );

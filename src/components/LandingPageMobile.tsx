@@ -8,7 +8,6 @@ import { useMemo } from "react";
 
 const PLACEHOLDER_IMG = "/whiteLogo.svg";
 
-// 1. Define the content for the mobile page in a structured array.
 const mobileSections = [
   { id: "team", imageKey: "team", alt: "Anker Team" },
   { id: "sign", imageKey: "sign", alt: "Piercing Me Baby Neon Sign" },
@@ -35,15 +34,18 @@ export default function LandingPageMobile({
 }: {
   images: R2Asset[];
 }): React.JSX.Element {
-  // 2. Create the same efficient, one-time lookup map.
   const imageUrlMap = useMemo(() => {
     if (!Array.isArray(images)) return new Map();
 
     const newMap = new Map<string, string>();
     images.forEach((img) => {
-      // Extracts "team" from a full key like "Parallax/team_blq97r.jpg"
-      const shortKey = img.key.split("/").pop()?.split("_")[0];
-      if (shortKey) {
+      const filename = img.key.split("/").pop();
+      if (filename) {
+        const keyWithoutExtension = filename.substring(
+          0,
+          filename.lastIndexOf("."),
+        );
+        const shortKey = keyWithoutExtension.split("_")[0];
         newMap.set(shortKey, img.url);
       }
     });
@@ -54,7 +56,6 @@ export default function LandingPageMobile({
     <div className="flex flex-col">
       <p className="text-center text-4xl font-bold m-8 p-8">Meet the Team</p>
 
-      {/* 3. Render the images by mapping over the structured array. */}
       {mobileSections.map((section) => {
         const imageUrl = imageUrlMap.get(section.imageKey) || PLACEHOLDER_IMG;
 

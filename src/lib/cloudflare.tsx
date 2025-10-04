@@ -103,3 +103,17 @@ export async function getPresignedUrlForKey(key: string): Promise<string> {
     return FALLBACK_IMG;
   }
 }
+
+export async function getSingleImage(key: string): Promise<string> {
+  try {
+    const command = new GetObjectCommand({
+      Bucket: BUCKET_NAME,
+      Key: key,
+    });
+    const url = await getSignedUrl(s3Client, command, { expiresIn: 3600 });
+    return url;
+  } catch (error) {
+    console.error(`[R2] Error generating signed URL for key "${key}":`, error);
+    return FALLBACK_IMG;
+  }
+}

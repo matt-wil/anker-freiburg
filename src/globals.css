@@ -79,7 +79,7 @@ body::before {
 }
 
 .about-clip-path {
-  clip-path: polygon(100% 6%, 97% 74%, 8% 89%, 0 0);
+  clip-path: polygon(100% 2.4%, 97% 74%, 8% 89%, 0 0);
 }
 
 main {

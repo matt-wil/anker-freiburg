@@ -60,12 +60,12 @@ export default function InfiniteGallery({ images }: { images: R2Asset[] }) {
     <div className="w-full min-h-screen p-8">
       <div
         ref={gridRef}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 auto-rows-[300px] gap-4 grid-auto-flow-dense"
       >
         {images.map((img, idx) => (
           <div
             key={`${img.key}-${idx}`}
-            className="group rounded-2xl border-2 border-white/20 overflow-hidden shadow-2xl relative transition-transform duration-300 cursor-pointer transform-gpu hover:scale-105 hover:z-10"
+            className="group flex items-center justify-center backdrop-blur-sm rounded-2xl border-2 border-white/20 overflow-hidden shadow-2xl relative transition-transform duration-300 cursor-pointer transform-gpu hover:scale-105 hover:z-10"
             onClick={() => setFullscreenImage(img)}
           >
             <ImageCard
