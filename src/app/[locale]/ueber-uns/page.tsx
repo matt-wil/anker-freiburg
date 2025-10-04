@@ -37,12 +37,14 @@ const Page = async (): Promise<React.JSX.Element> => {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <div className="relative flex flex-col items-center justify-center px-6 py-32 xl:py-5">
-        <div className="about-clip-path w-[360px] h-[206px] lg:w-[460px] lg:h-[263px] xl:w-[800px] xl:h-[457px]">
+        <div className="relative overflow-hidden about-clip-path w-[360px] h-[206px] lg:w-[460px] lg:h-[263px] xl:w-[800px] xl:h-[457px]">
           <Image
             src={teamImage}
             alt="Photo of the Anker tattoo and piercing team"
-            width={800}
-            height={800}
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 1024px) 460px, 800px"
           />
         </div>
         <AboutUs />
