@@ -22,6 +22,7 @@ const ParallaxImage = ({
   src,
   alt,
   containerClassName,
+  priority,
   ...props
 }: ParallaxImageProps): React.JSX.Element => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -87,7 +88,7 @@ const ParallaxImage = ({
     >
       <div
         ref={innerRef}
-        className="absolute top-0 left-0 h-full w-full"
+        className="absolute top-0 left-0 h-full w-full origin-top"
         style={{ willChange: "transform" }}
       >
         <Image
@@ -95,8 +96,9 @@ const ParallaxImage = ({
           src={src}
           alt={alt}
           fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 50vw"
+          priority={priority}
+          className="object-top"
+          sizes="100vw"
         />
       </div>
     </div>

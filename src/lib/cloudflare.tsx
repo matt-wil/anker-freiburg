@@ -28,7 +28,7 @@ const s3Client = new S3Client({
 });
 
 export async function getAssetsByFolder(prefix: string): Promise<R2Asset[]> {
-  console.log(`[R2] Fetching assets for prefix: "${prefix}"`);
+  //console.log(`[R2] Fetching assets for prefix: "${prefix}"`);
 
   try {
     const listCommand = new ListObjectsV2Command({
@@ -40,13 +40,11 @@ export async function getAssetsByFolder(prefix: string): Promise<R2Asset[]> {
 
     const contents = listResponse.Contents;
     if (!contents || contents.length === 0) {
-      console.log(`[R2] No contents found for prefix: "${prefix}"`);
+      //console.log(`[R2] No contents found for prefix: "${prefix}"`);
       return [];
     }
 
-    console.log(
-      `[R2] Found ${contents.length} item(s) for prefix: "${prefix}"`,
-    );
+    //console.log(`[R2] Found ${contents.length} item(s) for prefix: "${prefix}"`,);
 
     const assetPromises = contents
       .filter((item) => item.Key && !item.Key.endsWith("/"))
@@ -72,7 +70,7 @@ export async function getAssetsByFolder(prefix: string): Promise<R2Asset[]> {
       });
 
     const assets = await Promise.all(assetPromises);
-    console.log(`[R2] Successfully generated ${assets.length} signed URLs.`);
+    //console.log(`[R2] Successfully generated ${assets.length} signed URLs.`);
     return assets;
   } catch (error) {
     console.error(

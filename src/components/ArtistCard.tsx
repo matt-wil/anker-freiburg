@@ -16,7 +16,6 @@ const ArtistCard = ({
   artist,
   imageUrl,
 }: ArtistCardProps): React.JSX.Element => {
-  console.log("URL IN ARTISTCARD: ", imageUrl);
   const locale = useLocale();
   const t = useTranslations("artistCard");
   const artistSpecs = artist[
