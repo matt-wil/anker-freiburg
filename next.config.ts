@@ -8,9 +8,9 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "anker-tattoo-24.r2.cloudflarestorage.com",
+        hostname: "*.r2.cloudflarestorage.com",
         port: "",
-        pathname: "/**", // This allows any image path from this bucket
+        pathname: "/**",
       },
     ],
   },
