@@ -4,9 +4,23 @@ import PiercingJewelleryGallery from "./PiercingJewelleryGallery";
 import ScrollButton from "./ScrollButton";
 import DownloadButton from "./DownloadButton";
 import ArtistCard from "./ArtistCard";
+import { getPresignedUrlForKey } from "@/lib/cloudflare";
 
 export default async function Piercers() {
   const artists = await getPiercingArtists();
+  const artistsWithImages = await Promise.all(
+    artists.map(async (artist) => {
+      let finalImageUrl = artist.profile_img;
+
+      if (artist.r2_profile_key) {
+        finalImageUrl = await getPresignedUrlForKey(artist.r2_profile_key);
+      }
+      return {
+        ...artist,
+        imageUrl: finalImageUrl,
+      };
+    }),
+  );
 
   return (
     <section className="px-6 max-w-6xl mx-auto">
@@ -22,15 +36,13 @@ export default async function Piercers() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {artists.map((artist) => {
-          const publicId = artist.profile_img;
-          if (!publicId) {
-            return null;
-          }
-          return (
-            <ArtistCard key={artist.id} artist={artist} publicId={publicId} />
-          );
-        })}
+        {artistsWithImages.map((artist) => (
+          <ArtistCard
+            key={artist.id}
+            artist={artist}
+            imageUrl={artist.imageUrl}
+          />
+        ))}
       </div>
       <div id="price-list">
         <PiercingPriceList />

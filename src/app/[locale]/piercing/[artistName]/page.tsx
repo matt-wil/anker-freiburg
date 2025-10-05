@@ -1,5 +1,5 @@
 import InfiniteGallery from "@/components/InfiniteGallery";
-import { getArtistAssets } from "@/lib/cloudinary";
+import { getArtistAssets } from "@/lib/cloudflare";
 import { getArtistByName } from "@/lib/queries/artists";
 import type { ParamsProps } from "@/types";
 import type { Metadata } from "next";
@@ -17,7 +17,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "artistPortfolio" });
 
   const { portfolioImages } = await getArtistAssets("Piercing", upperedName);
-  const firstImage = portfolioImages[0]?.secure_url;
+  const firstImage = portfolioImages[0]?.url;
 
   return createPageMetadata({
     title: t("title", {
@@ -51,7 +51,11 @@ const page = async ({ params }: { params: Promise<ParamsProps> }) => {
     <div>
       <h1 className="page-header ml-2 px-6">{upperedName}&apos;s Portfolio</h1>
       <p className="m-2 px-6">{biography}</p>
-      <InfiniteGallery images={portfolioImages} />
+      <InfiniteGallery
+        images={portfolioImages}
+        artistName={artistName}
+        type="Piercing"
+      />
     </div>
   );
 };

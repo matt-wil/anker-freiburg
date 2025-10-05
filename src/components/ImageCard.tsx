@@ -1,34 +1,41 @@
 "use client";
 
-import { CldImage } from "next-cloudinary";
-import { useState } from "react";
+import Image, { type ImageProps } from "next/image";
+import { cn } from "@/lib/utils";
 
-type CldImageProps = React.ComponentProps<typeof CldImage>;
-
-interface ImageCardProps extends CldImageProps {
+interface ImageCardProps extends ImageProps {
   showHoverEffect?: boolean;
 }
 
 const ImageCard = ({
   showHoverEffect = false,
+  className,
+  alt = "Image from Anker Tattoo & Piercing Studio",
+  priority,
+  fill,
   ...props
 }: ImageCardProps): React.JSX.Element => {
-  const [isHovered, setIsHovered] = useState<boolean>(false);
   return (
     <div
-      className="relative overflow-hidden group mx-auto w-fit"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      className={cn("relative overflow-hidden group", {
+        "w-full h-full": fill,
+        "mx-auto w-fit": !fill,
+      })}
     >
-      <CldImage
+      <Image
         {...props}
-        className={`transition-transform duration-300 ease-in-out w-full h-auto ${isHovered ? "scale-110" : "scale-100"}`}
-        priority={true}
+        fill={fill}
+        priority={priority}
+        alt={alt}
+        className={cn(
+          "transition-transform duration-300 ease-in-out group-hover:scale-110",
+          className,
+        )}
       />
-      {/* Optional: Add a semi-transparent overlay for a background effect */}
       {showHoverEffect && (
         <div
-          className={`absolute inset-0 flex items-center justify-center bg-white transition-opacity duration-300 ease-in-out ${isHovered ? "opacity-60" : "opacity-0"}`}
+          className={`absolute inset-0 flex items-center justify-center bg-white
+                       transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-60`}
         >
           <span className="text-black text-3xl font-bold">Gallery</span>
         </div>

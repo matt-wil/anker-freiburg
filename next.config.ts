@@ -8,9 +8,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "res.cloudinary.com",
-        port: "",
-        pathname: "/dcrmzq3wo/**",
+        hostname: "*.r2.cloudflarestorage.com",
       },
     ],
   },

@@ -1,143 +1,108 @@
-"use client"
+// ParallaxMedia.tsx (or ParallaxImage.tsx)
 
-import { useEffect, useRef } from "react"
-import { useLenis } from "lenis/react"
-import Image from "next/image"
-import OptimizedVideo from "./OptimizedVideo"
-import { useMediaQuery } from "react-responsive"
+"use client";
 
-const lerp = (start: number, end: number, factor: number) => start + (end - start) * factor
+import { useEffect, useRef } from "react";
+import Image, { ImageProps } from "next/image";
+import { useLenis } from "lenis/react";
+import { useMediaQuery } from "react-responsive";
 
-const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(value, max))
+// Helper functions
+const lerp = (start: number, end: number, factor: number) =>
+  start + (end - start) * factor;
+const clamp = (value: number, min: number, max: number) =>
+  Math.max(min, Math.min(value, max));
 
-type MediaType = "image" | "video"
+type ParallaxImageProps = Omit<ImageProps, "alt"> & {
+  alt: string;
+  containerClassName?: string;
+};
 
-type ParallaxMediaProps = {
-  src: string,
-  alt?: string,
-  mediaType?: MediaType,
-  children?: React.ReactNode,
-  className?: string,
-  containerHeight?: string | number,
-  containerAspectRatio?: string
-}
-
-const ParallaxMedia = ({ src, alt = "", mediaType, children, className = "", containerHeight, containerAspectRatio }: ParallaxMediaProps): React.JSX.Element => {
-  const containerRef = useRef<HTMLDivElement | null>(null)
-  const innerRef = useRef<HTMLDivElement | null>(null)
-  const bounds = useRef<{ top: number, bottom: number } | null>(null)
-  const currentTranslateY = useRef(0)
-  const targetTranslateY = useRef(0)
-  const refId = useRef<number | null>(null)
-  const isMobile = useMediaQuery({ maxWidth: 768 })
-
-  const inferMediaType = (): MediaType => {
-    if (mediaType) return mediaType
-    return src.match(/\.(mp4|webm)$/i) ? "video" : "image"
-  }
-
-  const type = inferMediaType()
+const ParallaxImage = ({
+  src,
+  alt,
+  containerClassName,
+  priority,
+  ...props
+}: ParallaxImageProps): React.JSX.Element => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const innerRef = useRef<HTMLDivElement>(null);
+  const bounds = useRef<{ top: number; height: number } | null>(null);
+  const currentTranslateY = useRef(0);
+  const targetTranslateY = useRef(0);
+  const animationFrameId = useRef<number | null>(null);
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-
-    const updateBounds = () => {
-      if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect()
-        bounds.current = {
-          top: rect.top + window.scrollY,
-          bottom: rect.bottom + window.scrollY
-        }
-      }
-    }
-    updateBounds()
-    window.addEventListener("resize", updateBounds)
-
     const animate = () => {
       if (innerRef.current) {
         currentTranslateY.current = lerp(
           currentTranslateY.current,
           targetTranslateY.current,
-          0.2
-        )
-        const baseScale = isMobile ? 1.005 : 1.1
-        const scale = baseScale + Math.min(Math.abs(currentTranslateY.current) / 800, 0.15)
-        innerRef.current.style.transform = `translateY(${currentTranslateY.current}px) scale(${scale})`
+          0.1,
+        );
+        const baseScale = isMobile ? 1.05 : 1.15;
+        const scale = baseScale + Math.abs(currentTranslateY.current) / 2000;
+        innerRef.current.style.transform = `translateY(${currentTranslateY.current}px) scale(${scale})`;
       }
-      refId.current = requestAnimationFrame(animate)
-    }
-    animate()
-
+      animationFrameId.current = requestAnimationFrame(animate);
+    };
+    animate();
     return () => {
-      window.removeEventListener("resize", updateBounds)
-      if (refId.current) cancelAnimationFrame(refId.current)
-    }
-  }, [isMobile])
+      if (animationFrameId.current) {
+        cancelAnimationFrame(animationFrameId.current);
+      }
+    };
+  }, [isMobile]);
 
-  useLenis(({ scroll }) => {
-    if (!bounds.current) {
+  useEffect(() => {
+    const calculateBounds = () => {
       if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect()
+        const rect = containerRef.current.getBoundingClientRect();
         bounds.current = {
           top: rect.top + window.scrollY,
-          bottom: rect.bottom + window.scrollY
-        }
-      } else {
-        return
+          height: rect.height,
+        };
       }
-    }
-    const relativeScroll = scroll - (bounds.current.top || 0)
-    const parallaxFactor = isMobile ? 0.15 : 0.6
-    const rawOffset = relativeScroll * parallaxFactor
+    };
+    calculateBounds();
+    window.addEventListener("resize", calculateBounds);
+    return () => window.removeEventListener("resize", calculateBounds);
+  }, []);
 
-    const containerHeight = containerRef.current?.offsetHeight || 0
-    const maxOffset = containerHeight * 0.6
-    targetTranslateY.current = clamp(rawOffset, -maxOffset, maxOffset)
-  })
+  useLenis(({ scroll }) => {
+    if (bounds.current) {
+      const relativeScroll = scroll - bounds.current.top;
+      const parallaxFactor = isMobile ? 0.1 : 0.25;
+      const rawOffset = relativeScroll * parallaxFactor;
+      const maxOffset = bounds.current.height * 0.2;
+      targetTranslateY.current = clamp(rawOffset, -maxOffset, maxOffset);
+    }
+  });
 
   return (
     <div
       ref={containerRef}
-      className={className}
-      style={{
-        willChange: "transform",
-        overflow: "hidden",
-        position: "relative",
-        height: containerHeight,
-        aspectRatio: containerAspectRatio,
-      }}
+      className={`relative overflow-hidden ${containerClassName}`}
+      style={{ willChange: "transform" }}
     >
       <div
         ref={innerRef}
-        style={{
-          height: "100%",
-          width: "100%",
-          transform: `translateY(${currentTranslateY.current}px) scale(1.25)`,
-          transition: "transform 0.1s ease-out",
-          willChange: "transform",
-          position: "absolute",
-          top: 0,
-          left: 0
-        }}
+        className="absolute top-0 left-0 h-full w-full origin-top"
+        style={{ willChange: "transform" }}
       >
-        {type === "image" ? (
-          <Image
-            src={src}
-            alt={alt}
-            fill
-            unoptimized
-            quality={90}
-            priority
-            className="object-cover object-top lg:object-contain"
-            sizes="100vw"
-          />
-        ) : (
-          <OptimizedVideo src={src} />
-        )}
-        {children}
+        <Image
+          {...props}
+          src={src}
+          alt={alt}
+          fill
+          priority={priority}
+          className="object-top"
+          sizes="100vw"
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ParallaxMedia
+export default ParallaxImage;
