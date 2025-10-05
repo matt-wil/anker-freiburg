@@ -75,7 +75,7 @@ const Impressum = () => {
               <GiOpenTreasureChest
                 onClick={() =>
                   alert(
-                    "Now you have found Ankers Treasure come in store and try your luck on the Glücksrad!",
+                    "Congratulations, you found Anker's Treasure Chest! Come in and collect your prize!",
                   )
                 }
               />
