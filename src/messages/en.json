@@ -120,6 +120,7 @@
     "home": "Home",
     "tattoo": "Tattoo",
     "piercing": "Piercing",
+    "pmu": "Permanent Make-up",
     "contact": "Contact",
     "data": "Data Protection",
     "legal": "Legal Notice",
@@ -483,5 +484,16 @@
       }
     },
     "warning": "Please note: We do not tolerate any tricks or false information. Anyone who attempts to deceive us risks immediate termination of the procedure and potential legal action."
+  },
+  "pmu": {
+    "metadata": {
+      "pathSlug": "permanent-make-up",
+      "title": "Permanent Make-up Freiburg | Lip & Eyebrow Tattooing | Anker",
+      "description": "Professional Permanent Make-up at Anker Studio Freiburg. Specializing in Powder Brows and Lip Blush.",
+      "keywords": "Permanent Make-up Freiburg, PMU Freiburg, Lip Blush, Powder Brows, Cosmetic Tattooing",
+      "ogTitle": "Permanent Make-up & Aesthetics at Anker Tattoo Freiburg",
+      "ogDescription": "Discover high-quality lip and eyebrow pigmentation for natural beauty.",
+      "ogImageAlt": "Branded graphic for Anker Tattoo & PMU in Freiburg."
+    }
   }
 }
