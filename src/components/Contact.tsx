@@ -44,6 +44,9 @@ const Contact = (): React.JSX.Element => {
               {t("saturdayTime")}
               <br />
               <strong>{t("closedDays")}</strong>
+              <br />
+              <strong>{t("holidayTitle")}</strong>
+              {t("holidays")}
             </p>
           </div>
 

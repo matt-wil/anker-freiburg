@@ -160,7 +160,9 @@
     "addressLine2": "79098 Freiburg im Breisgau",
     "contactHeader": "Contact",
     "phone": "Telephone: ",
-    "email": "Email: "
+    "email": "Email: ",
+    "holidayTitle": "Please note: ",
+    "holidays": "Opening hours may vary. Please call or check our instagram for the most up to date information."
   },
   "faq": {
     "metadata": {
