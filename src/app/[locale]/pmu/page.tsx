@@ -2,7 +2,7 @@ import Pmu from "@/components/Pmu";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
-
+import { getSingleImage } from "@/lib/cloudflare";
 type RouteParams = { locale: string };
 
 type SegmentProps = { params: Promise<RouteParams> };
@@ -27,10 +27,11 @@ export async function generateMetadata({
   });
 }
 
-const page = (): React.JSX.Element => {
+const page = async (): Promise<React.JSX.Element> => {
+  const profileImageUrl = await getSingleImage("Beauty/nia_profile.jpg");
   return (
     <>
-      <Pmu />
+      <Pmu profileImage={profileImageUrl} />
     </>
   );
 };
