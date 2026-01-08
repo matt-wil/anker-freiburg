@@ -8,25 +8,25 @@
         "icon": "shieldCheckmark",
         "title": "Gesundheit & Sicherheit",
         "description": "Unsere Hygienepläne sind vom Gesundheitsamt geprüft und erfüllen höchste gesetzliche Standards, EU-konforme Tattoofarben, sterile Ausrüstung, zertifizierte Prozesse und eine Examinierte Krankenschwester vor Ort.",
-        "gradient": "from-cyan-500 to-pink-500"
+        "gradient": "from-emerald-400 to-cyan-500"
       },
       {
         "icon": "cuckooClock",
         "title": "Flexible Zeiten",
         "description": "Geöffnet an 5 Tagen die Woche mit der Möglichkeit von Terminen nach Vereinbarung.",
-        "gradient": "from-cyan-500 to-pink-500"
+        "gradient": "from-amber-400 to-yellow-600"
       },
       {
         "icon": "walkingIn",
         "title": "Walk-ins willkommen",
         "description": "Für Piercings benötigst du keinen Termin, sondern nur ein wenig Geduld, da es zu kurzen Wartezeiten kommen kann.",
-        "gradient": "from-cyan-500 to-pink-500"
+        "gradient": "from-rose-400 to-orange-400"
       },
       {
         "icon": "receiveMoney",
         "title": "Tattoo Termine",
         "description": "Da wir für Tattoo-Termine eine Anzahlung verlangen, solltest du vorbeikommen, damit wir auch persönlich über dein Design sprechen können.",
-        "gradient": "from-cyan-500 to-pink-500"
+        "gradient": "from-violet-500 to-purple-600"
       }
     ]
   },
@@ -44,7 +44,7 @@
           "Ein Stück Kunst, das nur dir gehört"
         ],
         "price": "150€ pro Stunde",
-        "gradient": "from-blue-500 to-purple-500"
+        "gradient": "from-slate-500 to-slate-800"
       },
       {
         "icon": "piercedBody",
@@ -57,7 +57,7 @@
           "Begleitung in der Nachsorge"
         ],
         "price": "ab 40€",
-        "gradient": "from-blue-500 to-purple-500"
+        "gradient": "from-stone-400 to-stone-600"
       },
       {
         "icon": "eraser",
@@ -69,19 +69,20 @@
           "Ehrliche Beratung"
         ],
         "price": "nach Vereinbarung",
-        "gradient": "from-blue-500 to-purple-500"
+        "gradient": "from-indigo-900 to-slate-800"
       },
       {
-        "icon": "flash",
-        "title": "Flash-Tattoos",
-        "description": "Wähle direkt ein Wanna-Do von unseren Künstlern",
+        "icon": "pmu",
+        "title": "Permanent Make-up",
+        "description": "Natürlich wirkende Verschönerungen, die Ihre tägliche Beauty-Routine vereinfachen.",
         "features": [
-          "Kunst zum fairen Preis",
-          "Von unseren Artists gezeichnet",
-          "Design wird nur einmal verwendet"
+          "18+ Jahre PMU Erfahrung",
+          "Nano- & Ombre-Techniken",
+          "Individuelle Gesichtsanalyse"
         ],
-        "price": "Immer Spezialpreise",
-        "gradient": "from-blue-500 to-purple-500"
+        "price": "Ab 130 €",
+        "gradient": "from-[#D4B996] to-[#A67C52]",
+        "path": "/pmu"
       }
     ]
   },
