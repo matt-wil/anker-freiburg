@@ -494,6 +494,17 @@
       "ogTitle": "Permanent Make-up & Aesthetics at Anker Tattoo Freiburg",
       "ogDescription": "Discover high-quality lip and eyebrow pigmentation for natural beauty.",
       "ogImageAlt": "Branded graphic for Anker Tattoo & PMU in Freiburg."
+    },
+    "subtitles": { "artistry": "Permanent Makeup Artistry" },
+    "links": {
+      "services": "View Services",
+      "portfolio": "Portfolio",
+      "contact": "Contact & Book"
+    },
+    "footer": {
+      "eyes": "Eyes",
+      "eyebrows": "Eyebrows",
+      "lips": "Lips"
     }
   }
 }

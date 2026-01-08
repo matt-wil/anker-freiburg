@@ -494,6 +494,19 @@
       "ogTitle": "Permanent Make-up & Ästhetik bei Anker Tattoo Freiburg",
       "ogDescription": "Erlebe hochwertige Lippen- und Augenbrauenpigmentierung für langanhaltende Schönheit.",
       "ogImageAlt": "Markengrafik für Anker Tattoo & PMU in Freiburg."
+    },
+    "subtitles": {
+      "artistry": "Permanent Make-up Kunst"
+    },
+    "links": {
+      "services": "Leistungen ansehen",
+      "portfolio": "Portfolio",
+      "contact": "Kontakt & Buchung"
+    },
+    "footer": {
+      "eyes": "Augen",
+      "eyebrows": "Augenbrauen",
+      "lips": "Lippen"
     }
   }
 }
