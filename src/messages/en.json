@@ -8,25 +8,25 @@
         "icon": "shieldCheckmark",
         "title": "Health & Safety",
         "description": "Our hygiene plans are approved by the health authority and meet the highest legal standards, EU-compliant tattoo inks, sterile equipment, certified processes, and a registered nurse on site.",
-        "gradient": "from-cyan-500 to-pink-500"
+        "gradient": "from-emerald-400 to-cyan-500"
       },
       {
         "icon": "cuckooClock",
         "title": "Flexible Times",
         "description": "Open 5 days a week with the possibility of appointments by arrangement.",
-        "gradient": "from-cyan-500 to-pink-500"
+        "gradient": "from-amber-400 to-yellow-600"
       },
       {
         "icon": "walkingIn",
         "title": "Walk-ins Welcome",
         "description": "You don't need an appointment for piercings, just a little patience, as there may be short waiting times.",
-        "gradient": "from-cyan-500 to-pink-500"
+        "gradient": "from-rose-400 to-orange-400"
       },
       {
         "icon": "receiveMoney",
         "title": "Tattoo Appointments",
         "description": "Since we require a deposit for tattoo appointments, we recommend that you come by so we can discuss your design in person.",
-        "gradient": "from-cyan-500 to-pink-500"
+        "gradient": "from-violet-500 to-purple-600"
       }
     ]
   },
@@ -44,7 +44,7 @@
           "A piece of art that belongs only to you"
         ],
         "price": "€150 per hour",
-        "gradient": "from-blue-500 to-purple-500"
+        "gradient": "from-slate-500 to-slate-800"
       },
       {
         "icon": "piercedBody",
@@ -57,7 +57,7 @@
           "Support during aftercare"
         ],
         "price": "from €40",
-        "gradient": "from-blue-500 to-purple-500"
+        "gradient": "from-stone-400 to-stone-600"
       },
       {
         "icon": "eraser",
@@ -69,19 +69,20 @@
           "Honest advice"
         ],
         "price": "by arrangement",
-        "gradient": "from-blue-500 to-purple-500"
+        "gradient": "from-indigo-900 to-slate-800"
       },
       {
-        "icon": "flash",
-        "title": "Flash Tattoos",
-        "description": "Choose a wanna-do directly from our artists.",
+        "icon": "pmu",
+        "title": "Permanent Make-up",
+        "description": "Subtle natural-looking enhancements designed to simplify your daily beauty routine.",
         "features": [
-          "Art at a fair price",
-          "Drawn by our artists",
-          "Design is only used once"
+          "18+ Years PMU Experience",
+          "Nano & Ombre Techniques",
+          "Tailored to Facial Structure"
         ],
-        "price": "Always special prices",
-        "gradient": "from-blue-500 to-purple-500"
+        "price": "Starting from €130",
+        "gradient": "from-[#D4B996] to-[#A67C52]",
+        "path": "/pmu"
       }
     ]
   },
