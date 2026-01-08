@@ -37,6 +37,10 @@ export const routing = defineRouting({
       de: "/piercing",
       en: "/piercing",
     },
+    "/pmu": {
+      de: "/pmu",
+      en: "/pmu",
+    },
     "/haeufige-gestellte-fragen": {
       de: "/haeufige-gestellte-fragen",
       en: "/frequently-asked-questions",

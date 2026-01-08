@@ -13,6 +13,7 @@ type NavPath =
   | "/ueber-uns"
   | "/tattoo"
   | "/piercing"
+  | "/pmu"
   | "/kontakt"
   | "/aktionen"
   | "/haeufige-gestellte-fragen"
@@ -25,12 +26,12 @@ interface NavItem {
   label: string;
 }
 
-// Corrected navLinks array with the 'faq' path as a string literal
 const navLinks: NavItem[] = [
   { key: "home", path: "/", label: "home" },
   { key: "about", path: "/ueber-uns", label: "about" },
   { key: "tattoo", path: "/tattoo", label: "tattoo" },
   { key: "piercing", path: "/piercing", label: "piercing" },
+  { key: "pmu", path: "/pmu", label: "pmu" },
   { key: "kontakt", path: "/kontakt", label: "contact" },
   { key: "aktionen", path: "/aktionen", label: "promo" },
   { key: "faq", path: "/haeufige-gestellte-fragen", label: "faq" },

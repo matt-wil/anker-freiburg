@@ -120,6 +120,7 @@
     "home": "Startseite",
     "tattoo": "Tattoo",
     "piercing": "Piercing",
+    "pmu": "Permanent Make-up",
     "contact": "Kontakt",
     "data": "Datenschutz",
     "legal": "Impressum",
@@ -485,5 +486,29 @@
       }
     },
     "warning": "Bitte beachtet: Wir dulden keinerlei Tricks oder falsche Angaben. Wer uns täuscht, riskiert den sofortigen Abbruch und rechtliche Schritte."
+  },
+  "pmu": {
+    "metadata": {
+      "pathSlug": "permanent-make-up",
+      "title": "Permanent Make-up Freiburg | Lippen & Augenbrauen | Anker Studio",
+      "description": "Professionelles Permanent Make-up im Anker Studio Freiburg. Spezialisiert auf Powder Brows und Lippenpigmentierung.",
+      "keywords": "Permanent Make-up Freiburg, PMU, Lippenpigmentierung, Powder Brows, Augenbrauen Tattoo",
+      "ogTitle": "Permanent Make-up & Ästhetik bei Anker Tattoo Freiburg",
+      "ogDescription": "Erlebe hochwertige Lippen- und Augenbrauenpigmentierung für langanhaltende Schönheit.",
+      "ogImageAlt": "Markengrafik für Anker Tattoo & PMU in Freiburg."
+    },
+    "subtitles": {
+      "artistry": "Permanent Make-up Kunst"
+    },
+    "links": {
+      "services": "Leistungen ansehen",
+      "portfolio": "Portfolio",
+      "contact": "Kontakt & Buchung"
+    },
+    "footer": {
+      "eyes": "Augen",
+      "eyebrows": "Augenbrauen",
+      "lips": "Lippen"
+    }
   }
 }
