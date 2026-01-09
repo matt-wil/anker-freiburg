@@ -1,18 +1,23 @@
 "use client";
 
-import Image, { type ImageProps } from "next/image";
 import { cn } from "@/lib/utils";
+import { DetailedHTMLProps, ImgHTMLAttributes } from "react";
 
-interface ImageCardProps extends ImageProps {
+interface ImageCardProps
+  extends DetailedHTMLProps<
+    ImgHTMLAttributes<HTMLImageElement>,
+    HTMLImageElement
+  > {
   showHoverEffect?: boolean;
+  fill?: boolean;
 }
 
 const ImageCard = ({
   showHoverEffect = false,
   className,
   alt = "Image from Anker Tattoo & Piercing Studio",
-  priority,
   fill,
+  src,
   ...props
 }: ImageCardProps): React.JSX.Element => {
   return (
@@ -22,20 +27,21 @@ const ImageCard = ({
         "mx-auto w-fit": !fill,
       })}
     >
-      <Image
+      <img
         {...props}
-        fill={fill}
-        priority={priority}
+        src={src}
         alt={alt}
         className={cn(
           "transition-transform duration-300 ease-in-out group-hover:scale-110",
+          fill ? "absolute inset-0 w-full h-full object-cover" : "h-auto",
           className,
         )}
+        loading="lazy"
       />
       {showHoverEffect && (
         <div
-          className={`absolute inset-0 flex items-center justify-center bg-white
-                       transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-60`}
+          className="absolute inset-0 flex items-center justify-center bg-white
+                     transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-60"
         >
           <span className="text-black text-3xl font-bold">Gallery</span>
         </div>
