@@ -10,6 +10,8 @@ interface ImageCardProps
   > {
   showHoverEffect?: boolean;
   fill?: boolean;
+  priority?: boolean;
+  sizes?: string;
 }
 
 const ImageCard = ({
