@@ -1,13 +1,10 @@
-// ParallaxMedia.tsx (or ParallaxImage.tsx)
-
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image, { ImageProps } from "next/image";
+import { ImageProps } from "next/image";
 import { useLenis } from "lenis/react";
 import { useMediaQuery } from "react-responsive";
 
-// Helper functions
 const lerp = (start: number, end: number, factor: number) =>
   start + (end - start) * factor;
 const clamp = (value: number, min: number, max: number) =>
@@ -23,7 +20,6 @@ const ParallaxImage = ({
   alt,
   containerClassName,
   priority,
-  ...props
 }: ParallaxImageProps): React.JSX.Element => {
   const containerRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
@@ -91,14 +87,11 @@ const ParallaxImage = ({
         className="absolute top-0 left-0 h-full w-full origin-top"
         style={{ willChange: "transform" }}
       >
-        <Image
-          {...props}
-          src={src}
+        <img
+          src={src as string}
           alt={alt}
-          fill
-          priority={priority}
-          className="object-top"
-          sizes="100vw"
+          className="absolute inset-0 w-full h-full object-cover object-top"
+          loading={priority ? "eager" : "lazy"}
         />
       </div>
     </div>
