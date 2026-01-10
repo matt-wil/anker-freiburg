@@ -179,7 +179,7 @@
     "header": "Frequently asked questions",
     "subHeader1": "General",
     "questionGeneral1": "How can I book an appointment?",
-    "answerGeneral1": "You can easily book piercing appointments using our contact form or by phone. If you'd like a tattoo, we ask you to come to the studio in person to discuss your idea and make a deposit.",
+    "answerGeneral1": "For piercings, no appointment is necessary—you can simply walk in during our opening hours. If you'd like a tattoo, we ask you to come to the studio in person to discuss your idea and make a deposit.",
     "questionGeneral2": "Are walk-in options available?",
     "answerGeneral2": "We offer walk-in days for tattoos. However, you should always make an appointment for a tattoo. For piercings, walk-ins are welcome! although there may be a short waiting time",
     "questionGeneral3": "How old do I have to be for a tattoo or piercing?",
@@ -350,7 +350,7 @@
             "price": "65 €"
           },
           {
-            "name": "Eskimo",
+            "name": "Vertical Labret",
             "price": "65 €"
           }
         ]
@@ -385,7 +385,15 @@
           },
           {
             "name": "Christina",
-            "price": "80 €"
+            "price": "85 €"
+          },
+          {
+            "name": "Clitoral Hood",
+            "price": "85 €"
+          },
+          {
+            "name": "Dermal Anchor",
+            "price": "75 €"
           }
         ]
       },
