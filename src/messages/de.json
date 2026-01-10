@@ -179,7 +179,7 @@
     "header": "Häufig gestellte Fragen",
     "subHeader1": "Allgemeines",
     "questionGeneral1": "Wie kann ich einen Termin buchen?",
-    "answerGeneral1": "Piercing Termine kannst du einfach über unser Kontaktformular oder telefonisch buchen. Falls du ein Tattoo möchtest, bitten wir dich, persönlich im Studio vorbeizukommen, um deine Idee zu besprechen und eine Anzahlung zu leisten.",
+    "answerGeneral1": "Für Piercings benötigst du keinen Termin – komm einfach spontan im Studio vorbei. Falls du ein Tattoo möchtest, bitten wir dich, persönlich im Studio vorbeizukommen, um deine Idee zu besprechen und eine Anzahlung zu leisten.",
     "questionGeneral2": "Gibt es Walk-in-Möglichkeiten?",
     "answerGeneral2": "Für Tattoos bieten wir Walk-in-Tage an. Allerdings solltest du zum Tätowieren immer einen Termin vereinbaren. Bei Piercings kannst du auch spontan vorbeikommen; Termine sind zwar besser, aber wenn du ein wenig Wartezeit mitbringst, ist das kein Problem.",
     "questionGeneral3": "Wie alt muss ich für ein Tattoo oder Piercing sein?",
@@ -350,7 +350,7 @@
             "price": "65 €"
           },
           {
-            "name": "Eskimo",
+            "name": "Vertical Labret",
             "price": "65 €"
           }
         ]
@@ -385,7 +385,15 @@
           },
           {
             "name": "Christina",
-            "price": "80 €"
+            "price": "85 €"
+          },
+          {
+            "name": "Klitorisvorhaut",
+            "price": "85 €"
+          },
+          {
+            "name": "Dermal Anchor",
+            "price": "75 €"
           }
         ]
       },
