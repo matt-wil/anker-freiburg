@@ -483,6 +483,10 @@
               "Nachnamen müssen übereinstimmen. Falls nicht, bitte Geburtsurkunde mitbringen."
             ]
           }
+        },
+        {
+          "age": "Altersregelung für Piercings",
+          "description": "6+ Ohrläppchen, 14+ Ohr Knorpel & Nostril, 16+ Bauchnabel & Augenbraue"
         }
       ]
     },

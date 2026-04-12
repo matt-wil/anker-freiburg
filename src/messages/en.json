@@ -483,6 +483,10 @@
               "Last names must match. If not, please bring a birth certificate."
             ]
           }
+        },
+        {
+          "age": "Age Requirements for Piercings",
+          "description": "6+ Earlobes, 14+ Ear Cartilage & Nostril, 16+ Bellybutton & Eyebrows"
         }
       ]
     },
