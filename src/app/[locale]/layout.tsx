@@ -1,5 +1,5 @@
 import "@/globals.css";
-import { Inter } from "next/font/google";
+import { inter, playfair, sourceSans, lora, openSans } from "@/app/fonts";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { NextIntlClientProvider } from "next-intl";
@@ -9,8 +9,6 @@ import IntroWrapper from "@/components/IntroWrapper";
 import { getMessages, getTranslations } from "next-intl/server";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { Metadata } from "next";
-
-const inter = Inter({ subsets: ["latin"] });
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -51,8 +49,8 @@ export async function generateMetadata({
     alternates: {
       canonical: `/${locale}`,
       languages: {
-        de: "/de",
-        en: "/en",
+        "de-DE": "/de",
+        "en-US": "/en",
         "x-default": "/de",
       },
     },
@@ -69,12 +67,21 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html
+      lang={locale}
+      className={`
+        ${inter.variable}
+        ${playfair.variable}
+        ${sourceSans.variable}
+        ${lora.variable}
+        ${openSans.variable}
+      `}
+    >
       <head>
         {/* Dynamic JSON-LD Graph for Search Engines and AI Crawlers */}
         <SchemaOrg locale={locale} />
       </head>
-      <body className={inter.className}>
+      <body className="font-sans antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <IntroWrapper>
             <Navbar />
