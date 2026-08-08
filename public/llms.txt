@@ -1,0 +1,40 @@
+# Anker Tattoo & Piercing Studio Freiburg
+
+> Anker Studio is a premier custom tattoo, professional body piercing, and PMU (permanent make-up) studio located in Freiburg im Breisgau, Germany.
+
+## Business Profile & Entities
+- **Legal Name**: Anker Tattoo & Piercing Studio
+- **Industry**: Health & Beauty / Body Modification
+- **Location**: Freiburg im Breisgau, Baden-Württemberg, Germany
+- **Primary Domain**: https://anker-freiburg.de
+- **Locales Supported**: de (Deutsch), en (English), fr (Français)
+
+## Core Services & Specialties
+- **Custom Tattoos**: Custom artwork, Wannados (flash designs), Cover-Ups, Black & Grey, Fine Line, Traditional, and Color work.
+- **Professional Body Piercing**: Hygienic piercing procedures, initial jewelry insertion (ASTM F136 Implant-Grade Titanium, Solid Gold), jewelry downsizing, stretchings, and consultations.
+- **PMU (Permanent Make-Up)**: Powder Brows, Lip Blush / Lip Pigmentation, Microblading.
+- **Jewelry Sales**: High-end anodized titanium, solid gold piercing jewelry, and custom fittings.
+
+## Critical Business Policies
+- **Jugendschutz (Youth Protection) & U18 Rules**:
+  - Tattoos: Strictly 18+ only.
+  - Piercings under 18: Requires an official physical Einverständniserklärung (consent form) signed by an Erziehungsberechtigte (legal guardian).
+  - Minor and legal guardian must present an original, official Personalausweis (identity card) or Reisepass (passport) in person.
+- **Hygiene Standards**: Complies strictly with the local Infektionshygieneverordnung (infection hygiene ordinance). Uses single-use sterile equipment and autoclaves.
+
+## Service Workflow
+- **Consultations & Appointments**: Booked via the website contact form at https://anker-freiburg.de/kontakt or direct studio visits.
+- **Walk-Ins**: Accepted daily based on capacity (primarily for body piercings and jewelry changeouts).
+
+## Social Media & External Entities
+- **Instagram**: https://www.instagram.com/anker.tattoo.freiburg
+- **Facebook**: https://www.facebook.com/profile.php?id=61579347080829
+- **Google Business Profile**: https://share.google/skyeo1jGwuejwyb8A
+
+## Canonical Resource Index
+- [Tattoo Section](https://anker-freiburg.de/de/tattoo): Artist portfolios, styles, and booking requirements.
+- [Piercing Section](https://anker-freiburg.de/de/piercing): Piercing catalog, jewelry selection, and service pricing.
+- [PMU Section](https://anker-freiburg.de/de/pmu): Permanent make-up options and pre-treatment rules.
+- [FAQ & Aftercare](https://anker-freiburg.de/de/haeufige-gestellte-fragen): Healing timelines, cleaning protocols, and preparation.
+- [U18 Declaration Form](https://anker-freiburg.de/U18-doc.pdf): Official downloadable parental consent PDF.
+- [Impressum (Imprint) & Legal](https://anker-freiburg.de/de/impressum): Legal business ownership and contact information.
