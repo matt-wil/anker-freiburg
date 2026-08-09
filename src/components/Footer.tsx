@@ -18,7 +18,7 @@ export default function Footer(): React.ReactNode {
           <CiInstagram className="w-10 h-10" />
         </a>
         <p className="max-w-xl px-4">
-          &#169; Anker Tattoo & Piercing Freiburg. All rights reserved |{" "}
+          &#169; Anker Tattoo & Piercing Studio Freiburg. All rights reserved |{" "}
           <a
             href="https://www.google.de/maps/place/Anchor+Tattoo+%26+Piercing/@47.992937,7.8459964,17z"
             target="_blank"

@@ -6,8 +6,8 @@
 - **Legal Name**: Anker Tattoo & Piercing Studio
 - **Industry**: Health & Beauty / Body Modification
 - **Location**: Freiburg im Breisgau, Baden-Württemberg, Germany
-- **Primary Domain**: https://anker-freiburg.de
-- **Locales Supported**: de (Deutsch), en (English), fr (Français)
+- **Primary Domain**: https://anker-tattoo.de
+- **Locales Supported**: de (Deutsch), en (English)
 
 ## Core Services & Specialties
 - **Custom Tattoos**: Custom artwork, Wannados (flash designs), Cover-Ups, Black & Grey, Fine Line, Traditional, and Color work.
@@ -23,7 +23,7 @@
 - **Hygiene Standards**: Complies strictly with the local Infektionshygieneverordnung (infection hygiene ordinance). Uses single-use sterile equipment and autoclaves.
 
 ## Service Workflow
-- **Consultations & Appointments**: Booked via the website contact form at https://anker-freiburg.de/kontakt or direct studio visits.
+- **Consultations & Appointments**: Booked via the website contact form at https://anker-tattoo.de/kontakt or direct studio visits.
 - **Walk-Ins**: Accepted daily based on capacity (primarily for body piercings and jewelry changeouts).
 
 ## Social Media & External Entities
@@ -32,9 +32,9 @@
 - **Google Business Profile**: https://share.google/skyeo1jGwuejwyb8A
 
 ## Canonical Resource Index
-- [Tattoo Section](https://anker-freiburg.de/de/tattoo): Artist portfolios, styles, and booking requirements.
-- [Piercing Section](https://anker-freiburg.de/de/piercing): Piercing catalog, jewelry selection, and service pricing.
-- [PMU Section](https://anker-freiburg.de/de/pmu): Permanent make-up options and pre-treatment rules.
-- [FAQ & Aftercare](https://anker-freiburg.de/de/haeufige-gestellte-fragen): Healing timelines, cleaning protocols, and preparation.
-- [U18 Declaration Form](https://anker-freiburg.de/U18-doc.pdf): Official downloadable parental consent PDF.
-- [Impressum (Imprint) & Legal](https://anker-freiburg.de/de/impressum): Legal business ownership and contact information.
+- [Tattoo Section](https://anker-tattoo.de/de/tattoo): Artist portfolios, styles, and booking requirements.
+- [Piercing Section](https://anker-tattoo.de/de/piercing): Piercing catalog, jewelry selection, and service pricing.
+- [PMU Section](https://anker-tattoo.de/de/pmu): Permanent make-up options and pre-treatment rules.
+- [FAQ & Aftercare](https://anker-tattoo.de/de/haeufige-gestellte-fragen): Healing timelines, cleaning protocols, and preparation.
+- [U18 Declaration Form](https://anker-tattoo.de/U18-doc.pdf): Official downloadable parental consent PDF.
+- [Impressum (Imprint) & Legal](https://anker-tattoo.de/de/impressum): Legal business ownership and contact information.
