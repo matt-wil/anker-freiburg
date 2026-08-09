@@ -7,7 +7,6 @@ import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AccordionItem from "@/components/AccordionItem";
-import { FAQSchema } from "@/components/FAQSchema"; // Import your schema component
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -47,35 +46,8 @@ const FAQ = () => {
     { headerKeyPart: "8", prefix: "Specials", count: 1 },
   ];
 
-  // Build the complete list of questions and answers for the schema generator
-  const allFaqs = faqCategories.flatMap((category) => {
-    return [...Array(category.count)]
-      .map((_, questionIndex) => {
-        const questionNum = questionIndex + 1;
-        const questionKey = `question${category.prefix}${questionNum}`;
-        const answerKey = `answer${category.prefix}${questionNum}`;
-        const questionText = t(questionKey);
-        const answerText = t(answerKey);
-
-        if (!questionText || questionText === questionKey) {
-          return null;
-        }
-
-        return {
-          question: questionText,
-          answer: answerText,
-        };
-      })
-      .filter(
-        (item): item is { question: string; answer: string } => item !== null,
-      );
-  });
-
   return (
     <div className="flex flex-col justify-center items-center text-center m-4">
-      {/* Inject the FAQ Schema dynamically for search engines and AI crawlers */}
-      <FAQSchema faqs={allFaqs} />
-
       <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl mb-8 font-bold header">
         {t("header")}
       </h1>

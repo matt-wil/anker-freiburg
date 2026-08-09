@@ -29,10 +29,8 @@ export async function SchemaOrg({ locale }: SchemaOrgProps) {
       });
     }
   } catch (error) {
-    console.error(
-      "Fehler beim Laden der Künstler für JSON-LD (Error loading artists for JSON-LD):",
-      error,
-    );
+    staffMembers = [];
+    console.log(error);
   }
 
   const schemaGraph = {
