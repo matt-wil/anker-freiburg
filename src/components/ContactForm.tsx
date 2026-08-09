@@ -7,6 +7,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 interface FormData {
   name: string;
   email: string;
+  confirmEmail: string;
   subject: string;
   message: string;
 }
@@ -15,6 +16,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
+    confirmEmail: "",
     subject: "",
     message: "",
   });
@@ -33,6 +35,13 @@ const ContactForm = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
+    if (formData.email !== formData.confirmEmail) {
+      alert(
+        "Die E-Mail-Adressen stimmen nicht überein. Bitte überprüfen Sie Ihre Eingabe.",
+      );
+      return;
+    }
+
     if (!captchaValue) {
       alert("Please complete the reCAPTCHA");
       return;
@@ -41,11 +50,19 @@ const ContactForm = () => {
     setSubmissionStatus("submitting");
 
     try {
+      // Exclude confirmEmail from the payload sent to the backend API
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      };
+
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          ...formData,
+          ...payload,
           "g-recaptcha-response": captchaValue,
         }),
       });
@@ -54,7 +71,13 @@ const ContactForm = () => {
 
       if (result.success) {
         setSubmissionStatus("success");
-        setFormData({ name: "", email: "", subject: "", message: "" });
+        setFormData({
+          name: "",
+          email: "",
+          confirmEmail: "",
+          subject: "",
+          message: "",
+        });
         recaptchaRef.current?.reset();
         setCaptchaValue(null);
       } else {
@@ -118,6 +141,26 @@ const ContactForm = () => {
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             placeholder="Deine Email-Adresse"
             value={formData.email}
+            onChange={handleFormChange}
+            required
+          />
+        </div>
+
+        {/* Confirm Email */}
+        <div className="mb-4">
+          <label
+            htmlFor="confirmEmail"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            E-Mail-Adresse bestätigen
+          </label>
+          <input
+            type="email"
+            id="confirmEmail"
+            name="confirmEmail"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Deine Email-Adresse wiederholen"
+            value={formData.confirmEmail}
             onChange={handleFormChange}
             required
           />
