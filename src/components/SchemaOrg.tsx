@@ -6,7 +6,6 @@ interface SchemaOrgProps {
 }
 
 export async function SchemaOrg({ locale }: SchemaOrgProps) {
-  // Fetch active studio team dynamically from Supabase
   let staffMembers: Array<{ "@type": string; name: string; jobTitle: string }> =
     [];
 
@@ -42,8 +41,8 @@ export async function SchemaOrg({ locale }: SchemaOrgProps) {
       {
         "@type": ["TattooParlor", "HealthAndBeautyBusiness"],
         "@id": "https://www.anker-tattoo.de/#studio",
-        name: "Anchor Tattoo & Piercing",
-        alternateName: "Anker Tattoo & Piercing Studio Freiburg",
+        name: "Anker Tattoo & Piercing Studio Freiburg",
+        alternateName: "Anker Tattoo, Piercing & PMU Studio",
         url: `https://www.anker-tattoo.de/${locale}`,
         logo: "https://www.anker-tattoo.de/anker_logo.png",
         image: "https://www.anker-tattoo.de/anker_og.png",
@@ -85,12 +84,35 @@ export async function SchemaOrg({ locale }: SchemaOrgProps) {
           "@type": "City",
           name: "Freiburg im Breisgau",
         },
+        makesOffer: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Custom Tattooing",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Professional Body Piercing",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Permanent Makeup (PMU)",
+            },
+          },
+        ],
       },
       {
         "@type": "WebSite",
         "@id": "https://www.anker-tattoo.de/#website",
         url: "https://www.anker-tattoo.de",
-        name: "Anchor Tattoo & Piercing Studio",
+        name: "Anker Tattoo & Piercing Studio Freiburg",
         inLanguage: ["de", "en"],
       },
     ],
