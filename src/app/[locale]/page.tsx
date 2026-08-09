@@ -86,10 +86,10 @@ export default async function Page() {
             Anker
           </span>
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mx-auto max-w-xl w-full mb-6">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mx-auto max-w-xl w-full mb-6">
             Tattoo & Piercing <br />
             Studio in Freiburg
-          </h1>
+          </h2>
           {/* Description */}
           <p className="text-base md:text-lg mx-auto max-w-xl w-full mb-10 leading-relaxed uppercase tracking-widest">
             Seit 2011
